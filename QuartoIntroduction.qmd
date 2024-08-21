@@ -1,0 +1,110 @@
+---
+title: "Introduction to Quarto"
+format:
+  html:
+    code-fold: true
+  pdf:
+    code-fold: true    
+jupyter: python3
+---
+
+# Getting started with Quarto
+
+## 
+
+[Quarto](https://quarto.org) is an open source scientific and technical publishing system. It can be used to make a range of publishable outputs (reports, posters, slides, blogs, webpages dashboards etc.). In this module you will earn to use Quarto to write reports and  make slide decks.
+
+It is assumed that you are using VSCode with Quarto from Apps Anywhere on the Uni machines. However, you are also encouraged to install Quarto/VSCode on your personal computer.
+
+Quarto documents are written using Markdown (you may have previously used RMArkdown). Quarto uses an open source document convertor called [Pandoc](https://pandoc.org/index.html). This happens in the background.
+
+
+## A first markdown document
+
+To begin with let's make a simple markdown document.
+
+At the top of a file we include a YAML block. This provides configuration information for the document. 
+
+``` markdown
+---
+title: "Hello, Quarto"
+format: html
+---
+
+This is a Quarto document
+
+```
+
+
+
+1. Open VisualStudio Code.
+2. Copy and paste the above code into a new file and save as a .qmd file in a  new directory
+3. 
+    * Compile the code by clicking the preview on the top right of your VSCode editor  
+    * Open a terminal and type
+    ``` bash
+    quarto render
+    quarto preview
+    ``` 
+4. Have a look at the contents on the directory. You shoule be able to see a .html file
+
+
+## Creating a pdf
+
+You will need to save documents in pdf format. To do this you can edit the YAML information as follows.
+
+``` markdown
+---
+title: "Hello, Quarto"
+format: pdf
+---
+
+This is a Quarto document
+
+```
+
+Repeat the above compiling steps. You should now be able to see that a pdf file has been created.
+
+## Adding structure to your Quarto documents
+
+Information on docuemnt structure can be found on the [Quarto help pages](https://quarto.org/docs/authoring/markdown-basics.html). Below I will highlight some of the key document structures that you will need in your project.
+
+### Markdown basics
+
+
+
+### Section headings
+
+
+``` markdown
+---
+title: " Quarto sections"
+format: html
+---
+
+# Main section 
+This is a Quarto document
+
+## Sub section title
+
+```
+
+
+### Tables
+
+### Figures
+
+### Internal referencing
+
+### Citations and references
+
+### Submitting code
+
+## Version control and github
+
+
+
+
+
+
+

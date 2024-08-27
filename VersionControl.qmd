@@ -1,0 +1,48 @@
+---
+title: "File management"
+format:
+  html:
+    code-fold: true
+  pdf:
+    code-fold: true    
+jupyter: python3
+---
+
+
+
+## 
+
+[Github](https://github.com) is a developer platform that allows developers to create, store, manage and share their code. It is version-controlled, meaning that when you *push* files to the github cloud then you will have access to all previously *pushed* version of those files. 
+
+* Github is used across academia and industry.
+* It provides you with a back-up for your project.
+
+## Github classroom 
+
+## Clone the MA40001 repository
+
+## Edit an existing file  and push the modified version to github
+
+* Open the file *.text
+* Edit the text
+* Commit the file and push it
+* Check that the version of the file in the cloud has changed to reflect your edit.
+
+## Create a new file on your local machine and push it to github
+
+## Revert to a previous version of a file using version control
+
+Suppose that you have made a mistake and want to revert to a previous version of a file. 
+- Find the file in the github repository
+- Look back at previous versions of the the file
+- Download the copy that you want to revert to
+
+
+
+## Using the command line interface
+
+You can also do all of the above from the terminal.
+
+
+
+

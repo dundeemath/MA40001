@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Quarto"
+title: "Quarto"
 format:
   html:
     code-fold: true
@@ -12,11 +12,11 @@ jupyter: python3
 
 ## 
 
-[Quarto](https://quarto.org) is an open source scientific and technical publishing system. It can be used to make a range of publishable outputs (reports, posters, slides, blogs, webpages dashboards etc.). In this module you will earn to use Quarto to write reports and  make slide decks.
+[Quarto](https://quarto.org) is an open source scientific and technical publishing system. It can be used to make a range of publishable outputs (reports, posters, slides, blogs, webpages dashboards etc.). In this section you will learn to use Quarto to write reports and  make slide decks. However, one of the advantages of learning Quarto is that it is straightforward to write and publish websites, blogs,dashboard, books.
 
 It is assumed that you are using VSCode with Quarto from Apps Anywhere on the Uni machines. However, you are also encouraged to install Quarto/VSCode on your personal computer.
 
-Quarto documents are written using Markdown (you may have previously used RMArkdown). Quarto uses an open source document convertor called [Pandoc](https://pandoc.org/index.html). This happens in the background.
+Quarto documents are written using Markdown (you may have previously used RMArkdown). In the background, Quarto uses an open source document convertor called [Pandoc](https://pandoc.org/index.html). 
 
 
 ## A first markdown document
@@ -46,12 +46,21 @@ This is a Quarto document
     quarto render
     quarto preview
     ``` 
-4. Have a look at the contents on the directory. You shoule be able to see a .html file
+4. Have a look at the contents on the directory. You shoule be able to see a .html file.
+
+:::{.callout-note}
+## Quarto on your personal computer
+
+ On your personal computer you may need to install  Quarto.
+
+You can find some guidance on how to do this [here](https://quarto.org/docs/get-started/).
+
+:::
 
 
 ## Creating a pdf
 
-You will need to save documents in pdf format. To do this you can edit the YAML information as follows.
+You will need to submit documents in pdf format. To do this you can edit the YAML information as follows.
 
 ``` markdown
 ---
@@ -65,44 +74,217 @@ This is a Quarto document
 
 Repeat the above compiling steps. You should now be able to see that a pdf file has been created.
 
+It is crucial that you can generate a pdf from your Quarto document as your final report will be submitted in pdf format. 
+
+It is advised to regularly check that  a pdf is generated when you render your Quarto document. I have noticed in the past that Quarto can render .html format but be unable to generate a pdf (e.g. if there are latex errors). These can be dealt with by debugging. 
+
+:::{.callout-note}
+# LAtex on your personal computer 
+
+To generate a pdf your computer must have a version of latex installed. In the Uni machines this has been set up for you. On your personal machines you may need to install latex and configure Quarto.
+
+You can find  guidance on how to do this [here](https://quarto.org/docs/output-formats/pdf-basics.html).
+
+:::
+
 ## Adding structure to your Quarto documents
 
-Information on docuemnt structure can be found on the [Quarto help pages](https://quarto.org/docs/authoring/markdown-basics.html). Below I will highlight some of the key document structures that you will need in your project.
-
-### Markdown basics
-
+Information on document structure can be found on the [Quarto help pages](https://quarto.org/docs/authoring/markdown-basics.html). Below I will highlight some of the key document structures that you will likely need in your project.
 
 
 ### Section headings
 
+Here is some Quarto code that will generate a document with Section headings. 
+* Create a new .qmd file in VS Code
+* Copy and paste the code below
+* Render the code and check that a .html file has been generated in
+* Open the .hmtl in a browser.
 
 ``` markdown
 ---
 title: " Quarto sections"
 format: html
+code-fold: True
 ---
 
 # Main section 
 This is a Quarto document
 
 ## Sub section title
+This is a subsection
 
+### 
+This is a further subsection
+
+#
+This is a new section
+
+##
 ```
 
 
 ### Tables
 
+Tables can provide a concise way to present information. Typical uses in a report might be to gather information about model parameters or to display data.
+
+Here is an example of a table:
+
+| Parameter | Value | Unit  |
+|---------|:-----|------:|
+| $a$      | 1  |    ms$^{-1}$ |
+| $b$      | 2  |   s$^{-1}$  |
+| $c$        | 3    |     Nondim  |
+
+: Demonstration of  table
+
+
+You can find more info. on Quarto tables [here](https://quarto.org/docs/authoring/tables.html).
+
 ### Figures
 
-### Internal referencing
+
+To include an existing figure in a Quarto document then you must firstly store the figure file in a sensible directory. Then you can include the figure ('DemoFigureMA40001.png') using the syntax: 
+
+
+``` markdown
+![This is the figure caption.](DemoFigureMA40001.png)
+```
+
+![This is the figure caption.](DemoFigureMA40001.png)
+
+
+
+
+You can find more info on Quarto figures [here](https://quarto.org/docs/authoring/figures.html).
+
+
+
+
+### Cross referencing
+
+Throughout your document you will need to refer to different objects that you have created (e.g. Tables, Figures, equations, theorems).
+
+In Quarto objects are tagged using a specific syntax (prefix for that specific obect + unique tag). See @tbl-syntax for some examples. The object is cross referenced using an `@' tag.
+
+
+| Object | Tag | Reference |
+|---------|:-----|------:|
+| Table      | `{#tbl-mytable}`  |    `@tbl-mytable` |
+| Figure     | `{#fig-myfigure}`  |   `@fig-myfigure`  |
+| Equation       | `{#eq-myequation}` | `@eq-myequation`   |
+: A table with syntax for referencing some Quarto objects. {#tbl-syntax}
+
+
+ The table could be cross referenced using a tag `{#tbl-parameters}` as follows
+
+``` markdown
+| Parameter | Value | Unit  |
+|---------|:-----|------:|
+| $a$      | 1  |    ms$^{-1}$ |
+| $b$      | 2  |   s$^{-1}$  |
+| $c$        | 3    |     Nondim  |
+
+: Demonstration of  table {#tbl-parameters}
+```
+
+ The tag can now be cross referenced using the tag (see @tbl-parameters).
+
+| Parameter | Value | Unit  |
+|---------|:-----|------:|
+| $a$      | 1  |    ms$^{-1}$ |
+| $b$      | 2  |   s$^{-1}$  |
+| $c$        | 3    |     Nondim  |
+
+: Demonstration of  table {#tbl-parameters}
+
+
+
+In a similar manner we can cross reference an equation (see tag `#eq-emc2`). This is cross-referenced using the handle `@eq-emc2`.
+
+``` markdown
+$$
+E=mc^2
+$$ {#eq-emc2}
+```
+
+So if I defined an equation
+$$
+E=mc^2,
+$$ {#eq-emc2}
+I can refer to it in the text via @eq-emc2.
+
+
+
+
+Quarto allows for definition and cross referencing of a range of [mathematical objects](https://quarto.org/docs/authoring/cross-references.html#theorems-and-proofs) (e.g. theorems, corroloraries)
+
+
+
+
+You can find out more about cross referencing [here](https://quarto.org/docs/authoring/cross-references.html).
+
 
 ### Citations and references
 
-### Submitting code
+In your final report will need to provide a list of references that are cited at relevant points in your document.
 
-## Version control and github
+Thiscan be achieved relatively straightforwardly in Quarto.
+
+You need to create a `.bib` file (e.g. `mybibliography.bib`) and save it in a sensible directory (e.g. alongside your .qmd files).
+
+You need to populate the .bib file with bibliographic entries, each of which will have a unique tag (e.g. `my_bib_tag`)
+
+Then in your `.qmd` file you can cite a reference using  the `@' handle (e.g. `@my_bib_tag').
 
 
+
+
+You can find out more about citations in Quarto [here](https://quarto.org/docs/authoring/citations.html).
+
+
+
+
+::: {.callout-note}
+# Creating a .bib file
+
+You could use a reference manager such as Mendeley or Jabref.
+
+Alternatively, you 
+
+ - go to [google scholar](https://scholar.google.com).
+ - go to settings [tab](https://scholar.google.com/scholar_settings?sciifh=1&hl=en&as_sdt=0,5)
+ - In the Bibliography manager, select -> *Show links to import citations into* Bibtex
+- Now when you search for a paper/textbook in Google scholar, there should be an additional link: 'import into Bibtex' 
+- Copy and paste the contents in the link into your .bib file
+
+
+
+
+
+:::
+
+
+# Appendices
+
+## Submitting code
+
+You should include codes that you have developed in the appendix of your report. You can do this using a *code block*.
+
+
+
+``` markdown
+
+``` markdown
+Copy and paste code here
+```
+
+# Websites and blogs in Quarto
+
+Given what you have achieved thus far, it is not a very big step to generate and publish websites, blogs and dashboards. 
+
+There are some tutorials avilable on how to do this on the Quarto [pages](https://quarto.org/docs/websites/).
+
+For guidance on publishing material see [here](https://quarto.org/docs/publishing/).
 
 
 

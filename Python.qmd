@@ -1,0 +1,327 @@
+---
+title: "Python code development"
+format:
+  html:
+    code-fold: true
+  pdf:
+    code-fold: true    
+jupyter: python3
+---
+
+
+# Introduction
+It is strongly encouraged that you use and develop programs over the course of your project. You should discuss programming with your project supervisor. In this section we will develop Python codes to solve a number of example problems.
+
+The focus of the examples:
+ - developing programming skills for problem solving
+ - writing your own programmes
+ - using existing packages
+
+ It is usually a very useful exercise to try to implement your own version of an algorithm. However, in many cases there already exist  well developed codes that we of course should use!
+
+
+You can use Python via Apps Anywhere (Open Anaconda and then use the SPyder IDE).
+
+Alternatively, you can run Python codes via your Quarto document. On the Uni machines Quarto has been connected to an installation of Python. 
+
+
+## Some key ideas
+
+
+### Variables and datatypes
+```{python}
+
+# Define an integer
+
+a=8
+
+# Define a floating point number
+
+b=16.25
+
+#
+
+s='Arsenal FC'
+
+print(type(a))
+print(type(b))
+print(type(s))
+
+boolean_variable_1=True
+boolean_variable_2=False
+
+boolean_variable_and=boolean_variable_1*boolean_variable_2
+
+assert(boolean_variable_and==False)
+
+## addition
+
+## substraction
+
+# multiplication
+
+
+## exponential
+
+```
+
+
+### Lists and dictionaries
+
+```{python}
+
+my_list=[1,2,3,4,5]
+
+print(my_list)
+
+print('The second entry in the list is')
+print(my_list[1])
+```
+
+
+### Logical statements and control loops
+
+
+### Writing functions
+
+A good rule of thumb is that if you find yourself using the same piece of code three or more times you should write a function. This avoids duplication of code.
+
+Suppose we find ourselves manually computing the sum of positive integers many times, i.e.
+$$ 
+s_2=0+1+2=3
+$$
+and
+$$ 
+s_3=0+1+2+3=6.
+$$
+
+It makes sense to write a function that computes the sum for arbitrary $n$. Then we call that function when needed.
+
+
+
+```{python}
+
+# Define a function
+def sum_integers(n):
+  sum_int=0
+  for i in range(n):
+    sum_int=sum_int+i
+  return sum_int
+
+# The old way might eb to manually write out the sum
+s_1=0+1
+s_2=0+1+2
+s_3=0+1+2+3
+
+
+# instead we call a function 
+
+s_function_3=sum_integers(3)
+print(s_function_3)
+
+s_function_120=sum_integers(120)
+print(s_function_120)
+
+
+
+```
+
+
+
+
+## Using Python libraries
+
+### Matrix computation (numpy)
+
+[Numpy](https://numpy.org) is a widely used Python libary. It is a standard way to use arrays in Python. Numpy also contains lots of algorithm (e.g. linear algebra, calculus, mathematical functions, integration, random number generation etc.). You can find a beginner's guide [here](https://numpy.org/doc/stable/user/absolute_beginners.html).
+
+## Arrays
+
+Numpy provides tools for calculating many mathematical operations.
+
+```{python}
+import numpy as np
+
+x=3.14
+y=np.sin(x)
+
+
+print('sin (3.14) is: ' )
+print(y)
+
+assert(np.abs(y)<0.1)
+
+z=np.pi
+p=np.sin(z)
+
+assert(np.abs(p)<0.00001)
+
+print(p)
+
+```
+
+
+We can also use numpy to define and manipulate arrays. In the example below we use python lists to define two 1D arrays. 
+
+
+
+``` {python}
+import numpy as np
+
+# Define a numpy array
+a = np.array([1, 2, 3, 4, 5, 6])
+b=np.array([7,8,9,10,11,12])
+print(a)
+
+c=a+b
+print('The sum of a and b is:')
+print(c)
+
+print("The first entry in a is")
+a[0]
+```
+
+
+
+
+We can also use numpy for higher dimensional arrays
+
+Calculate the determinant of the 2x2 matrix
+$$
+A=\begin{pmatrix}
+4 & 3 \\
+2 & 1
+\end{pmatrix}.
+$$
+
+
+```{python}
+import numpy as np
+
+# generate a two by two matrix of zeros
+A=np.zeros((2,2))
+
+# Set values as per questions
+
+A[0,0]=4
+A[0,1]=3
+A[1,0]=2
+A[1,1]=1
+
+# Print A out to check it is correct
+print('The matrix is:')
+print(A)
+
+# Compute the determinant
+determinant=np.linalg.det(A)
+
+print('The determinant is:')
+print(determinant)
+
+
+# Formally check that the answer is correct.
+assert(determinant==-2.0)
+
+
+
+```
+
+1. Compute the trace of the matrix $A$.
+2. Compute the determinant of the $3 \times 3$ matrix
+$$
+B=\begin{pmatrix}
+4 & 3& 2 \\
+2 & 1 & 4 \\
+3 & 2 & 1
+\end{pmatrix}.
+$$
+3. Compute the eigenvalues of $B$.
+
+
+### Plotting (matplotlib)
+
+[Matplotlib](https://matplotlib.org/stable/users/explain/quick_start.html#a-simple-example) is a pyton library for plotting.
+
+
+
+Let's plot some well-known functions.
+
+Suppose we wish to plot the function
+$$
+f(x)=x^2, \ \ x \in[0,2].
+$$
+
+```{python}
+#import python libraries
+import matplotlib.pyplot as plt
+import numpy as np
+# define x
+x=np.linspace(0,2,200)
+
+# Now define the funciton of x
+
+f=x**2
+
+# Now plot the function
+
+# Generate a figure ane an axis
+fig,ax=plt.subplots()
+
+# call the plot function to plot the data
+ax.plot(x,f)
+
+# Set the x and y labels
+ax.set_xlabel('$x$')
+ax.set_ylabel('$f(x)$')
+```
+
+Exercises:
+
+ 1. Change the domain to $$x\in[0,4]$$.
+ 2. Plot the function $$f(x)=\sin(x) $$.
+ 3. Create two subplots.
+ 4. Make the font on the labels larger
+ 5. Add a legend to the figures.
+
+
+
+
+
+### Symbolic computation in Python (sympy)
+
+### Numerically solving differential equations (sci-py)
+ 
+ #### ODEs
+
+ #### PDEs
+
+### Optimisation (skikit-learn)
+
+### Data analysis (pandas)
+
+### Machine learning (tensorflow)
+
+## Writing your own scripts
+
+At some point (either over the course of your project or later) you will likely encounter a  problem that cannot be solved using existing code libraries, i.e. you will need to write your own progammes. To prepare for this day, it is a good idea to practice your code development skills on problems where the solution are already known.
+
+
+## Image analysis (skikit-image)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

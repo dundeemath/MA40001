@@ -22,9 +22,9 @@ My name is Philip Murray and I am the module lead.
 ## Uni machines
 
 From Apps Anywhere, open:
-* *Visual Studio Code* 
+
+* VS Code with Quarto XXX 
 *  *Anaconda* 
-* *Quarto*
 
 * Install the Quarto extension (Extensions tab on left-hand side)
 * Install the Python extension
@@ -35,7 +35,8 @@ From Apps Anywhere, open:
 
 * Download the test file *asdf.qmd*.
 * Open the file in Visual Studio Code
-* 
+
+
 ### Python
 
 From the terminal within Visual Studio  Code:

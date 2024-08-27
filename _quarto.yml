@@ -3,25 +3,27 @@ project:
   output-dir: docs
 
 
-
 book:
   title: "MA40001"
   author: "Philip Murray"
-  date: "11/22/2024"
+  date: "01/09/2024"
   downloads: pdf
   repo-actions: [issue]
-  cover-image: MA32009Cover.png
-
-
   
   chapters:
     - index.qmd
-    - part: "Markdown"
+    - part: "Mathematical/Scientific communication"
+      chapters:
+        - WritingAReport.qmd 
+        - VersionControl.qmd
+    - part: "Generating documents"
       chapters: 
-        - index.qmd
+        - QuartoIntroduction.qmd
+        - MathematicalTypesetting.qmd
+        - Presentations.qmd
     - part: "Python"
       chapters:
-        - index.qmd
+        - Python.qmd
 
       
 format:

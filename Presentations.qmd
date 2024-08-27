@@ -1,0 +1,32 @@
+---
+title: "Presentations"
+format:
+  html:
+    code-fold: true
+  pdf:
+    code-fold: true    
+jupyter: python3
+---
+
+## Slides
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

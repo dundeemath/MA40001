@@ -218,7 +218,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./MathematicalTypesetting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mathematical typesetting to Quarto</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Typesetting mathematics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -265,21 +265,29 @@ window.Quarto = {
   <li><a href="#logical-statements-and-control-loops" id="toc-logical-statements-and-control-loops" class="nav-link" data-scroll-target="#logical-statements-and-control-loops"><span class="header-section-number">7.1.3</span> Logical statements and control loops</a></li>
   <li><a href="#writing-functions" id="toc-writing-functions" class="nav-link" data-scroll-target="#writing-functions"><span class="header-section-number">7.1.4</span> Writing functions</a></li>
   </ul></li>
-  <li><a href="#using-python-libraries" id="toc-using-python-libraries" class="nav-link" data-scroll-target="#using-python-libraries"><span class="header-section-number">7.2</span> Using Python libraries</a>
+  <li><a href="#code-debugging" id="toc-code-debugging" class="nav-link" data-scroll-target="#code-debugging"><span class="header-section-number">7.2</span> Code debugging</a>
   <ul class="collapse">
-  <li><a href="#matrix-computation-numpy" id="toc-matrix-computation-numpy" class="nav-link" data-scroll-target="#matrix-computation-numpy"><span class="header-section-number">7.2.1</span> Matrix computation (numpy)</a></li>
+  <li><a href="#interpreting-error-messages" id="toc-interpreting-error-messages" class="nav-link" data-scroll-target="#interpreting-error-messages"><span class="header-section-number">7.2.1</span> interpreting error messages</a></li>
+  <li><a href="#print-to-screen" id="toc-print-to-screen" class="nav-link" data-scroll-target="#print-to-screen"><span class="header-section-number">7.2.2</span> print to screen</a></li>
+  <li><a href="#check-datatypes" id="toc-check-datatypes" class="nav-link" data-scroll-target="#check-datatypes"><span class="header-section-number">7.2.3</span> check datatypes</a></li>
+  <li><a href="#check-syntax-of-function-call" id="toc-check-syntax-of-function-call" class="nav-link" data-scroll-target="#check-syntax-of-function-call"><span class="header-section-number">7.2.4</span> check syntax of function call</a></li>
+  <li><a href="#debugger" id="toc-debugger" class="nav-link" data-scroll-target="#debugger"><span class="header-section-number">7.2.5</span> Debugger</a></li>
   </ul></li>
-  <li><a href="#arrays" id="toc-arrays" class="nav-link" data-scroll-target="#arrays"><span class="header-section-number">7.3</span> Arrays</a>
+  <li><a href="#essential-python-libraries" id="toc-essential-python-libraries" class="nav-link" data-scroll-target="#essential-python-libraries"><span class="header-section-number">7.3</span> Essential Python libraries</a>
   <ul class="collapse">
-  <li><a href="#plotting-matplotlib" id="toc-plotting-matplotlib" class="nav-link" data-scroll-target="#plotting-matplotlib"><span class="header-section-number">7.3.1</span> Plotting (matplotlib)</a></li>
-  <li><a href="#symbolic-computation-in-python-sympy" id="toc-symbolic-computation-in-python-sympy" class="nav-link" data-scroll-target="#symbolic-computation-in-python-sympy"><span class="header-section-number">7.3.2</span> Symbolic computation in Python (sympy)</a></li>
-  <li><a href="#numerically-solving-differential-equations-sci-py" id="toc-numerically-solving-differential-equations-sci-py" class="nav-link" data-scroll-target="#numerically-solving-differential-equations-sci-py"><span class="header-section-number">7.3.3</span> Numerically solving differential equations (sci-py)</a></li>
-  <li><a href="#optimisation-skikit-learn" id="toc-optimisation-skikit-learn" class="nav-link" data-scroll-target="#optimisation-skikit-learn"><span class="header-section-number">7.3.4</span> Optimisation (skikit-learn)</a></li>
-  <li><a href="#data-analysis-pandas" id="toc-data-analysis-pandas" class="nav-link" data-scroll-target="#data-analysis-pandas"><span class="header-section-number">7.3.5</span> Data analysis (pandas)</a></li>
-  <li><a href="#machine-learning-tensorflow" id="toc-machine-learning-tensorflow" class="nav-link" data-scroll-target="#machine-learning-tensorflow"><span class="header-section-number">7.3.6</span> Machine learning (tensorflow)</a></li>
+  <li><a href="#matrix-computation-numpy" id="toc-matrix-computation-numpy" class="nav-link" data-scroll-target="#matrix-computation-numpy"><span class="header-section-number">7.3.1</span> Matrix computation (numpy)</a></li>
+  <li><a href="#plotting-matplotlib" id="toc-plotting-matplotlib" class="nav-link" data-scroll-target="#plotting-matplotlib"><span class="header-section-number">7.3.2</span> Plotting (matplotlib)</a></li>
+  <li><a href="#symbolic-computation-in-python-sympy" id="toc-symbolic-computation-in-python-sympy" class="nav-link" data-scroll-target="#symbolic-computation-in-python-sympy"><span class="header-section-number">7.3.3</span> Symbolic computation in Python (sympy)</a></li>
   </ul></li>
-  <li><a href="#writing-your-own-scripts" id="toc-writing-your-own-scripts" class="nav-link" data-scroll-target="#writing-your-own-scripts"><span class="header-section-number">7.4</span> Writing your own scripts</a></li>
-  <li><a href="#image-analysis-skikit-image" id="toc-image-analysis-skikit-image" class="nav-link" data-scroll-target="#image-analysis-skikit-image"><span class="header-section-number">7.5</span> Image analysis (skikit-image)</a></li>
+  <li><a href="#python-libraries-of-interest-to-particular-projects" id="toc-python-libraries-of-interest-to-particular-projects" class="nav-link" data-scroll-target="#python-libraries-of-interest-to-particular-projects"><span class="header-section-number">7.4</span> Python libraries of interest to particular projects</a>
+  <ul class="collapse">
+  <li><a href="#numerically-solving-differential-equations-sci-py" id="toc-numerically-solving-differential-equations-sci-py" class="nav-link" data-scroll-target="#numerically-solving-differential-equations-sci-py"><span class="header-section-number">7.4.1</span> Numerically solving differential equations (sci-py)</a></li>
+  <li><a href="#optimisation-skikit-learn" id="toc-optimisation-skikit-learn" class="nav-link" data-scroll-target="#optimisation-skikit-learn"><span class="header-section-number">7.4.2</span> Optimisation (skikit-learn)</a></li>
+  <li><a href="#data-analysis-pandas" id="toc-data-analysis-pandas" class="nav-link" data-scroll-target="#data-analysis-pandas"><span class="header-section-number">7.4.3</span> Data analysis (pandas)</a></li>
+  <li><a href="#machine-learning-tensorflow" id="toc-machine-learning-tensorflow" class="nav-link" data-scroll-target="#machine-learning-tensorflow"><span class="header-section-number">7.4.4</span> Machine learning (tensorflow)</a></li>
+  <li><a href="#image-analysis-skikit-image" id="toc-image-analysis-skikit-image" class="nav-link" data-scroll-target="#image-analysis-skikit-image"><span class="header-section-number">7.4.5</span> Image analysis (skikit-image)</a></li>
+  </ul></li>
+  <li><a href="#writing-your-own-scripts" id="toc-writing-your-own-scripts" class="nav-link" data-scroll-target="#writing-your-own-scripts"><span class="header-section-number">7.5</span> Writing your own scripts</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -317,7 +325,7 @@ window.Quarto = {
 <h2 data-number="7.1" class="anchored" data-anchor-id="some-key-ideas"><span class="header-section-number">7.1</span> Some key ideas</h2>
 <section id="variables-and-datatypes" class="level3" data-number="7.1.1">
 <h3 data-number="7.1.1" class="anchored" data-anchor-id="variables-and-datatypes"><span class="header-section-number">7.1.1</span> Variables and datatypes</h3>
-<div id="2b65399a" class="cell" data-execution_count="1">
+<div id="5c0b87b7" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define an integer</span></span>
@@ -361,7 +369,7 @@ window.Quarto = {
 </section>
 <section id="lists-and-dictionaries" class="level3" data-number="7.1.2">
 <h3 data-number="7.1.2" class="anchored" data-anchor-id="lists-and-dictionaries"><span class="header-section-number">7.1.2</span> Lists and dictionaries</h3>
-<div id="e07abbc6" class="cell" data-execution_count="2">
+<div id="589f0075" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>my_list<span class="op">=</span>[<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>]</span>
@@ -390,7 +398,7 @@ s_2=0+1+2=3
 s_3=0+1+2+3=6.
 \]</span></p>
 <p>It makes sense to write a function that computes the sum for arbitrary <span class="math inline">\(n\)</span>. Then we call that function when needed.</p>
-<div id="0ef0b9a1" class="cell" data-execution_count="3">
+<div id="2cedb407" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a function</span></span>
@@ -421,36 +429,64 @@ s_3=0+1+2+3=6.
 </div>
 </section>
 </section>
-<section id="using-python-libraries" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="using-python-libraries"><span class="header-section-number">7.2</span> Using Python libraries</h2>
-<section id="matrix-computation-numpy" class="level3" data-number="7.2.1">
-<h3 data-number="7.2.1" class="anchored" data-anchor-id="matrix-computation-numpy"><span class="header-section-number">7.2.1</span> Matrix computation (numpy)</h3>
+<section id="code-debugging" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="code-debugging"><span class="header-section-number">7.2</span> Code debugging</h2>
+<ul>
+<li>syntax errors</li>
+<li></li>
+<li>algorithm errors</li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">sum</span><span class="op">=</span><span class="fl">0.0</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">sum</span><span class="op">=</span><span class="bu">sum</span><span class="op">+</span>i</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">sum</span><span class="op">=</span><span class="bu">sum</span><span class="op">+</span>i</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="interpreting-error-messages" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="interpreting-error-messages"><span class="header-section-number">7.2.1</span> interpreting error messages</h3>
+</section>
+<section id="print-to-screen" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="print-to-screen"><span class="header-section-number">7.2.2</span> print to screen</h3>
+</section>
+<section id="check-datatypes" class="level3" data-number="7.2.3">
+<h3 data-number="7.2.3" class="anchored" data-anchor-id="check-datatypes"><span class="header-section-number">7.2.3</span> check datatypes</h3>
+</section>
+<section id="check-syntax-of-function-call" class="level3" data-number="7.2.4">
+<h3 data-number="7.2.4" class="anchored" data-anchor-id="check-syntax-of-function-call"><span class="header-section-number">7.2.4</span> check syntax of function call</h3>
+</section>
+<section id="debugger" class="level3" data-number="7.2.5">
+<h3 data-number="7.2.5" class="anchored" data-anchor-id="debugger"><span class="header-section-number">7.2.5</span> Debugger</h3>
+</section>
+</section>
+<section id="essential-python-libraries" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="essential-python-libraries"><span class="header-section-number">7.3</span> Essential Python libraries</h2>
+<section id="matrix-computation-numpy" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="matrix-computation-numpy"><span class="header-section-number">7.3.1</span> Matrix computation (numpy)</h3>
 <p><a href="https://numpy.org">Numpy</a> is a widely used Python libary. It is a standard way to use arrays in Python. Numpy also contains lots of algorithm (e.g.&nbsp;linear algebra, calculus, mathematical functions, integration, random number generation etc.). You can find a beginner’s guide <a href="https://numpy.org/doc/stable/user/absolute_beginners.html">here</a>.</p>
-</section>
-</section>
-<section id="arrays" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="arrays"><span class="header-section-number">7.3</span> Arrays</h2>
+<section id="arrays" class="level4" data-number="7.3.1.1">
+<h4 data-number="7.3.1.1" class="anchored" data-anchor-id="arrays"><span class="header-section-number">7.3.1.1</span> Arrays</h4>
 <p>Numpy provides tools for calculating many mathematical operations.</p>
-<div id="dde2a282" class="cell" data-execution_count="4">
+<div id="0efb229a" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>x<span class="op">=</span><span class="fl">3.14</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>y<span class="op">=</span>np.sin(x)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'sin (3.14) is: '</span> )</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span>(np.<span class="bu">abs</span>(y)<span class="op">&lt;</span><span class="fl">0.1</span>)</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>z<span class="op">=</span>np.pi</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>p<span class="op">=</span>np.sin(z)</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span>(np.<span class="bu">abs</span>(p)<span class="op">&lt;</span><span class="fl">0.00001</span>)</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(p)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>x<span class="op">=</span><span class="fl">3.14</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>y<span class="op">=</span>np.sin(x)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'sin (3.14) is: '</span> )</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span>(np.<span class="bu">abs</span>(y)<span class="op">&lt;</span><span class="fl">0.1</span>)</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>z<span class="op">=</span>np.pi</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>p<span class="op">=</span>np.sin(z)</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span>(np.<span class="bu">abs</span>(p)<span class="op">&lt;</span><span class="fl">0.00001</span>)</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(p)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>sin (3.14) is: 
@@ -459,22 +495,22 @@ s_3=0+1+2+3=6.
 </div>
 </div>
 <p>We can also use numpy to define and manipulate arrays. In the example below we use python lists to define two 1D arrays.</p>
-<div id="172ac0f3" class="cell" data-execution_count="5">
+<div id="dec79b2b" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a numpy array</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>])</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>b<span class="op">=</span>np.array([<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">9</span>,<span class="dv">10</span>,<span class="dv">11</span>,<span class="dv">12</span>])</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a)</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>c<span class="op">=</span>a<span class="op">+</span>b</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The sum of a and b is:'</span>)</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(c)</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"The first entry in a is"</span>)</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>a[<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a numpy array</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>])</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>b<span class="op">=</span>np.array([<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">9</span>,<span class="dv">10</span>,<span class="dv">11</span>,<span class="dv">12</span>])</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>c<span class="op">=</span>a<span class="op">+</span>b</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The sum of a and b is:'</span>)</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(c)</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"The first entry in a is"</span>)</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>a[<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1 2 3 4 5 6]
@@ -493,34 +529,34 @@ A=\begin{pmatrix}
 2 &amp; 1
 \end{pmatrix}.
 \]</span></p>
-<div id="5115a148" class="cell" data-execution_count="6">
+<div id="ea71df35" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># generate a two by two matrix of zeros</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>A<span class="op">=</span>np.zeros((<span class="dv">2</span>,<span class="dv">2</span>))</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Set values as per questions</span></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">0</span>,<span class="dv">0</span>]<span class="op">=</span><span class="dv">4</span></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">0</span>,<span class="dv">1</span>]<span class="op">=</span><span class="dv">3</span></span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">1</span>,<span class="dv">0</span>]<span class="op">=</span><span class="dv">2</span></span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">1</span>,<span class="dv">1</span>]<span class="op">=</span><span class="dv">1</span></span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Print A out to check it is correct</span></span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The matrix is:'</span>)</span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(A)</span>
-<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute the determinant</span></span>
-<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>determinant<span class="op">=</span>np.linalg.det(A)</span>
-<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The determinant is:'</span>)</span>
-<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(determinant)</span>
-<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Formally check that the answer is correct.</span></span>
-<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span>(determinant<span class="op">==-</span><span class="fl">2.0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co"># generate a two by two matrix of zeros</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>A<span class="op">=</span>np.zeros((<span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Set values as per questions</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">0</span>,<span class="dv">0</span>]<span class="op">=</span><span class="dv">4</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">0</span>,<span class="dv">1</span>]<span class="op">=</span><span class="dv">3</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">1</span>,<span class="dv">0</span>]<span class="op">=</span><span class="dv">2</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">1</span>,<span class="dv">1</span>]<span class="op">=</span><span class="dv">1</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Print A out to check it is correct</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The matrix is:'</span>)</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(A)</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute the determinant</span></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>determinant<span class="op">=</span>np.linalg.det(A)</span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The determinant is:'</span>)</span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(determinant)</span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Formally check that the answer is correct.</span></span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span>(determinant<span class="op">==-</span><span class="fl">2.0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>The matrix is:
@@ -541,37 +577,39 @@ B=\begin{pmatrix}
 \]</span></li>
 <li>Compute the eigenvalues of <span class="math inline">\(B\)</span>.</li>
 </ol>
-<section id="plotting-matplotlib" class="level3" data-number="7.3.1">
-<h3 data-number="7.3.1" class="anchored" data-anchor-id="plotting-matplotlib"><span class="header-section-number">7.3.1</span> Plotting (matplotlib)</h3>
+</section>
+</section>
+<section id="plotting-matplotlib" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="plotting-matplotlib"><span class="header-section-number">7.3.2</span> Plotting (matplotlib)</h3>
 <p><a href="https://matplotlib.org/stable/users/explain/quick_start.html#a-simple-example">Matplotlib</a> is a pyton library for plotting.</p>
 <p>Let’s plot some well-known functions.</p>
 <p>Suppose we wish to plot the function <span class="math display">\[
 f(x)=x^2, \ \ x \in[0,2].
 \]</span></p>
-<div id="5744565a" class="cell" data-execution_count="7">
+<div id="3cc53c2e" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#import python libraries</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># define x</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>x<span class="op">=</span>np.linspace(<span class="dv">0</span>,<span class="dv">2</span>,<span class="dv">200</span>)</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Now define the funciton of x</span></span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>f<span class="op">=</span>x<span class="op">**</span><span class="dv">2</span></span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Now plot the function</span></span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a figure ane an axis</span></span>
-<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>fig,ax<span class="op">=</span>plt.subplots()</span>
-<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a><span class="co"># call the plot function to plot the data</span></span>
-<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>ax.plot(x,f)</span>
-<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Set the x and y labels</span></span>
-<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">'$x$'</span>)</span>
-<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">'$f(x)$'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#import python libraries</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># define x</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>x<span class="op">=</span>np.linspace(<span class="dv">0</span>,<span class="dv">2</span>,<span class="dv">200</span>)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Now define the funciton of x</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>f<span class="op">=</span>x<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Now plot the function</span></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a figure ane an axis</span></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>fig,ax<span class="op">=</span>plt.subplots()</span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a><span class="co"># call the plot function to plot the data</span></span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>ax.plot(x,f)</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Set the x and y labels</span></span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">'$x$'</span>)</span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">'$f(x)$'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>Text(0, 0.5, '$f(x)$')</code></pre>
@@ -593,30 +631,37 @@ f(x)=x^2, \ \ x \in[0,2].
 <li>Add a legend to the figures.</li>
 </ol>
 </section>
-<section id="symbolic-computation-in-python-sympy" class="level3" data-number="7.3.2">
-<h3 data-number="7.3.2" class="anchored" data-anchor-id="symbolic-computation-in-python-sympy"><span class="header-section-number">7.3.2</span> Symbolic computation in Python (sympy)</h3>
-</section>
-<section id="numerically-solving-differential-equations-sci-py" class="level3" data-number="7.3.3">
-<h3 data-number="7.3.3" class="anchored" data-anchor-id="numerically-solving-differential-equations-sci-py"><span class="header-section-number">7.3.3</span> Numerically solving differential equations (sci-py)</h3>
-<p>#### ODEs</p>
-<p>#### PDEs</p>
-</section>
-<section id="optimisation-skikit-learn" class="level3" data-number="7.3.4">
-<h3 data-number="7.3.4" class="anchored" data-anchor-id="optimisation-skikit-learn"><span class="header-section-number">7.3.4</span> Optimisation (skikit-learn)</h3>
-</section>
-<section id="data-analysis-pandas" class="level3" data-number="7.3.5">
-<h3 data-number="7.3.5" class="anchored" data-anchor-id="data-analysis-pandas"><span class="header-section-number">7.3.5</span> Data analysis (pandas)</h3>
-</section>
-<section id="machine-learning-tensorflow" class="level3" data-number="7.3.6">
-<h3 data-number="7.3.6" class="anchored" data-anchor-id="machine-learning-tensorflow"><span class="header-section-number">7.3.6</span> Machine learning (tensorflow)</h3>
+<section id="symbolic-computation-in-python-sympy" class="level3" data-number="7.3.3">
+<h3 data-number="7.3.3" class="anchored" data-anchor-id="symbolic-computation-in-python-sympy"><span class="header-section-number">7.3.3</span> Symbolic computation in Python (sympy)</h3>
 </section>
 </section>
-<section id="writing-your-own-scripts" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="writing-your-own-scripts"><span class="header-section-number">7.4</span> Writing your own scripts</h2>
-<p>At some point (either over the course of your project or later) you will likely encounter a problem that cannot be solved using existing code libraries, i.e.&nbsp;you will need to write your own progammes. To prepare for this day, it is a good idea to practice your code development skills on problems where the solution are already known.</p>
+<section id="python-libraries-of-interest-to-particular-projects" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="python-libraries-of-interest-to-particular-projects"><span class="header-section-number">7.4</span> Python libraries of interest to particular projects</h2>
+<section id="numerically-solving-differential-equations-sci-py" class="level3" data-number="7.4.1">
+<h3 data-number="7.4.1" class="anchored" data-anchor-id="numerically-solving-differential-equations-sci-py"><span class="header-section-number">7.4.1</span> Numerically solving differential equations (sci-py)</h3>
+<section id="odes" class="level4" data-number="7.4.1.1">
+<h4 data-number="7.4.1.1" class="anchored" data-anchor-id="odes"><span class="header-section-number">7.4.1.1</span> ODEs</h4>
 </section>
-<section id="image-analysis-skikit-image" class="level2" data-number="7.5">
-<h2 data-number="7.5" class="anchored" data-anchor-id="image-analysis-skikit-image"><span class="header-section-number">7.5</span> Image analysis (skikit-image)</h2>
+<section id="pdes" class="level4" data-number="7.4.1.2">
+<h4 data-number="7.4.1.2" class="anchored" data-anchor-id="pdes"><span class="header-section-number">7.4.1.2</span> PDEs</h4>
+</section>
+</section>
+<section id="optimisation-skikit-learn" class="level3" data-number="7.4.2">
+<h3 data-number="7.4.2" class="anchored" data-anchor-id="optimisation-skikit-learn"><span class="header-section-number">7.4.2</span> Optimisation (skikit-learn)</h3>
+</section>
+<section id="data-analysis-pandas" class="level3" data-number="7.4.3">
+<h3 data-number="7.4.3" class="anchored" data-anchor-id="data-analysis-pandas"><span class="header-section-number">7.4.3</span> Data analysis (pandas)</h3>
+</section>
+<section id="machine-learning-tensorflow" class="level3" data-number="7.4.4">
+<h3 data-number="7.4.4" class="anchored" data-anchor-id="machine-learning-tensorflow"><span class="header-section-number">7.4.4</span> Machine learning (tensorflow)</h3>
+</section>
+<section id="image-analysis-skikit-image" class="level3" data-number="7.4.5">
+<h3 data-number="7.4.5" class="anchored" data-anchor-id="image-analysis-skikit-image"><span class="header-section-number">7.4.5</span> Image analysis (skikit-image)</h3>
+</section>
+</section>
+<section id="writing-your-own-scripts" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="writing-your-own-scripts"><span class="header-section-number">7.5</span> Writing your own scripts</h2>
+<p>At some point (either over the course of your project or later) you will likely encounter a problem that cannot be solved using existing code libraries, i.e.&nbsp;you will need to write your own progammes. To prepare for this day, it is a good idea to practice your code development skills on problems where the solution are already known. Over the course of project assessment you will be asked about the methods that you have used in your project. It is much easier to defend the use of a method if you have a clear idea how to programme it; then the limitations of a method become much clearer. You can also include this code in appendix in your written report.</p>
 
 
 </section>

@@ -257,25 +257,21 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#getting-started-with-quarto" id="toc-getting-started-with-quarto" class="nav-link active" data-scroll-target="#getting-started-with-quarto"><span class="header-section-number">4</span> Getting started with Quarto</a>
+  <li><a href="#a-first-markdown-document" id="toc-a-first-markdown-document" class="nav-link active" data-scroll-target="#a-first-markdown-document"><span class="header-section-number">3.1</span> A first markdown document</a></li>
+  <li><a href="#creating-a-pdf" id="toc-creating-a-pdf" class="nav-link" data-scroll-target="#creating-a-pdf"><span class="header-section-number">3.2</span> Creating a pdf</a></li>
+  <li><a href="#adding-structure-to-your-quarto-documents" id="toc-adding-structure-to-your-quarto-documents" class="nav-link" data-scroll-target="#adding-structure-to-your-quarto-documents"><span class="header-section-number">3.3</span> Adding structure to your Quarto documents</a>
   <ul class="collapse">
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">4.1</span> </a></li>
-  <li><a href="#a-first-markdown-document" id="toc-a-first-markdown-document" class="nav-link" data-scroll-target="#a-first-markdown-document"><span class="header-section-number">4.2</span> A first markdown document</a></li>
-  <li><a href="#creating-a-pdf" id="toc-creating-a-pdf" class="nav-link" data-scroll-target="#creating-a-pdf"><span class="header-section-number">4.3</span> Creating a pdf</a></li>
-  <li><a href="#adding-structure-to-your-quarto-documents" id="toc-adding-structure-to-your-quarto-documents" class="nav-link" data-scroll-target="#adding-structure-to-your-quarto-documents"><span class="header-section-number">4.4</span> Adding structure to your Quarto documents</a>
+  <li><a href="#section-headings" id="toc-section-headings" class="nav-link" data-scroll-target="#section-headings"><span class="header-section-number">3.3.1</span> Section headings</a></li>
+  <li><a href="#tables" id="toc-tables" class="nav-link" data-scroll-target="#tables"><span class="header-section-number">3.3.2</span> Tables</a></li>
+  <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures"><span class="header-section-number">3.3.3</span> Figures</a></li>
+  <li><a href="#cross-referencing" id="toc-cross-referencing" class="nav-link" data-scroll-target="#cross-referencing"><span class="header-section-number">3.3.4</span> Cross referencing</a></li>
+  <li><a href="#citations-and-references" id="toc-citations-and-references" class="nav-link" data-scroll-target="#citations-and-references"><span class="header-section-number">3.3.5</span> Citations and references</a></li>
+  </ul></li>
+  <li><a href="#appendices" id="toc-appendices" class="nav-link" data-scroll-target="#appendices"><span class="header-section-number">4</span> Appendices</a>
   <ul class="collapse">
-  <li><a href="#section-headings" id="toc-section-headings" class="nav-link" data-scroll-target="#section-headings"><span class="header-section-number">4.4.1</span> Section headings</a></li>
-  <li><a href="#tables" id="toc-tables" class="nav-link" data-scroll-target="#tables"><span class="header-section-number">4.4.2</span> Tables</a></li>
-  <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures"><span class="header-section-number">4.4.3</span> Figures</a></li>
-  <li><a href="#cross-referencing" id="toc-cross-referencing" class="nav-link" data-scroll-target="#cross-referencing"><span class="header-section-number">4.4.4</span> Cross referencing</a></li>
-  <li><a href="#citations-and-references" id="toc-citations-and-references" class="nav-link" data-scroll-target="#citations-and-references"><span class="header-section-number">4.4.5</span> Citations and references</a></li>
+  <li><a href="#submitting-code" id="toc-submitting-code" class="nav-link" data-scroll-target="#submitting-code"><span class="header-section-number">4.1</span> Submitting code</a></li>
   </ul></li>
-  </ul></li>
-  <li><a href="#appendices" id="toc-appendices" class="nav-link" data-scroll-target="#appendices"><span class="header-section-number">5</span> Appendices</a>
-  <ul class="collapse">
-  <li><a href="#submitting-code" id="toc-submitting-code" class="nav-link" data-scroll-target="#submitting-code"><span class="header-section-number">5.1</span> Submitting code</a></li>
-  </ul></li>
-  <li><a href="#websites-and-blogs-in-quarto" id="toc-websites-and-blogs-in-quarto" class="nav-link" data-scroll-target="#websites-and-blogs-in-quarto"><span class="header-section-number">6</span> Websites and blogs in Quarto</a></li>
+  <li><a href="#websites-and-blogs-in-quarto" id="toc-websites-and-blogs-in-quarto" class="nav-link" data-scroll-target="#websites-and-blogs-in-quarto"><span class="header-section-number">5</span> Websites and blogs in Quarto</a></li>
   </ul>
 </nav>
     </div>
@@ -301,35 +297,36 @@ window.Quarto = {
 </header>
 
 
-<section id="getting-started-with-quarto" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Getting started with Quarto</h1>
-<section id="section" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="section"><span class="header-section-number">4.1</span> </h2>
-<p><a href="https://quarto.org">Quarto</a> is an open source scientific and technical publishing system. It can be used to make a range of publishable outputs (reports, posters, slides, blogs, webpages dashboards etc.). In this section you will learn to use Quarto to write reports and make slide decks. However, one of the advantages of learning Quarto is that it is straightforward to write and publish websites, blogs,dashboard, books.</p>
+<p><a href="https://quarto.org">Quarto</a> is an open source scientific and technical publishing system. It can be used to make a range of publishable outputs (reports, posters, slides, blogs, webpages dashboards etc.). In this section you will learn to use Quarto to write reports and make slide decks. However, one of the advantages of learning Quarto is that it is straightforward to write and publish websites, blogs, dashboards and books.</p>
 <p>It is assumed that you are using VSCode with Quarto from Apps Anywhere on the Uni machines. However, you are also encouraged to install Quarto/VSCode on your personal computer.</p>
 <p>Quarto documents are written using Markdown (you may have previously used RMArkdown). In the background, Quarto uses an open source document convertor called <a href="https://pandoc.org/index.html">Pandoc</a>.</p>
-</section>
-<section id="a-first-markdown-document" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="a-first-markdown-document"><span class="header-section-number">4.2</span> A first markdown document</h2>
-<p>To begin with let’s make a simple markdown document.</p>
-<p>At the top of a file we include a YAML block. This provides configuration information for the document.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Hello, Quarto"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>This is a Quarto document</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="a-first-markdown-document" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="a-first-markdown-document"><span class="header-section-number">3.1</span> A first markdown document</h2>
+<p>To begin with, let’s consider a simple markdown document.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- Configuration information --&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>title: "Hello, Quarto"</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>format: html</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- Insert content below --&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>This is a Quarto document.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>At the top of a file we include a YAML block (enclosed by <code>---</code>). This provides configuration information for the document.</p>
+<p>To run this code you should:</p>
 <ol type="1">
-<li>Open VisualStudio Code.</li>
-<li>Copy and paste the above code into a new file and save as a .qmd file in a new directory</li>
+<li><p>Open VisualStudio Code.</p></li>
+<li><p>Create a new <code>.qmd</code> file and save in a sensible directory.</p></li>
+<li><p>Copy and paste the above code into the .qmd file.</p></li>
 <li><ul>
-<li>Compile the code by clicking the preview on the top right of your VSCode editor<br>
-</li>
-<li>Open a terminal and type</li>
+<li>Compile the code by clicking the preview on the top right of your VSCode editor.</li>
+</ul>
+<p>OR</p>
+<ul>
+<li>Open a terminal, navigate to the directory and type</li>
 </ul>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li>Have a look at the contents on the directory. You shoule be able to see a .html file.</li>
+<li><p>Have a look at the contents on the directory. You shoule be able to see that a .html fil has been generated.</p></li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -346,9 +343,9 @@ Quarto on your personal computer
 </div>
 </div>
 </section>
-<section id="creating-a-pdf" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="creating-a-pdf"><span class="header-section-number">4.3</span> Creating a pdf</h2>
-<p>You will need to submit documents in pdf format. To do this you can edit the YAML information as follows.</p>
+<section id="creating-a-pdf" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="creating-a-pdf"><span class="header-section-number">3.2</span> Creating a pdf</h2>
+<p>Over the course of your project you will need to submit documents in pdf format. To get Quarto to generate PDF you need to edit the YAML information as follows.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Hello, Quarto"</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> pdf</span></span>
@@ -356,8 +353,20 @@ Quarto on your personal computer
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>This is a Quarto document</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Repeat the above compiling steps. You should now be able to see that a pdf file has been created.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>It is crucial that you can generate a pdf from your Quarto document as your final report will be submitted in pdf format.</p>
-<p>It is advised to regularly check that a pdf is generated when you render your Quarto document. I have noticed in the past that Quarto can render .html format but be unable to generate a pdf (e.g.&nbsp;if there are latex errors). These can be dealt with by debugging.</p>
+<p>It is advised to regularly check that a pdf is generated when you render your Quarto document. I have noticed that with some bugs in latex, Quarto can render a document in .html format (it looks ok in preview) but be unable to generate a pdf.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -368,17 +377,23 @@ LAtex on your personal computer
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>To generate a pdf your computer must have a version of latex installed. In the Uni machines this has been set up for you. On your personal machines you may need to install latex and configure Quarto.</p>
+<p>To generate a pdf, your computer must have a version of latex installed. In the Uni machines this has been set up for you. On your personal machines you may need to install latex and configure Quarto.</p>
 <p>You can find guidance on how to do this <a href="https://quarto.org/docs/output-formats/pdf-basics.html">here</a>.</p>
 </div>
 </div>
 </section>
-<section id="adding-structure-to-your-quarto-documents" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="adding-structure-to-your-quarto-documents"><span class="header-section-number">4.4</span> Adding structure to your Quarto documents</h2>
+<section id="adding-structure-to-your-quarto-documents" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="adding-structure-to-your-quarto-documents"><span class="header-section-number">3.3</span> Adding structure to your Quarto documents</h2>
 <p>Information on document structure can be found on the <a href="https://quarto.org/docs/authoring/markdown-basics.html">Quarto help pages</a>. Below I will highlight some of the key document structures that you will likely need in your project.</p>
-<section id="section-headings" class="level3" data-number="4.4.1">
-<h3 data-number="4.4.1" class="anchored" data-anchor-id="section-headings"><span class="header-section-number">4.4.1</span> Section headings</h3>
-<p>Here is some Quarto code that will generate a document with Section headings. * Create a new .qmd file in VS Code * Copy and paste the code below * Render the code and check that a .html file has been generated in * Open the .hmtl in a browser.</p>
+<section id="section-headings" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="section-headings"><span class="header-section-number">3.3.1</span> Section headings</h3>
+<p>Below is some Quarto code that will generate a document with Section headings.</p>
+<ul>
+<li>Create a new .qmd file in VS Code</li>
+<li>Copy and paste the code below</li>
+<li>Render the code and check that a .html file has been generated in</li>
+<li>Open the .html in a browser.</li>
+</ul>
 <div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> " Quarto sections"</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> html</span></span>
@@ -399,10 +414,18 @@ LAtex on your personal computer
 <span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>##</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="tables" class="level3" data-number="4.4.2">
-<h3 data-number="4.4.2" class="anchored" data-anchor-id="tables"><span class="header-section-number">4.4.2</span> Tables</h3>
+<section id="tables" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="tables"><span class="header-section-number">3.3.2</span> Tables</h3>
 <p>Tables can provide a concise way to present information. Typical uses in a report might be to gather information about model parameters or to display data.</p>
-<p>Here is an example of a table:</p>
+<p>Here is an example of Quarto code to make a table:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>| Parameter | Value | Unit  |</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>|---------|:-----|------:|</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>| $a$      | 1  |    ms$^{-1}$ |</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>| $b$      | 2  |   s$^{-1}$  |</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>| $c$        | 3    |     Nondim  |</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>: Demonstration of  table</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The rendered version appears as</p>
 <table class="caption-top table">
 <caption>Demonstration of table</caption>
 <thead>
@@ -432,10 +455,10 @@ LAtex on your personal computer
 </table>
 <p>You can find more info. on Quarto tables <a href="https://quarto.org/docs/authoring/tables.html">here</a>.</p>
 </section>
-<section id="figures" class="level3" data-number="4.4.3">
-<h3 data-number="4.4.3" class="anchored" data-anchor-id="figures"><span class="header-section-number">4.4.3</span> Figures</h3>
+<section id="figures" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="figures"><span class="header-section-number">3.3.3</span> Figures</h3>
 <p>To include an existing figure in a Quarto document then you must firstly store the figure file in a sensible directory. Then you can include the figure (‘DemoFigureMA40001.png’) using the syntax:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="al">![This is the figure caption.](DemoFigureMA40001.png)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="al">![This is the figure caption.](DemoFigureMA40001.png)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="DemoFigureMA40001.png" class="img-fluid figure-img"></p>
@@ -444,14 +467,14 @@ LAtex on your personal computer
 </div>
 <p>You can find more info on Quarto figures <a href="https://quarto.org/docs/authoring/figures.html">here</a>.</p>
 </section>
-<section id="cross-referencing" class="level3" data-number="4.4.4">
-<h3 data-number="4.4.4" class="anchored" data-anchor-id="cross-referencing"><span class="header-section-number">4.4.4</span> Cross referencing</h3>
+<section id="cross-referencing" class="level3" data-number="3.3.4">
+<h3 data-number="3.3.4" class="anchored" data-anchor-id="cross-referencing"><span class="header-section-number">3.3.4</span> Cross referencing</h3>
 <p>Throughout your document you will need to refer to different objects that you have created (e.g.&nbsp;Tables, Figures, equations, theorems).</p>
-<p>In Quarto objects are tagged using a specific syntax (prefix for that specific obect + unique tag). See <a href="#tbl-syntax" class="quarto-xref">Table&nbsp;<span>4.1</span></a> for some examples. The object is cross referenced using an `@’ tag.</p>
+<p>In Quarto objects are tagged using a specific syntax (prefix for that specific obect + unique tag). See <a href="#tbl-syntax" class="quarto-xref">Table&nbsp;<span>3.1</span></a> for some examples. The object is cross referenced using an `@’ tag.</p>
 <div id="tbl-syntax" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-syntax-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.1: A table with syntax for referencing some Quarto objects.
+Table&nbsp;3.1: A table with syntax for referencing some Quarto objects.
 </figcaption>
 <div aria-describedby="tbl-syntax-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -484,18 +507,18 @@ Table&nbsp;4.1: A table with syntax for referencing some Quarto objects.
 </figure>
 </div>
 <p>The table could be cross referenced using a tag <code>{#tbl-parameters}</code> as follows</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>| Parameter | Value | Unit  |</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>|---------|:-----|------:|</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>| $a$      | 1  |    ms$^{-1}$ |</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>| $b$      | 2  |   s$^{-1}$  |</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>| $c$        | 3    |     Nondim  |</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>: Demonstration of  table {#tbl-parameters}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>The tag can now be cross referenced using the tag (see <a href="#tbl-parameters" class="quarto-xref">Table&nbsp;<span>4.2</span></a>).</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>| Parameter | Value | Unit  |</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>|---------|:-----|------:|</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>| $a$      | 1  |    ms$^{-1}$ |</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>| $b$      | 2  |   s$^{-1}$  |</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>| $c$        | 3    |     Nondim  |</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>: Demonstration of  table {#tbl-parameters}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The tag can now be cross referenced using the tag (see <a href="#tbl-parameters" class="quarto-xref">Table&nbsp;<span>3.2</span></a>).</p>
 <div id="tbl-parameters" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-parameters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.2: Demonstration of table
+Table&nbsp;3.2: Demonstration of table
 </figcaption>
 <div aria-describedby="tbl-parameters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -528,17 +551,17 @@ Table&nbsp;4.2: Demonstration of table
 </figure>
 </div>
 <p>In a similar manner we can cross reference an equation (see tag <code>#eq-emc2</code>). This is cross-referenced using the handle <code>@eq-emc2</code>.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>E=mc^2</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>$$ {#eq-emc2}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>E=mc^2</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>$$ {#eq-emc2}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>So if I defined an equation <span id="eq-emc2"><span class="math display">\[
 E=mc^2,
-\tag{4.1}\]</span></span> I can refer to it in the text via <a href="#eq-emc2" class="quarto-xref">Equation&nbsp;<span>4.1</span></a>.</p>
+\tag{3.1}\]</span></span> I can refer to it in the text via <a href="#eq-emc2" class="quarto-xref">Equation&nbsp;<span>3.1</span></a>.</p>
 <p>Quarto allows for definition and cross referencing of a range of <a href="https://quarto.org/docs/authoring/cross-references.html#theorems-and-proofs">mathematical objects</a> (e.g.&nbsp;theorems, corroloraries)</p>
 <p>You can find out more about cross referencing <a href="https://quarto.org/docs/authoring/cross-references.html">here</a>.</p>
 </section>
-<section id="citations-and-references" class="level3" data-number="4.4.5">
-<h3 data-number="4.4.5" class="anchored" data-anchor-id="citations-and-references"><span class="header-section-number">4.4.5</span> Citations and references</h3>
+<section id="citations-and-references" class="level3" data-number="3.3.5">
+<h3 data-number="3.3.5" class="anchored" data-anchor-id="citations-and-references"><span class="header-section-number">3.3.5</span> Citations and references</h3>
 <p>In your final report will need to provide a list of references that are cited at relevant points in your document.</p>
 <p>Thiscan be achieved relatively straightforwardly in Quarto.</p>
 <p>You need to create a <code>.bib</code> file (e.g.&nbsp;<code>mybibliography.bib</code>) and save it in a sensible directory (e.g.&nbsp;alongside your .qmd files).</p>
@@ -568,19 +591,18 @@ Creating a .bib file
 </div>
 </section>
 </section>
-</section>
-<section id="appendices" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Appendices</h1>
-<section id="submitting-code" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="submitting-code"><span class="header-section-number">5.1</span> Submitting code</h2>
+<section id="appendices" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Appendices</h1>
+<section id="submitting-code" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="submitting-code"><span class="header-section-number">4.1</span> Submitting code</h2>
 <p>You should include codes that you have developed in the appendix of your report. You can do this using a <em>code block</em>.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="in">``` markdown</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>Copy and paste code here</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="in">``` markdown</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>Copy and paste code here</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
-<section id="websites-and-blogs-in-quarto" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Websites and blogs in Quarto</h1>
+<section id="websites-and-blogs-in-quarto" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Websites and blogs in Quarto</h1>
 <p>Given what you have achieved thus far, it is not a very big step to generate and publish websites, blogs and dashboards.</p>
 <p>There are some tutorials avilable on how to do this on the Quarto <a href="https://quarto.org/docs/websites/">pages</a>.</p>
 <p>For guidance on publishing material see <a href="https://quarto.org/docs/publishing/">here</a>.</p>

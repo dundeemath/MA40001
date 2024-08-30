@@ -8,11 +8,9 @@ format:
 jupyter: python3
 ---
 
-# Getting started with Quarto
+ 
 
-## 
-
-[Quarto](https://quarto.org) is an open source scientific and technical publishing system. It can be used to make a range of publishable outputs (reports, posters, slides, blogs, webpages dashboards etc.). In this section you will learn to use Quarto to write reports and  make slide decks. However, one of the advantages of learning Quarto is that it is straightforward to write and publish websites, blogs,dashboard, books.
+[Quarto](https://quarto.org) is an open source scientific and technical publishing system. It can be used to make a range of publishable outputs (reports, posters, slides, blogs, webpages dashboards etc.). In this section you will learn to use Quarto to write reports and  make slide decks. However, one of the advantages of learning Quarto is that it is straightforward to write and publish websites, blogs, dashboards and books.
 
 It is assumed that you are using VSCode with Quarto from Apps Anywhere on the Uni machines. However, you are also encouraged to install Quarto/VSCode on your personal computer.
 
@@ -21,32 +19,39 @@ Quarto documents are written using Markdown (you may have previously used RMArkd
 
 ## A first markdown document
 
-To begin with let's make a simple markdown document.
+To begin with, let's consider a simple markdown document.
 
-At the top of a file we include a YAML block. This provides configuration information for the document. 
 
 ``` markdown
+<!-- Configuration information -->
 ---
 title: "Hello, Quarto"
 format: html
 ---
 
-This is a Quarto document
+<!-- Insert content below -->
+This is a Quarto document.
 
 ```
 
+At the top of a file we include a YAML block (enclosed by `---`). This provides configuration information for the document. 
 
+To run this code you should:
 
 1. Open VisualStudio Code.
-2. Copy and paste the above code into a new file and save as a .qmd file in a  new directory
-3. 
-    * Compile the code by clicking the preview on the top right of your VSCode editor  
-    * Open a terminal and type
+2. Create a new  `.qmd` file and save in a sensible directory.
+3. Copy and paste the above code into the .qmd file.
+4. 
+    * Compile the code by clicking the preview on the top right of your VSCode editor.
+
+    OR
+
+    * Open a terminal, navigate to the directory and type
     ``` bash
     quarto render
     quarto preview
     ``` 
-4. Have a look at the contents on the directory. You shoule be able to see a .html file.
+4. Have a look at the contents on the directory. You shoule be able to see that a .html fil has been generated.
 
 :::{.callout-note}
 ## Quarto on your personal computer
@@ -60,7 +65,7 @@ You can find some guidance on how to do this [here](https://quarto.org/docs/get-
 
 ## Creating a pdf
 
-You will need to submit documents in pdf format. To do this you can edit the YAML information as follows.
+Over the course of your project you will need to submit documents in pdf format. To get Quarto to generate PDF  you need to edit the YAML information as follows.
 
 ``` markdown
 ---
@@ -74,14 +79,18 @@ This is a Quarto document
 
 Repeat the above compiling steps. You should now be able to see that a pdf file has been created.
 
+
+::: {.callout-note}
 It is crucial that you can generate a pdf from your Quarto document as your final report will be submitted in pdf format. 
 
-It is advised to regularly check that  a pdf is generated when you render your Quarto document. I have noticed in the past that Quarto can render .html format but be unable to generate a pdf (e.g. if there are latex errors). These can be dealt with by debugging. 
+It is advised to regularly check that  a pdf is generated when you render your Quarto document. I have noticed that with some bugs in latex, Quarto can render a document in .html format (it looks ok in preview) but be unable to generate a pdf.
+
+:::
 
 :::{.callout-note}
 # LAtex on your personal computer 
 
-To generate a pdf your computer must have a version of latex installed. In the Uni machines this has been set up for you. On your personal machines you may need to install latex and configure Quarto.
+To generate a pdf, your computer must have a version of latex installed. In the Uni machines this has been set up for you. On your personal machines you may need to install latex and configure Quarto.
 
 You can find  guidance on how to do this [here](https://quarto.org/docs/output-formats/pdf-basics.html).
 
@@ -94,11 +103,12 @@ Information on document structure can be found on the [Quarto help pages](https:
 
 ### Section headings
 
-Here is some Quarto code that will generate a document with Section headings. 
+Below is some Quarto code that will generate a document with Section headings. 
+
 * Create a new .qmd file in VS Code
 * Copy and paste the code below
 * Render the code and check that a .html file has been generated in
-* Open the .hmtl in a browser.
+* Open the .html in a browser.
 
 ``` markdown
 ---
@@ -127,7 +137,19 @@ This is a new section
 
 Tables can provide a concise way to present information. Typical uses in a report might be to gather information about model parameters or to display data.
 
-Here is an example of a table:
+Here is an example of Quarto code to make a table:
+
+``` markdown
+| Parameter | Value | Unit  |
+|---------|:-----|------:|
+| $a$      | 1  |    ms$^{-1}$ |
+| $b$      | 2  |   s$^{-1}$  |
+| $c$        | 3    |     Nondim  |
+
+: Demonstration of  table
+```
+
+The rendered version appears as
 
 | Parameter | Value | Unit  |
 |---------|:-----|------:|

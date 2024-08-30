@@ -88,9 +88,9 @@ Any fraction replaces a bracket, so $\frac{5}{a+b}$ does not need the brackets.
 
 Common mistakes are (in addition to violating the above conventions):
 
-* there are typos in the equations
+* there are typos/inconsistencies in the equations
 * the presented system is not mathematically self-consistent (e.g. a system of ODEs is missing initial conditions)
-* variables and parameters are not defined
+* variables/parameters are not defined
 * using different font styles and sizes to represent the same quantity;
 * not using the same symbol (or font) in the text and separate formulae;
 * not using spaces between symbols, and/or wrong symbols, e.g $axb$ instead of $a \times b$; 
@@ -245,11 +245,11 @@ Other types of plots are useful for different purposes:
 # common mistakes
 
 * hanging figures (i.e. figures that not placed in context (e.g. connected to the text))
-
 * figures without axis labels
 * coloured graphs without colour scale/legend 
 * labels/ tick marks are too small
 * type of graph unsuitable for the data shown
+* the figure was not adequately connected to the text (it is not clear, for example, what equations were solved, what method was used.)
 
 :::
 
@@ -257,6 +257,8 @@ Some rules -of-thumb:
 
 
 * check that any text in axis labels/legends is approximately the same size as font in the main text
+
+### Schematic diagrams
 
 
 

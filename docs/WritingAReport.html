@@ -219,7 +219,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./MathematicalTypesetting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mathematical typesetting to Quarto</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Typesetting mathematics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -263,7 +263,8 @@ window.Quarto = {
   <li><a href="#pitching-the-content-appropriately" id="toc-pitching-the-content-appropriately" class="nav-link" data-scroll-target="#pitching-the-content-appropriately"><span class="header-section-number">1.1.2</span> Pitching the content appropriately</a></li>
   <li><a href="#equations" id="toc-equations" class="nav-link" data-scroll-target="#equations"><span class="header-section-number">1.1.3</span> Equations</a></li>
   <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures"><span class="header-section-number">1.1.4</span> Figures</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">1.1.5</span> References</a></li>
+  <li><a href="#schematic-diagrams" id="toc-schematic-diagrams" class="nav-link" data-scroll-target="#schematic-diagrams"><span class="header-section-number">1.1.5</span> Schematic diagrams</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">1.1.6</span> References</a></li>
   </ul></li>
   <li><a href="#written-reports" id="toc-written-reports" class="nav-link" data-scroll-target="#written-reports"><span class="header-section-number">1.2</span> Written reports</a></li>
   <li><a href="#verbal-presentation" id="toc-verbal-presentation" class="nav-link" data-scroll-target="#verbal-presentation"><span class="header-section-number">1.3</span> Verbal presentation</a></li>
@@ -360,9 +361,9 @@ Common mistakes
 <div class="callout-body-container callout-body">
 <p>Common mistakes are (in addition to violating the above conventions):</p>
 <ul>
-<li>there are typos in the equations</li>
+<li>there are typos/inconsistencies in the equations</li>
 <li>the presented system is not mathematically self-consistent (e.g.&nbsp;a system of ODEs is missing initial conditions)</li>
-<li>variables and parameters are not defined</li>
+<li>variables/parameters are not defined</li>
 <li>using different font styles and sizes to represent the same quantity;</li>
 <li>not using the same symbol (or font) in the text and separate formulae;</li>
 <li>not using spaces between symbols, and/or wrong symbols, e.g <span class="math inline">\(axb\)</span> instead of <span class="math inline">\(a \times b\)</span>;</li>
@@ -418,7 +419,7 @@ f (x, y) = \cos(x) \sin(xy)
 </div>
 </div>
 <div class="cell-output cell-output-display">
-<div id="fig-surfplot-2" class="quarto-float quarto-figure quarto-figure-center anchored" height="434" width="592">
+<div id="fig-surfplot-2" class="quarto-float quarto-figure quarto-figure-center anchored" width="592" height="434">
 <figure class="quarto-float quarto-subfloat-fig figure">
 <div aria-describedby="fig-surfplot-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="WritingAReport_files/figure-html/fig-surfplot-output-2.png" id="fig-surfplot-2" data-ref-parent="fig-surfplot" width="592" height="434" class="figure-img">
@@ -565,11 +566,12 @@ common mistakes
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>hanging figures (i.e.&nbsp;figures that not placed in context (e.g.&nbsp;connected to the text))</p></li>
-<li><p>figures without axis labels</p></li>
-<li><p>coloured graphs without colour scale/legend</p></li>
-<li><p>labels/ tick marks are too small</p></li>
-<li><p>type of graph unsuitable for the data shown</p></li>
+<li>hanging figures (i.e.&nbsp;figures that not placed in context (e.g.&nbsp;connected to the text))</li>
+<li>figures without axis labels</li>
+<li>coloured graphs without colour scale/legend</li>
+<li>labels/ tick marks are too small</li>
+<li>type of graph unsuitable for the data shown</li>
+<li>the figure was not adequately connected to the text (it is not clear, for example, what equations were solved, what method was used.)</li>
 </ul>
 </div>
 </div>
@@ -578,8 +580,11 @@ common mistakes
 <li>check that any text in axis labels/legends is approximately the same size as font in the main text</li>
 </ul>
 </section>
-<section id="references" class="level3" data-number="1.1.5">
-<h3 data-number="1.1.5" class="anchored" data-anchor-id="references"><span class="header-section-number">1.1.5</span> References</h3>
+<section id="schematic-diagrams" class="level3" data-number="1.1.5">
+<h3 data-number="1.1.5" class="anchored" data-anchor-id="schematic-diagrams"><span class="header-section-number">1.1.5</span> Schematic diagrams</h3>
+</section>
+<section id="references" class="level3" data-number="1.1.6">
+<h3 data-number="1.1.6" class="anchored" data-anchor-id="references"><span class="header-section-number">1.1.6</span> References</h3>
 <p>All text in your report must be either original or attributed to the originating author(s). A word-for-word quotation should be indicated with quotation symbols. Such as: The whatever effect causes “extremely aggressive phenotypes” to dominate (Smith et al.&nbsp;2010). Extensive quotes of more than one sentence should generally be set apart as a separate, often-indented paragraph: According to Tolkien (1954):</p>
 <p>“One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.”</p>
 <p>It is generally best to limit quotations to no more than 1-3 sentences. Instead, one should paraphrase and/or summarise cited work. Moreover, the majority of the content of a report should be in the authors original words. It should be the authors original logical argument, with citations used to document and justify key assertions and facts. Hence, quotations should be kept to a minimum.</p>

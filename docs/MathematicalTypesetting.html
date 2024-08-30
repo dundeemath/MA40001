@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Mathematical typesetting to Quarto – MA40001</title>
+<title>4&nbsp; Typesetting mathematics – MA40001</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -144,7 +144,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./QuartoIntroduction.html">Generating documents</a></li><li class="breadcrumb-item"><a href="./MathematicalTypesetting.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mathematical typesetting to Quarto</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./QuartoIntroduction.html">Generating documents</a></li><li class="breadcrumb-item"><a href="./MathematicalTypesetting.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Typesetting mathematics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -219,7 +219,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./MathematicalTypesetting.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mathematical typesetting to Quarto</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Typesetting mathematics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -267,9 +267,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./QuartoIntroduction.html">Generating documents</a></li><li class="breadcrumb-item"><a href="./MathematicalTypesetting.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mathematical typesetting to Quarto</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./QuartoIntroduction.html">Generating documents</a></li><li class="breadcrumb-item"><a href="./MathematicalTypesetting.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Typesetting mathematics</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mathematical typesetting to Quarto</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Typesetting mathematics</span></h1>
 </div>
 
 
@@ -290,14 +290,14 @@ window.Quarto = {
 <h1 data-number="5"><span class="header-section-number">5</span> The math environment in latex</h1>
 <p>Latex is a programming language used for mathematical typesetting. In its original form a latex file is compiled to generate a .pdf file. Mathematical notation is written in the ‘math environment’. You can find a detailed introduction to latex <a href="https://tug.ctan.org/info/short-math-guide/short-math-guide.pdf">here</a>.</p>
 <p>Within Quarto we can access the latex math environment by enclosing text within dollar symbols.</p>
-<p>To typeset mathematics in line (e.g.&nbsp;<span class="math inline">\(x+y=2\)</span>) we write …</p>
+<p>To typeset mathematics inline (e.g.&nbsp;<span class="math inline">\(x+y=2\)</span>) we write …</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>To typeset mathematics in line (e.g. $x+y=2$) we write ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>To typeset mathematics in a new line we use double dollar symbols. To obtain the expression <span class="math display">\[
-\frac{x+y}{2}=4
+\frac{x+y}{2}=4,
 \]</span> we write</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>\frac{x+y}{2}=4</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>\frac{x+y}{2}=4.</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>$$</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>It is worth spending some time familiarising yourself with basic latex commands.</p>
 <p>An very simple equation, $ f(x) &gt; 0$, inserted in a line of text (inline). The dollar sign switches between maths mode and text mode.</p>

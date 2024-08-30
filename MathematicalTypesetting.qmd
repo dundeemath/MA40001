@@ -1,5 +1,5 @@
 ---
-title: "Mathematical typesetting to Quarto"
+title: "Typesetting mathematics"
 format:
   html:
     code-fold: true
@@ -13,7 +13,7 @@ Latex is a programming language used for mathematical typesetting. In its origin
 
 Within Quarto we can access the latex math environment by enclosing text within dollar symbols. 
 
-To typeset mathematics in line (e.g. $x+y=2$) we write ...
+To typeset mathematics inline (e.g. $x+y=2$) we write ...
 
 ``` markdown
 To typeset mathematics in line (e.g. $x+y=2$) we write ...
@@ -22,13 +22,13 @@ To typeset mathematics in line (e.g. $x+y=2$) we write ...
 
 To typeset mathematics in a new line we use double dollar symbols. To obtain the expression
 $$
-\frac{x+y}{2}=4
+\frac{x+y}{2}=4,
 $$
 we write
 ``` markdown
 
 $$
-\frac{x+y}{2}=4
+\frac{x+y}{2}=4.
 $$
 ```
 

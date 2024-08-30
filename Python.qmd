@@ -24,11 +24,28 @@ You can use Python via Apps Anywhere (Open Anaconda and then use the SPyder IDE)
 
 Alternatively, you can run Python codes via your Quarto document. On the Uni machines Quarto has been connected to an installation of Python. 
 
+To run python via Quarto create a python environment
+
+``` markdown 
+
+Insert syntax for running python.
+
+```
+
 
 ## Some key ideas
 
 
+## Calculator
+
 ### Variables and datatypes
+
+Strings
+Lists
+Tuples
+Sets
+Dictionaries
+
 ```{python}
 
 # Define an integer
@@ -128,14 +145,52 @@ print(s_function_120)
 
 
 
+## Code debugging
 
-## Using Python libraries
+* syntax errors
+* runtime errors
+* logic errors
+
+``` python
+
+sum=0.0
+for i in range(5)
+  sum=sum+i
+
+```
+
+``` python
+
+for i in range(5):
+  sum=sum+i
+
+```
+
+##
+Plan your code
+Keep code clean (e.g. use variables, write expressiosn that are easy to interpret)
+Test code often
+Comment code
+
+### interpreting error messages
+
+### print to screen
+
+### check datatypes
+
+### check syntax of function call
+
+### Debugger
+
+
+
+## Essential Python libraries
 
 ### Matrix computation (numpy)
 
 [Numpy](https://numpy.org) is a widely used Python libary. It is a standard way to use arrays in Python. Numpy also contains lots of algorithm (e.g. linear algebra, calculus, mathematical functions, integration, random number generation etc.). You can find a beginner's guide [here](https://numpy.org/doc/stable/user/absolute_beginners.html).
 
-## Arrays
+#### Arrays
 
 Numpy provides tools for calculating many mathematical operations.
 
@@ -284,16 +339,17 @@ Exercises:
  5. Add a legend to the figures.
 
 
-
-
-
 ### Symbolic computation in Python (sympy)
+
+
+##  Python libraries of interest to particular projects
+
 
 ### Numerically solving differential equations (sci-py)
  
- #### ODEs
+#### ODEs
 
- #### PDEs
+#### PDEs
 
 ### Optimisation (skikit-learn)
 
@@ -301,12 +357,15 @@ Exercises:
 
 ### Machine learning (tensorflow)
 
+### Image analysis (skikit-image)
+
+
 ## Writing your own scripts
 
 At some point (either over the course of your project or later) you will likely encounter a  problem that cannot be solved using existing code libraries, i.e. you will need to write your own progammes. To prepare for this day, it is a good idea to practice your code development skills on problems where the solution are already known.
+Over the course of project assessment you will be asked about the methods that you have used in your project. It is much easier to defend the use of a method if you have a clear idea how to programme it; then the limitations of a method become much clearer. You can also include this code in appendix in your written report.
 
 
-## Image analysis (skikit-image)
 
 
 

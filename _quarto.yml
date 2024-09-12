@@ -12,18 +12,12 @@ book:
   
   chapters:
     - index.qmd
-    - part: "Mathematical/Scientific communication"
-      chapters:
-        - WritingAReport.qmd 
-        - VersionControl.qmd
-    - part: "Generating documents"
-      chapters: 
-        - QuartoIntroduction.qmd
-        - MathematicalTypesetting.qmd
-        - Presentations.qmd
-    - part: "Python"
-      chapters:
-        - Python.qmd
+    - WritingAReport.qmd 
+    - VersionControl.qmd
+    - QuartoIntroduction.qmd
+    - MathematicalTypesetting.qmd
+    - Presentations.qmd
+    - Python.qmd
 
       
 format:

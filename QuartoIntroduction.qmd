@@ -16,6 +16,13 @@ It is assumed that you are using VSCode with Quarto from Apps Anywhere on the Un
 
 Quarto documents are written using Markdown (you may have previously used RMArkdown). In the background, Quarto uses an open source document convertor called [Pandoc](https://pandoc.org/index.html). 
 
+## Getting started
+
+Apps Anywhere
+Visual Studio Code X with Quarto extension-> Launch
+File->New File->Quarto document
+
+To compile the document: click preview button in top tight corner
 
 ## A first markdown document
 
@@ -286,21 +293,21 @@ Alternatively, you
 :::
 
 
-# Appendices
+## Appendices
 
-## Submitting code
+### Submitting code
 
 You should include codes that you have developed in the appendix of your report. You can do this using a *code block*.
 
 
-
-``` markdown
+````
 
 ``` markdown
 Copy and paste code here
 ```
+````
 
-# Websites and blogs in Quarto
+## Websites and blogs in Quarto
 
 Given what you have achieved thus far, it is not a very big step to generate and publish websites, blogs and dashboards. 
 

@@ -28,17 +28,23 @@ The main aims are to develop:
 
 A common theme with the different assessment points is the need for a *narrative* around your project:
 
-- can you describe the project in one sentence
+- can you describe the project in *one succinct sentence*? 
 - can you outline why the topic is important?
 - what is the background to the project? 
 - what methods/results/techniques have you developed?
 - can you summarise your findings?
 
-Once you have settled on a narrative then the different assessment points can be thought of as variations on presentation of your project narrative. 
+Once you have settled on a narrative, the different assessment points can be thought of as variations on the presentation of your project narrative. 
 
 ### Pitching the content appropriately
 
+The first in principle in good communication is to *know your audience*.
 
+If you pitch at too high a level (e.g. assuming that your audience know more than they actually do), the audience will likely be unable to follow your reasoning.
+
+If you pitch at too low a level (e.g. by explaining concepts that your audience is already familiar with) they will likely be bored/feel condescended etc.
+
+At all points of your assessment: assume that you are communicating with your class mates, i.e. Level 4/5 of a undergraduate mathematics degree. This means that you should not assume that the audience has specific knowledge of the details/background of your project.
 
 ### Equations
 
@@ -48,39 +54,46 @@ Has sufficient  background detail been presented so that the arguments can be re
 
 
 #### Typesetting equations
-To typeset formulae is actually quite difficult. Mathematics uses a variety of symbols and several different alphabets: Roman, Greek, Hebrew are the most common. In addition formulae are often more similar to graphics than to text. There are numerators and denominators which in turn can have fractions etc, as for instance:
+To typeset formulae is actually quite difficult. Mathematics uses a variety of symbols and several different alphabets: Roman, Greek, Hebrew are the most common. In addition formulae are often more similar to graphics than to text. There are numerators and denominators which in turn can have fractions etc., e.g.:
 $$
 f:= \frac{1}{1+\frac{1}{1+\frac{1}{1+x}}}.
 $$
 
 To make this formula look good requires either an advanced typesetting program or a lot of effort. Most common typesetting programmes come with some sort of equation editor, but very few can handle such a problem. The most powerful mathematical typesetting program, which is also the format used for almost all mathematical literature is LaTeX. We will learn about LaTeX later.
 
-Like grammar for a language there exist also certain conventions about how to write formulae. Here is a (far from exhaustive) list of the most import conventions:
+As with grammar, for a language there exist also certain conventions about how to write formulae. Here is a (far from exhaustive) list of the most import conventions:
 
-* Treat the formula like text. If the formula is at the end of a sentence there has to be a full stop at the end of the formula. If another formula follows use a comma or semicolon.  This how we count
+* Treat the formula like text. If the formula is at the end of a sentence there has to be a full stop at the end of the formula. If another formula follows use a comma or semicolon.  This is  how we count
 $$
 1 + 0 = 1,
 1 + 1 = 2.
 $$
 
 * use Roman (typically lower case) letters in *italic* style for all variables: $x$, $y$, $z$, $a$, $b$, $c$,
-both if we refer to them in the text as well as in formulae. 
+both if we refer to them in the text as well as in formulae. Note difference between $x$ and x.
 
-* use Greek letters are used for angles, and e.g. differential forms;
-* vectors are typeset in bold, $\mathbf{a}$, or using an arrow, $\overrightarrow{a}$;
+* use Greek letters for angles, and e.g. differential forms;
+* typeset vectors in bold, $\mathbf{a}$, or using an arrow, $\overrightarrow{a}$;
 * typeset functions  in roman, $\sin(x)$ rather than $sin(x)$;
 * typeset matrices  using capital roman letters, e.g. $M$;
 * represent number systems and also certain vector spaces in a style where certain lines are double: $\mathbb{R}$, $\mathbb{Q}$, $\mathbb{C}$, ...;
 * use curly brackets for sets, e.g. $\{1, 2, 3\} = \{2, 1, 3\}$, and regular brackets for an ordered list $(1, 2, 3) \neq (2, 1, 3)$;
 * denote a range  by three dots: $i = 1, 2, . . . , n,$ (no bracket required);
 * use brackets only where necessary, note that multiplication/division takes precedence
-over addition/subtraction; E.g 
-$$a + (b · c)$$
+over addition/subtraction; e.g 
+$$
+a + (b · c)
+$$
 does not need the brackets, but 
-$$(a + b) · c$$
+$$
+(a + b) · c
+$$
 does. 
 Any fraction replaces a bracket, so $\frac{5}{a+b}$ does not need the brackets. 
-* use a separate line for any formula that uses more than one line.
+* use a separate line for any formula that uses more than one line or complicated formula. Don't write $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$ in line. Instead write
+$$
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}.
+$$
 
 
 :::{.callout-note}
@@ -100,17 +113,27 @@ Common mistakes are (in addition to violating the above conventions):
 
 ### Figures
 
-A formula is often the best and most concise way to communicate a relation or function to a mathematically trained audience. However, there are many cases where even a mathematician has difficulties to understand (in the short time available in a presentation) what a function represents. For functions of one and two variables there is always the option to show a plot of the function. Here is an example of a function in two variables:
+A formula is often the best and most concise way to communicate a relation or function to a mathematically trained audience. However, there are many cases where even a mathematician might have difficulty  understanding (e.g. in the short time available in a presentation) what a function represents. For functions of one and two variables there is always the option to show a plot of the function. Here is an example of a function in two variables:
 $$
-f (x, y) = \cos(x) \sin(xy)
+f (x, y) = \cos(x) \sin(xy).
 $$ {#eq-3dplot}
 Although this is a comparatively simple function it takes some time to figure out what properties the function has, that is for instance: 
+
 * Is the function periodic? 
 * How many maxima/minima does it have? 
 * How does it behave for $x, y \rightarrow \infty$?
 
 
-See surface and contour plots in @fig-surfplot. A plot can often show these properties quicker but usually in a less accurate way. The advantage of a contour plot is that it is often easier to see the locations of maxima and minima but it is not so easy to see how high the extrema are.
+To explain the behaviour of such a function, a plot will help! But which plot? For example, we could use a surface or contour plot (see @fig-surfplot).  The advantage of a contour plot is that it is often easier to see the locations of maxima and minima but it is not so easy to see how high the extrema are.
+
+:::{.callout-tip}
+# Connecting figures to text 
+
+Note that all plots should be cross referenced in the text, i.e. we should never have figures that are not referenceed somewhere in the text.
+
+A good rule of thumb is: if figures and tables are removed from the text, does the text still read coherently? i.e. the figure is helping the reader to understant a point that is made in the text. It is not replacing the need for text.
+
+:::
 
 ```{python}
 #| label: fig-surfplot
@@ -236,10 +259,10 @@ plt.show()
 
 Other types of plots are useful for different purposes:
 
-- bar chart
-- pie chart
-- scatter plot
-- line chart
+- bar chart (@fig-discretbin)
+- pie chart (@fig-piechart)
+- scatter plot (@fig-scatterplot)
+- line chart (@fig-line).
 
 :::{.callout-note}
 # common mistakes
@@ -260,14 +283,32 @@ Some rules -of-thumb:
 
 ### Schematic diagrams
 
+Schematic diagrams are a useful way to help to try and introduce a new concept/summarise a finding.
+
+There are many ways to generate schematic diagrams (e.g. generating in software such as Photoshop or Illustrator and saving as an image).
+
+Alternatively Quarto provides an itnerface to a number of graph tools that generate schematic diagrams, e.g. 
+
+```{mermaid}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
+
+
+
+
 
 
 ### References
 
 All text in your report must be either original or attributed to the originating author(s). A word-for-word quotation should be indicated with quotation symbols. Such as: The
-whatever effect causes “extremely aggressive phenotypes” to dominate (Smith et al. 2010). Extensive quotes of more than one sentence should generally be set apart as a separate, often-indented paragraph: According to Tolkien (1954):
+whatever effect causes “extremely aggressive phenotypes” to dominate (Smith et al. 2010). Extensive quotes of more than one sentence should generally be set apart as a separate paragraph: According to Tolkien (1954):
 
-  “One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.”
+
+“ One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them. ”
 
 
 It is generally best to limit quotations to no more than 1-3 sentences. Instead, one should paraphrase and/or summarise cited work. Moreover, the majority of the content of a report should be in the authors original words. It should be the authors original logical argument, with citations used to document and justify key assertions and facts. Hence, quotations should be kept to a minimum. 
@@ -335,11 +376,15 @@ The overall structure of a report is (generally) as follows:
 
 
 
-* check that the written text stands alone without the figures (i.e. the figures are helping the reader to understand a point that is being made in the main text.)
-* use figure captions to provide techical information about the figure (e.g. what variables are plotted, reference equations in the main text, reference tables of parameter values or details that are essential to reproduce the figure)
-
+A template project report is available via the MA40001Resources github repository.
 
 ## Verbal presentation
+
+
+
+
+
+A template presentation is available via the MA40001Resources github repository.
 
 
 

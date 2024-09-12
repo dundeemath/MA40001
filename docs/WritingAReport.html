@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -102,6 +102,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -144,7 +147,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./WritingAReport.html">Mathematical/Scientific communication</a></li><li class="breadcrumb-item"><a href="./WritingAReport.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Scientific/mathematical writing</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./WritingAReport.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Scientific/mathematical writing</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -178,75 +181,42 @@ window.Quarto = {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Mathematical/Scientific communication</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WritingAReport.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Scientific/mathematical writing</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./VersionControl.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">File management</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Generating documents</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./QuartoIntroduction.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Quarto</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./MathematicalTypesetting.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Typesetting mathematics</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Presentations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Presentations</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Python</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Python.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Python code development</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
     </ul>
     </div>
 </nav>
@@ -274,7 +244,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./WritingAReport.html">Mathematical/Scientific communication</a></li><li class="breadcrumb-item"><a href="./WritingAReport.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Scientific/mathematical writing</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Scientific/mathematical writing</span></h1>
 </div>
@@ -312,42 +282,52 @@ window.Quarto = {
 <h3 data-number="1.1.1" class="anchored" data-anchor-id="narrative"><span class="header-section-number">1.1.1</span> Narrative</h3>
 <p>A common theme with the different assessment points is the need for a <em>narrative</em> around your project:</p>
 <ul>
-<li>can you describe the project in one sentence</li>
+<li>can you describe the project in <em>one succinct sentence</em>?</li>
 <li>can you outline why the topic is important?</li>
 <li>what is the background to the project?</li>
 <li>what methods/results/techniques have you developed?</li>
 <li>can you summarise your findings?</li>
 </ul>
-<p>Once you have settled on a narrative then the different assessment points can be thought of as variations on presentation of your project narrative.</p>
+<p>Once you have settled on a narrative, the different assessment points can be thought of as variations on the presentation of your project narrative.</p>
 </section>
 <section id="pitching-the-content-appropriately" class="level3" data-number="1.1.2">
 <h3 data-number="1.1.2" class="anchored" data-anchor-id="pitching-the-content-appropriately"><span class="header-section-number">1.1.2</span> Pitching the content appropriately</h3>
+<p>The first in principle in good communication is to <em>know your audience</em>.</p>
+<p>If you pitch at too high a level (e.g.&nbsp;assuming that your audience know more than they actually do), the audience will likely be unable to follow your reasoning.</p>
+<p>If you pitch at too low a level (e.g.&nbsp;by explaining concepts that your audience is already familiar with) they will likely be bored/feel condescended etc.</p>
+<p>At all points of your assessment: assume that you are communicating with your class mates, i.e.&nbsp;Level 4/5 of a undergraduate mathematics degree. This means that you should not assume that the audience has specific knowledge of the details/background of your project.</p>
 </section>
 <section id="equations" class="level3" data-number="1.1.3">
 <h3 data-number="1.1.3" class="anchored" data-anchor-id="equations"><span class="header-section-number">1.1.3</span> Equations</h3>
 <p>Are equations presented accurately? Are mathematical objects accurately defined? Has sufficient background detail been presented so that the arguments can be reasonably followed?</p>
 <section id="typesetting-equations" class="level4" data-number="1.1.3.1">
 <h4 data-number="1.1.3.1" class="anchored" data-anchor-id="typesetting-equations"><span class="header-section-number">1.1.3.1</span> Typesetting equations</h4>
-<p>To typeset formulae is actually quite difficult. Mathematics uses a variety of symbols and several different alphabets: Roman, Greek, Hebrew are the most common. In addition formulae are often more similar to graphics than to text. There are numerators and denominators which in turn can have fractions etc, as for instance: <span class="math display">\[
+<p>To typeset formulae is actually quite difficult. Mathematics uses a variety of symbols and several different alphabets: Roman, Greek, Hebrew are the most common. In addition formulae are often more similar to graphics than to text. There are numerators and denominators which in turn can have fractions etc., e.g.: <span class="math display">\[
 f:= \frac{1}{1+\frac{1}{1+\frac{1}{1+x}}}.
 \]</span></p>
 <p>To make this formula look good requires either an advanced typesetting program or a lot of effort. Most common typesetting programmes come with some sort of equation editor, but very few can handle such a problem. The most powerful mathematical typesetting program, which is also the format used for almost all mathematical literature is LaTeX. We will learn about LaTeX later.</p>
-<p>Like grammar for a language there exist also certain conventions about how to write formulae. Here is a (far from exhaustive) list of the most import conventions:</p>
+<p>As with grammar, for a language there exist also certain conventions about how to write formulae. Here is a (far from exhaustive) list of the most import conventions:</p>
 <ul>
-<li><p>Treat the formula like text. If the formula is at the end of a sentence there has to be a full stop at the end of the formula. If another formula follows use a comma or semicolon. This how we count <span class="math display">\[
+<li><p>Treat the formula like text. If the formula is at the end of a sentence there has to be a full stop at the end of the formula. If another formula follows use a comma or semicolon. This is how we count <span class="math display">\[
 1 + 0 = 1,
 1 + 1 = 2.
 \]</span></p></li>
-<li><p>use Roman (typically lower case) letters in <em>italic</em> style for all variables: <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>, <span class="math inline">\(z\)</span>, <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, both if we refer to them in the text as well as in formulae.</p></li>
-<li><p>use Greek letters are used for angles, and e.g.&nbsp;differential forms;</p></li>
-<li><p>vectors are typeset in bold, <span class="math inline">\(\mathbf{a}\)</span>, or using an arrow, <span class="math inline">\(\overrightarrow{a}\)</span>;</p></li>
+<li><p>use Roman (typically lower case) letters in <em>italic</em> style for all variables: <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>, <span class="math inline">\(z\)</span>, <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, both if we refer to them in the text as well as in formulae. Note difference between <span class="math inline">\(x\)</span> and x.</p></li>
+<li><p>use Greek letters for angles, and e.g.&nbsp;differential forms;</p></li>
+<li><p>typeset vectors in bold, <span class="math inline">\(\mathbf{a}\)</span>, or using an arrow, <span class="math inline">\(\overrightarrow{a}\)</span>;</p></li>
 <li><p>typeset functions in roman, <span class="math inline">\(\sin(x)\)</span> rather than <span class="math inline">\(sin(x)\)</span>;</p></li>
 <li><p>typeset matrices using capital roman letters, e.g.&nbsp;<span class="math inline">\(M\)</span>;</p></li>
 <li><p>represent number systems and also certain vector spaces in a style where certain lines are double: <span class="math inline">\(\mathbb{R}\)</span>, <span class="math inline">\(\mathbb{Q}\)</span>, <span class="math inline">\(\mathbb{C}\)</span>, …;</p></li>
 <li><p>use curly brackets for sets, e.g.&nbsp;<span class="math inline">\(\{1, 2, 3\} = \{2, 1, 3\}\)</span>, and regular brackets for an ordered list <span class="math inline">\((1, 2, 3) \neq (2, 1, 3)\)</span>;</p></li>
 <li><p>denote a range by three dots: <span class="math inline">\(i = 1, 2, . . . , n,\)</span> (no bracket required);</p></li>
-<li><p>use brackets only where necessary, note that multiplication/division takes precedence over addition/subtraction; E.g <span class="math display">\[a + (b · c)\]</span> does not need the brackets, but <span class="math display">\[(a + b) · c\]</span> does. Any fraction replaces a bracket, so <span class="math inline">\(\frac{5}{a+b}\)</span> does not need the brackets.</p></li>
-<li><p>use a separate line for any formula that uses more than one line.</p></li>
+<li><p>use brackets only where necessary, note that multiplication/division takes precedence over addition/subtraction; e.g <span class="math display">\[
+a + (b · c)
+\]</span> does not need the brackets, but <span class="math display">\[
+(a + b) · c
+\]</span> does. Any fraction replaces a bracket, so <span class="math inline">\(\frac{5}{a+b}\)</span> does not need the brackets.</p></li>
+<li><p>use a separate line for any formula that uses more than one line or complicated formula. Don’t write <span class="math inline">\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)</span> in line. Instead write <span class="math display">\[
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}.
+\]</span></p></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -375,10 +355,29 @@ Common mistakes
 </section>
 <section id="figures" class="level3" data-number="1.1.4">
 <h3 data-number="1.1.4" class="anchored" data-anchor-id="figures"><span class="header-section-number">1.1.4</span> Figures</h3>
-<p>A formula is often the best and most concise way to communicate a relation or function to a mathematically trained audience. However, there are many cases where even a mathematician has difficulties to understand (in the short time available in a presentation) what a function represents. For functions of one and two variables there is always the option to show a plot of the function. Here is an example of a function in two variables: <span id="eq-3dplot"><span class="math display">\[
-f (x, y) = \cos(x) \sin(xy)
-\tag{1.1}\]</span></span> Although this is a comparatively simple function it takes some time to figure out what properties the function has, that is for instance: * Is the function periodic? * How many maxima/minima does it have? * How does it behave for <span class="math inline">\(x, y \rightarrow \infty\)</span>?</p>
-<p>See surface and contour plots in <a href="#fig-surfplot" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>. A plot can often show these properties quicker but usually in a less accurate way. The advantage of a contour plot is that it is often easier to see the locations of maxima and minima but it is not so easy to see how high the extrema are.</p>
+<p>A formula is often the best and most concise way to communicate a relation or function to a mathematically trained audience. However, there are many cases where even a mathematician might have difficulty understanding (e.g.&nbsp;in the short time available in a presentation) what a function represents. For functions of one and two variables there is always the option to show a plot of the function. Here is an example of a function in two variables: <span id="eq-3dplot"><span class="math display">\[
+f (x, y) = \cos(x) \sin(xy).
+\tag{1.1}\]</span></span> Although this is a comparatively simple function it takes some time to figure out what properties the function has, that is for instance:</p>
+<ul>
+<li>Is the function periodic?</li>
+<li>How many maxima/minima does it have?</li>
+<li>How does it behave for <span class="math inline">\(x, y \rightarrow \infty\)</span>?</li>
+</ul>
+<p>To explain the behaviour of such a function, a plot will help! But which plot? For example, we could use a surface or contour plot (see <a href="#fig-surfplot" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>). The advantage of a contour plot is that it is often easier to see the locations of maxima and minima but it is not so easy to see how high the extrema are.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Connecting figures to text
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that all plots should be cross referenced in the text, i.e.&nbsp;we should never have figures that are not referenceed somewhere in the text.</p>
+<p>A good rule of thumb is: if figures and tables are removed from the text, does the text still read coherently? i.e.&nbsp;the figure is helping the reader to understant a point that is made in the text. It is not replacing the need for text.</p>
+</div>
+</div>
 <div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -425,6 +424,7 @@ f (x, y) = \cos(x) \sin(xy)
 <img src="WritingAReport_files/figure-html/fig-surfplot-output-2.png" id="fig-surfplot-2" data-ref-parent="fig-surfplot" width="592" height="434" class="figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-surfplot-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b)
 </figcaption>
 </figure>
 </div>
@@ -550,10 +550,10 @@ Figure&nbsp;1.5: <span class="math inline">\(y\)</span> is plotted against x.
 </div>
 <p>Other types of plots are useful for different purposes:</p>
 <ul>
-<li>bar chart</li>
-<li>pie chart</li>
-<li>scatter plot</li>
-<li>line chart</li>
+<li>bar chart (<a href="#fig-discretbin" class="quarto-xref">Figure&nbsp;<span>1.2</span></a>)</li>
+<li>pie chart (<a href="#fig-piechart" class="quarto-xref">Figure&nbsp;<span>1.3</span></a>)</li>
+<li>scatter plot (<a href="#fig-scatterplot" class="quarto-xref">Figure&nbsp;<span>1.4</span></a>)</li>
+<li>line chart (<a href="#fig-line" class="quarto-xref">Figure&nbsp;<span>1.5</span></a>).</li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -582,11 +582,30 @@ common mistakes
 </section>
 <section id="schematic-diagrams" class="level3" data-number="1.1.5">
 <h3 data-number="1.1.5" class="anchored" data-anchor-id="schematic-diagrams"><span class="header-section-number">1.1.5</span> Schematic diagrams</h3>
+<p>Schematic diagrams are a useful way to help to try and introduce a new concept/summarise a finding.</p>
+<p>There are many ways to generate schematic diagrams (e.g.&nbsp;generating in software such as Photoshop or Illustrator and saving as an image).</p>
+<p>Alternatively Quarto provides an itnerface to a number of graph tools that generate schematic diagrams, e.g.&nbsp;</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[Hard edge] --&gt; B(Round edge)
+  B --&gt; C{Decision}
+  C --&gt; D[Result one]
+  C --&gt; E[Result two]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 <section id="references" class="level3" data-number="1.1.6">
 <h3 data-number="1.1.6" class="anchored" data-anchor-id="references"><span class="header-section-number">1.1.6</span> References</h3>
-<p>All text in your report must be either original or attributed to the originating author(s). A word-for-word quotation should be indicated with quotation symbols. Such as: The whatever effect causes “extremely aggressive phenotypes” to dominate (Smith et al.&nbsp;2010). Extensive quotes of more than one sentence should generally be set apart as a separate, often-indented paragraph: According to Tolkien (1954):</p>
-<p>“One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.”</p>
+<p>All text in your report must be either original or attributed to the originating author(s). A word-for-word quotation should be indicated with quotation symbols. Such as: The whatever effect causes “extremely aggressive phenotypes” to dominate (Smith et al.&nbsp;2010). Extensive quotes of more than one sentence should generally be set apart as a separate paragraph: According to Tolkien (1954):</p>
+<p>“ One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them. ”</p>
 <p>It is generally best to limit quotations to no more than 1-3 sentences. Instead, one should paraphrase and/or summarise cited work. Moreover, the majority of the content of a report should be in the authors original words. It should be the authors original logical argument, with citations used to document and justify key assertions and facts. Hence, quotations should be kept to a minimum.</p>
 <p>Students must take great care when quoting or paraphrasing text to cite the original source. To do otherwise is <a href="https://learningspaces.dundee.ac.uk/asc/understanding-plagiarism-and-academic-dishonesty/"><em>plagiarism</em></a>, which undermines the integrity of science, and has serious consequences for the authors as well. (e.g., failing grades, expulsion from a degree program, loss of an academic position, being shunned by the scientific community, etc.)</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -656,13 +675,11 @@ Some common errors in the stucture
 <li><p>References: This section contains the full list of publications that you cited in your report.</p></li>
 <li><p>Appendices (optional): Lengthy and/or tedious calculations or details that are too distracting to the overall flow of your paper, and yet are necessary to fully document your work, should be placed in appendices. You must also provide evidence for any codes that you have developed.</p></li>
 </ol>
-<ul>
-<li>check that the written text stands alone without the figures (i.e.&nbsp;the figures are helping the reader to understand a point that is being made in the main text.)</li>
-<li>use figure captions to provide techical information about the figure (e.g.&nbsp;what variables are plotted, reference equations in the main text, reference tables of parameter values or details that are essential to reproduce the figure)</li>
-</ul>
+<p>A template project report is available via the MA40001Resources github repository.</p>
 </section>
 <section id="verbal-presentation" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="verbal-presentation"><span class="header-section-number">1.3</span> Verbal presentation</h2>
+<p>A template presentation is available via the MA40001Resources github repository.</p>
 
 
 </section>

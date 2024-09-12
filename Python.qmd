@@ -9,7 +9,7 @@ jupyter: python3
 ---
 
 
-# Introduction
+## Introduction
 It is strongly encouraged that you use and develop programs over the course of your project. You should discuss programming with your project supervisor. In this section we will develop Python codes to solve a number of example problems.
 
 The focus of the examples:
@@ -36,7 +36,7 @@ Insert syntax for running python.
 ## Some key ideas
 
 
-## Calculator
+### Calculator
 
 ### Variables and datatypes
 
@@ -145,7 +145,7 @@ print(s_function_120)
 
 
 
-## Code debugging
+### Code debugging
 
 * syntax errors
 * runtime errors
@@ -166,31 +166,32 @@ for i in range(5):
 
 ```
 
-##
+####
 Plan your code
 Keep code clean (e.g. use variables, write expressiosn that are easy to interpret)
 Test code often
 Comment code
 
-### interpreting error messages
+#### interpreting error messages
 
-### print to screen
+#### print to screen
 
-### check datatypes
+#### check datatypes
 
-### check syntax of function call
+#### check syntax of function call
 
-### Debugger
+#### Debugger
 
 
 
-## Essential Python libraries
+## Python libraries
 
-### Matrix computation (numpy)
+### Essential 
+
+#### Matrix computation (numpy)
 
 [Numpy](https://numpy.org) is a widely used Python libary. It is a standard way to use arrays in Python. Numpy also contains lots of algorithm (e.g. linear algebra, calculus, mathematical functions, integration, random number generation etc.). You can find a beginner's guide [here](https://numpy.org/doc/stable/user/absolute_beginners.html).
 
-#### Arrays
 
 Numpy provides tools for calculating many mathematical operations.
 
@@ -293,7 +294,7 @@ $$
 3. Compute the eigenvalues of $B$.
 
 
-### Plotting (matplotlib)
+#### Plotting (matplotlib)
 
 [Matplotlib](https://matplotlib.org/stable/users/explain/quick_start.html#a-simple-example) is a pyton library for plotting.
 
@@ -339,10 +340,10 @@ Exercises:
  5. Add a legend to the figures.
 
 
-### Symbolic computation in Python (sympy)
+#### Symbolic computation in Python (sympy)
 
 
-##  Python libraries of interest to particular projects
+###  Python libraries of interest to particular projects
 
 
 ### Numerically solving differential equations (sci-py)

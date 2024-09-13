@@ -24,7 +24,7 @@
     "href": "index.html#software",
     "title": "MA40001",
     "section": "Software",
-    "text": "Software\nThe taught component of the module will require you to use the following software:\n\nQuarto\nVisual Studio Code\nGithub\nlatex\nPython\n\n\n\n\n\n\n\nWhy bother with all this?\n\n\n\nThe aim is to provide you with open-source tools that enable you to generate modern scientific/mathematical documents.\n\n\n\nUni machines\nFrom Apps Anywhere, open:\n\nVisual Studio Code 1.92.2 with Quarto 1.5.56\n\n\n\nOn your own machine\nInstall\n\nQuarto\nVS Code\nPython + libraries (matplotlib.pyplot, numpy,)\n\nWithin Quarto: * install the quarto extension for VS Code * install Latex (follow Quarto instruction for generating a pdf). * Configure the Python interpreter (Show and Run Commands-&gt;Python Select Interpreter)",
+    "text": "Software\nThe taught component of the module will require you to use the following software:\n\nQuarto\nVisual Studio Code\nGithub\nlatex\nPython\n\n\n\n\n\n\n\nWhy bother with all this?\n\n\n\nThe aim is to provide you with open-source tools that enable you to generate modern scientific/mathematical documents.\n\n\n\nUni machines\nFrom Apps Anywhere, open:\n\nVisual Studio Code 1.92.2 with Quarto 1.5.56\n\n\n\nOn your own machine\nInstall\n\nQuarto\nVS Code\nPython + libraries (matplotlib.pyplot, numpy,)\n\nWithin Quarto:\n\ninstall the quarto extension for VS Code\ninstall Latex (follow Quarto instruction for generating a pdf).\nConfigure the Python interpreter (Show and Run Commands-&gt;Python Select Interpreter)",
     "crumbs": [
       "Preface"
     ]

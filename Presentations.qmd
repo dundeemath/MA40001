@@ -8,7 +8,7 @@ format:
 jupyter: python3
 ---
 
-As part of your project you will give an approx. 10 minute presentation. You will have to develop some slides to present.
+As part of your project you will give an approx. 10 minute presentation. To do this, you will have to develop some slides to present.
 
 Quarto has a number of different options for [producing slide decks](https://quarto.org/docs/presentations/). Below we will use [Revealjs](https://quarto.org/docs/presentations/revealjs/).
 

@@ -20,7 +20,7 @@ The taught component of the module will require you to use the following softwar
 * Visual Studio Code
 * Github
 * latex
-* python
+* Python
 
 
 ::: {.callout-note}

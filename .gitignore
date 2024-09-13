@@ -1,6 +1,8 @@
-/.quarto/
+.quarto/
 .DS_Store
-/docs/
+docs/
 /*_files/
 .quarto/
 \.quarto\
+
+/.quarto/

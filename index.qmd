@@ -47,6 +47,7 @@ Install
  * Python + libraries (matplotlib.pyplot, numpy,)
 
  Within Quarto:
+ 
  * install the quarto extension for VS Code
  * install Latex (follow Quarto instruction for generating a pdf).
  * Configure the Python interpreter (Show and Run Commands->Python Select Interpreter)

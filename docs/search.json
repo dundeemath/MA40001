@@ -134,7 +134,7 @@
     "href": "VersionControl.html#github-classroom",
     "title": "2  File management",
     "section": "2.2 Github classroom",
-    "text": "2.2 Github classroom\n\nFind the Github Desktop app on Apps Anywhere.\nYou will need to create a github account if you do not currently have one.\nDownload the MA4000Resources repository using the provided link.",
+    "text": "2.2 Github classroom\n\nLaunch the Github Desktop app on Apps Anywhere.\nYou will need to create a github account if you do not currently have one.\nDownload the MA40001Resources repository using the provided link.\nLaunch VS Code\nFile-&gt;Open folder-&gt;Find location of downloaded github repo on your local machine",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>File management</span>"
     ]
@@ -143,8 +143,8 @@
     "objectID": "VersionControl.html#edit-an-existing-file-and-push-the-modified-version-to-github",
     "href": "VersionControl.html#edit-an-existing-file-and-push-the-modified-version-to-github",
     "title": "2  File management",
-    "section": "2.3 Edit an existing file and push the modified version to github",
-    "text": "2.3 Edit an existing file and push the modified version to github\n\nOpen the file *.text\nEdit the text\nCommit the file and push it\nCheck that the version of the file in the cloud has changed to reflect your edit.",
+    "section": "2.4 Edit an existing file and push the modified version to github",
+    "text": "2.4 Edit an existing file and push the modified version to github\n\nOpen the file *.text\nEdit the text\nCommit the file and push it\nCheck that the version of the file in the cloud has changed to reflect your edit.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>File management</span>"
     ]
@@ -153,8 +153,8 @@
     "objectID": "VersionControl.html#create-a-new-file-on-your-local-machine-and-push-it-to-github",
     "href": "VersionControl.html#create-a-new-file-on-your-local-machine-and-push-it-to-github",
     "title": "2  File management",
-    "section": "2.4 Create a new file on your local machine and push it to github",
-    "text": "2.4 Create a new file on your local machine and push it to github",
+    "section": "2.5 Create a new file on your local machine and push it to github",
+    "text": "2.5 Create a new file on your local machine and push it to github",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>File management</span>"
     ]
@@ -163,8 +163,8 @@
     "objectID": "VersionControl.html#revert-to-a-previous-version-of-a-file-using-version-control",
     "href": "VersionControl.html#revert-to-a-previous-version-of-a-file-using-version-control",
     "title": "2  File management",
-    "section": "2.5 Revert to a previous version of a file using version control",
-    "text": "2.5 Revert to a previous version of a file using version control\nSuppose that you have made a mistake and want to revert to a previous version of a file. - Find the file in the github repository - Look back at previous versions of the the file - Download the copy that you want to revert to",
+    "section": "2.6 Revert to a previous version of a file using version control",
+    "text": "2.6 Revert to a previous version of a file using version control\nSuppose that you have made a mistake and want to revert to a previous version of a file. - Find the file in the github repository - Look back at previous versions of the the file - Download the copy that you want to revert to",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>File management</span>"
     ]
@@ -173,8 +173,8 @@
     "objectID": "VersionControl.html#using-the-command-line-interface",
     "href": "VersionControl.html#using-the-command-line-interface",
     "title": "2  File management",
-    "section": "2.6 Using the command line interface",
-    "text": "2.6 Using the command line interface\nYou can also do all of the above from the terminal.",
+    "section": "2.7 Using the command line interface",
+    "text": "2.7 Using the command line interface\nYou can also do all of the above from the terminal.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>File management</span>"
     ]
@@ -337,6 +337,16 @@
     "text": "Assessment components\n\nPresentation\nInterim report\nPoster\nFinal report\nViva",
     "crumbs": [
       "Preface"
+    ]
+  },
+  {
+    "objectID": "VersionControl.html#pull-a-repository-from-github",
+    "href": "VersionControl.html#pull-a-repository-from-github",
+    "title": "2  File management",
+    "section": "2.3 Pull a repository from github",
+    "text": "2.3 Pull a repository from github\nFetch origin Pull origin (updates your local version of files)\nView the files of your repository in Explorer\nInsert Summary comment Commit to main",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>File management</span>"
     ]
   }
 ]

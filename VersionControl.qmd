@@ -19,9 +19,12 @@ jupyter: python3
 
 ## Github classroom 
 
-* Find the Github Desktop app on Apps Anywhere.
+* Launch the Github Desktop app on Apps Anywhere.
 * You will need to create a github account if you do not currently have one.
 * Download the MA40001Resources repository using the provided link.
+
+* Launch VS Code on AppsAnywhere.
+* File->Open folder->Find location of downloaded github repo on your local machine
 
 
 

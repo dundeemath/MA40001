@@ -1,0 +1,438 @@
+---
+title: "Scientific/mathematical communication"
+format:
+  html:
+    code-fold: true
+    echo: false
+  pdf:
+    code-fold: true    
+jupyter: python3
+---
+
+
+The assessment of your project will involve:
+
+* verbal presentation (~10 minute slide presentation)
+* written reports (interim report and final report)
+* poster
+* viva (aural exam)
+
+The main aims are to develop:
+
+* mathematical skills,
+* independent investigation skills
+* scientific/mathematical communication skills. 
+
+## Common elements across different assessment points
+
+### Narrative 
+
+A common theme with the different assessment points is the need for a *narrative* around your project:
+
+- can you describe the project in *one succinct sentence*? 
+- can you outline why the topic is important?
+- what is the background to the project? 
+- what methods/results/techniques have you developed?
+- can you summarise your findings?
+
+Once you have settled on a narrative, the different assessment points can be thought of as variations on the presentation of your project narrative. 
+
+:::{.callout-important}
+# Exercise - project narrative
+
+Define a narrative for your project:
+
+- One sentence description
+- Why is it important to study this topic?
+- Describe any relevant background
+- What are  the project Aims?
+- What work have you done to address the Aims?
+- Outlook
+
+:::
+
+
+
+
+### Pitching the content appropriately
+
+The first in principle in good communication is to *know your audience*.
+
+If you pitch at too high a level (e.g. assuming that your audience know more than they actually do), the audience will likely be unable to follow your reasoning.
+
+If you pitch at too low a level (e.g. by explaining concepts that your audience is already familiar with) they will likely be bored/feel condescended etc.
+
+At all points of your assessment: assume that you are communicating with your peers, i.e. Level 4/5 of a undergraduate mathematics degree. This means that you should *not* assume that the audience have specific knowledge of the details/background of your project.
+
+### Equations
+
+You will almost certainly use mathematical notation in your assessment.
+
+Are equations presented accurately?
+Are mathematical objects accurately defined?
+Has sufficient background detail been presented so that the arguments can be reasonably followed?
+
+
+#### Typesetting equations
+To typeset formulae is actually quite difficult. Mathematics uses a variety of symbols and several different alphabets: Roman, Greek, Hebrew are the most common. In addition formulae are often more similar to graphics than to text. There are numerators and denominators which in turn can have fractions etc., e.g.:
+$$
+f:= \frac{1}{1+\frac{1}{1+\frac{1}{1+x}}}.
+$$
+
+To make this formula look good requires either an advanced typesetting program or a lot of effort. Most common typesetting programmes come with some sort of equation editor, but very few can handle such a problem. The most powerful mathematical typesetting program, which is also the format used for almost all mathematical literature is LaTeX. We will learn about LaTeX later.
+
+As with grammar, for a language there exist also certain conventions about how to write formulae. Here is a (far from exhaustive) list of the most import conventions:
+
+* Treat the formula like text. If the formula is at the end of a sentence there has to be a full stop at the end of the formula. If another formula follows use a comma or semicolon.  This is  how we count
+$$
+1 + 0 = 1,
+1 + 1 = 2.
+$$
+
+* use Roman (typically lower case) letters in *italic* style for all variables: $x$, $y$, $z$, $a$, $b$, $c$,
+both if we refer to them in the text as well as in formulae. Note difference between $x$ and x.
+
+* use Greek letters for angles, and e.g. differential forms;
+* typeset vectors in bold, $\mathbf{a}$, or using an arrow, $\overrightarrow{a}$;
+* typeset functions  in roman, $\sin(x)$ rather than $sin(x)$;
+* typeset matrices  using capital roman letters, e.g. $M$;
+* represent number systems and also certain vector spaces in a style where certain lines are double: $\mathbb{R}$, $\mathbb{Q}$, $\mathbb{C}$, ...;
+* use curly brackets for sets, e.g. $\{1, 2, 3\} = \{2, 1, 3\}$, and regular brackets for an ordered list $(1, 2, 3) \neq (2, 1, 3)$;
+* denote a range  by three dots: $i = 1, 2, . . . , n,$ (no bracket required);
+* use brackets only where necessary, note that multiplication/division takes precedence
+over addition/subtraction; e.g 
+$$
+a + (b · c)
+$$
+does not need the brackets, but 
+$$
+(a + b) · c
+$$
+does. 
+Any fraction replaces a bracket, so $\frac{5}{a+b}$ does not need the brackets. 
+* use a separate line for any formula that uses more than one line or complicated formula. Don't write $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$ in line. Instead write
+$$
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}.
+$$
+
+
+:::{.callout-note}
+# Common mistakes
+
+Common mistakes are (in addition to violating the above conventions):
+
+* there are typos/inconsistencies in the equations
+* the presented system is not mathematically self-consistent (e.g. a system of ODEs is missing initial conditions)
+* variables/parameters are not defined
+* using different font styles and sizes to represent the same quantity;
+* not using the same symbol (or font) in the text and separate formulae;
+* not using spaces between symbols, and/or wrong symbols, e.g $axb$ instead of $a \times b$; 
+* forgetting brackets or placing too many brackets.
+:::
+
+
+### Figures
+
+A formula is often the best and most concise way to communicate a relation or function to a mathematically trained audience. However, there are many cases where even a mathematician might have difficulty  understanding (e.g. in the short time available in a presentation) what a function represents. For functions of one and two variables there is always the option to show a plot of the function. Here is an example of a function in two variables:
+$$
+f (x, y) = \cos(x) \sin(xy).
+$$ {#eq-3dplot}
+Although this is a comparatively simple function it takes some time to figure out what properties the function has, that is for instance: 
+
+* Is the function periodic? 
+* How many maxima/minima does it have? 
+* How does it behave for $x, y \rightarrow \infty$?
+
+
+To explain the behaviour of such a function, a plot will help! But which plot? For example, we could use a surface or contour plot (see @fig-surfplot).  The advantage of a contour plot is that it is often easier to see the locations of maxima and minima but it is not so easy to see how high the extrema are.
+
+:::{.callout-tip}
+# Connecting figures to text 
+
+Note that all plots should be cross referenced in the text, i.e. we should never have figures that are not referenceed somewhere in the text.
+
+A good rule of thumb is: if figures and tables are removed from the text, does the text still read coherently? i.e. the figure is helping the reader to understant a point that is made in the text. It is not replacing the need for text.
+
+:::
+
+```{python}
+#| label: fig-surfplot
+#| fig-cap: "3D plot of @eq-3dplot"
+#| fig-subcap:
+#|   - "A 3D plot. $f(x,y)$ is plotted against $x$ and $y$"
+#|   - "A contour plot. Contours of $f(x,y)$ are plotted against $x$ and $y$." 
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x=np.linspace(-3.0,3.0,100)
+y=np.linspace(-3.0,3.0,100)
+
+[x_mesh,y_mesh]=np.meshgrid(x,y)
+
+z=np.cos(x_mesh)*np.sin(x_mesh*y_mesh)
+
+fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
+ax.plot_surface(x_mesh,y_mesh,z)
+
+ax.set_xlabel('$x$')
+ax.set_ylabel('$y$')
+ax.set_zlabel('$f(x,y)$')
+
+fig2, ax2 = plt.subplots()
+ax2.contour(x_mesh,y_mesh,z)
+
+ax2.set_xlabel('$x$')
+ax2.set_ylabel('$y$')
+plt.show()
+```
+
+
+```{python}
+#| label: fig-discretbin
+#| fig-cap: "A bar chart."
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x=np.array([4,10,5,2,1])
+
+
+fig, ax = plt.subplots()
+ax.bar([0,1,2,3,4],x)
+
+ax.set_xlabel('$x$')
+
+plt.show()
+```
+
+
+
+```{python}
+#| label: fig-piechart
+#| fig-cap: "A pie chart."
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+labels = 'Paw patrol', 'JJ and Mikey', 'Pokemon', 'Octonauts'
+sizes = [15, 30, 45, 10]
+
+fig, ax = plt.subplots()
+ax.pie(sizes, labels=labels)
+
+plt.show()
+```
+
+```{python}
+#| label: fig-scatterplot
+#| fig-cap: "A scatter plot."
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Fixing random state for reproducibility
+np.random.seed(19680801)
+
+
+N = 50
+x = np.random.rand(N)
+y = 3*x+np.random.rand(N)
+
+fig,ax=plt.subplots()
+ax.scatter(x, y, alpha=0.5)
+ax.set_xlabel('$x$')
+ax.set_ylabel('$y$')
+
+plt.show()
+```
+
+
+
+```{python}
+#| label: fig-line
+#| fig-cap: "$y$ is plotted against x."
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Fixing random state for reproducibility
+
+
+
+x = np.linspace(0,5,10)
+y = 3*np.sin(x)+1.0+0.05*np.random.rand(len(x))
+
+
+fig,ax=plt.subplots()
+ax.plot(x, y,'-x')
+ax.set_xlabel('$x$')
+ax.set_ylabel('$y$')
+
+plt.show()
+```
+
+
+
+
+
+
+Other types of plots are useful for different purposes:
+
+- bar chart (@fig-discretbin)
+- pie chart (@fig-piechart)
+- scatter plot (@fig-scatterplot)
+- line chart (@fig-line).
+
+:::{.callout-note}
+# common mistakes
+
+* hanging figures (i.e. figures that are not referenced/placed in context in the text (e.g. @fig-piechart))
+* figures without axis labels
+* coloured graphs without colour scale/legend 
+* labels/ tick marks are too small
+* type of graph unsuitable for the data shown
+* the figure was not adequately connected to the text (it is not clear, for example, what equations were solved, what method was used.)
+
+:::
+
+Some rules -of-thumb:
+
+
+* check that any text in axis labels/legends is approximately the same size as font in the main text
+
+### Schematic diagrams
+
+Schematic diagrams are a useful way to help to try and introduce a new concept/summarise a finding.
+
+There are many ways to generate schematic diagrams (e.g. generating in software such as Photoshop or Illustrator and saving as an image).
+
+Alternatively Quarto provides an interface to a number of [graph-based tools](https://quarto.org/docs/authoring/diagrams.html) that generate schematic diagrams, e.g. 
+
+```{mermaid}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
+
+
+
+
+
+
+### References
+
+All text in your report must be either original or attributed to the originating author(s). A word-for-word quotation should be indicated with quotation symbols. Such as: The
+whatever effect causes “extremely aggressive phenotypes” to dominate (Smith et al. 2010). Extensive quotes of more than one sentence should generally be set apart as a separate paragraph.
+
+
+It is generally best to limit quotations to no more than 1-3 sentences. Instead, one should paraphrase and/or summarise cited work. Moreover, the majority of the content of a report should be in the author's original words. It should be the author's original logical argument, with citations used to document and justify key assertions and facts. Hence, quotations should be kept to a minimum. 
+
+Students must take great care when quoting or paraphrasing text to cite the original source. To do otherwise is [*plagiarism*](https://learningspaces.dundee.ac.uk/asc/understanding-plagiarism-and-academic-dishonesty/), which undermines the integrity of science, and has serious consequences for the authors as well. (e.g., failing grades, expulsion from a degree program, loss of an academic position, being shunned by the scientific community, etc.)
+
+:::{.callout-note}
+# University of Dundee definition of plagiarism
+
+Plagiarism is the unacknowledged use of another’s work as if it were one’s own. Examples are: 
+
+* the inclusion of more than a single phrase from another's work without the use of quotation marks and acknowledgement of the source; 
+* summarising another's work by changing a few words or altering the order of presentation without acknowledgement; 
+* copying another's work; 
+* the use of another's ideas without acknowledgement. 
+
+NB: if you wish to reference your own work, it is important to acknowledge yourself as the source and provide the appropriate reference.
+:::
+
+
+
+
+
+[Wikipedia](http://en.wikipedia.org/wiki/) is an excellent resource for learning new topics. However, it is not an acceptable source for citation in a report or publication for various reasons: 
+* the content of wikipedia changes continuously and what we refer to today might not be there tomorrow. , 
+* it is generally not written by experts and often contains errors. 
+
+Instead you should try and try and cite primary sources (e.g. research papers or textbooks) as these have permanent bibliographic identifiers (dois).
+
+## Use of AI
+
+Large language models (LLMs), such as ChatGPT, Dal-E, are being used to generate increasingly complex outputs (e.g. images, text). AI is also increasingly used in the development of codes (e.g. CodePilot).
+
+LLMs use statistical patterns in datasets upon which they have been trained to generate responses to natural language queries. To the untrained eye, the output can seem very convincing and, depending on the query, it can be accurate. But the output can also be completely incorrect.
+
+Using AI-generated materials without attributing the source is a form of plagiarism. Hence if you use generative AI in your project it must be clearly declared.
+
+
+## Written reports
+
+The overall structure of a report is (generally) as follows:
+
+1. Title page: This should give the title of the report, the author list, and the date.
+
+3. Abstract: provide a short synopsis (~10 sentence) of the project.
+
+4. Introduction: This introduces the overall context and importance of the problem you are addressing. It should give:
+
+    * A basic paragraph or two on background of the problem, its significance, and motivation for the paper. It should make us want to continue reading.
+    * In a research-grade paper, you would include information as to why preceding work by others has been insufficient. What work, findings, or improved methodology are required?
+    * A summary of any hypotheses that you will develop and justify throughout the paper
+    * A basic outline of the remainder of the paper, including a note on the methodology (in mathematics, these would be your modelling, analytical, and numerical techniques).
+5. Actual content: There should be one or more sections that logically progress your argument and analysis. For example:
+
+    * Formulation of the problem
+    * Methods used to solve the problem
+    * Results
+
+6. Discussion and Conclusions: Wrap up with a summary of your major results, the significance of your conclusions (including any additional analysis of the results to lay out this significance), and an outlook what else could be done/ or where improvements are required.
+
+:::{.callout-note}
+# Some common errors in the stucture
+
+* Insufficient development of background (the author assumes that the reader knows more than they do)
+* The aims of the project are not clearly stated
+* The importance of the topic is insufficiently described (e.g. why study this problem?)
+* the discussion is too short 
+:::
+
+7. References: This section contains the full list of publications that you cited in your report.
+
+8. Appendices (optional): Lengthy and/or tedious calculations or details that are too distracting to the overall flow of your paper, and yet are necessary to fully document your work, should be placed in appendices. You must also provide evidence for any codes that you have developed.
+
+
+
+A template project report is available via the MA40001Resources github repository.
+
+## Verbal presentation
+
+
+
+
+
+A template presentation is available via the MA40001Resources github repository.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

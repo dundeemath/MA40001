@@ -1,5 +1,5 @@
 ---
-title: "Python code development"
+title: " Code development"
 format:
   html:
     code-fold: true
@@ -10,41 +10,71 @@ jupyter: python3
 
 
 ## Introduction
-It is strongly encouraged that you use and develop programs over the course of your project. You should discuss programming with your project supervisor. In this section we will develop Python codes to solve a number of example problems.
+It is strongly encouraged that you make use of any opportunities to use and develop computer programs over the course of your project. You should discuss programming with your project supervisor. 
 
-The focus of the examples:
- - developing programming skills for problem solving
- - writing your own programmes
- - using existing packages
+In this section we will develop some Python codes. Python has been chosen because it:
 
- It is usually a very useful exercise to try to implement your own version of an algorithm. However, in many cases there already exist  well developed codes that we of course should use!
+- is versatile (there are lots of existing libraries to explore);
+- is open source (you will have free access to it after you graduate);
+- it can be easily embedded within Quarto;
+- is used across industry and academia.
+
+It is, of course, fine if you wish to use other programming languages in your project.
 
 
-You can use Python via Apps Anywhere (Open Anaconda and then use the SPyder IDE).
 
-Alternatively, you can run Python codes via your Quarto document. On the Uni machines Quarto has been connected to an installation of Python. 
 
-To run python via Quarto create a python environment
+::: {.callout-note}
+# Note:
 
-``` markdown 
+On the Uni machines Quarto has been set up so that it interfaces to an installation of Python with some preinstalled libraries. To set up on your own machine you will need to install Python, create a Python environment and interface with Quarto (Show and Run Commands -> Select Python Interpreter).
 
-Insert syntax for running python.
-
-```
+:::
 
 
 ## Some key ideas
 
 
+### Python in Quarto
+
+To run Python within Quarto, create a python environment as follows:
+
+````markdown
+
+```{{python}} 
+
+# Insert Python code here.
+
+```
+````
+
+Note that a simialr syntax is used to embed codes in other open source languages (R and Julia).
+
 ### Calculator
 
-### Variables and datatypes
+We can use Python as a simple calculator.
+```{python}
 
-- Strings
-- Lists
-- Tuples
-- Sets
-- Dictionaries
+x=1
+y=2
+
+z=x+y
+print(z)
+
+```
+
+### Datatypes
+
+It is worth having a concept of different `datatypes' before you start progamming.  In Python, some of the key datatypes are:
+
+- float (decimals)
+- int integers
+- str (string of text)
+- boolean (logical)
+
+In Python, we not explicitly declare a datatype (the interpreter figures this out based upon the variable that has been defined). See code below for an example.
+
+
 
 ```{python}
 
@@ -56,14 +86,19 @@ a=8
 
 b=16.25
 
-#
+# Define a string
 
 s='Arsenal FC'
+
+
+# print out  the datatype
 
 print(type(a))
 print(type(b))
 print(type(s))
 
+
+# Define some bollean variables
 boolean_variable_1=True
 boolean_variable_2=False
 
@@ -71,37 +106,139 @@ boolean_variable_and=boolean_variable_1*boolean_variable_2
 
 assert(boolean_variable_and==False)
 
-## addition
-
-## substraction
-
-# multiplication
-
-
-## exponential
-
 ```
 
 
-### Lists and dictionaries
+### Containers 
+
+Python comes with some default containers:
+
+- Lists
+- Tuples
+- Sets
+- Dictionaries
+
+These have different uses.
+
+
+#### Lists
+
+Lists are mutable, i.e. they can be modified within the code.
+```{python}
+
+# Define a list
+mylist=[1,2,3]
+
+# Print to screen
+print(mylist)
+
+# Look at the 0th entry
+print(mylist[0])
+
+
+# Define a new list
+mylist2=['a','b','c']
+
+# Print to screen
+print(mylist2)
+# Print the 0th entry to screen
+print(mylist2[0])
+
+# Change one of the elements ... it is mutable
+mylist2[1]='d'
+
+#Print to screen
+print(mylist2)
+
+```
+#### Tuples
+
+Tuples are immutable container type, i,
+```{python}
+
+mytuple=(1,2,3)
+
+print(mytuple)
+
+print(mytuple[0])
+
+mytuple2=('a','b','c')
+
+print(mytuple2)
+
+print(mytuple2[0])
+```
+
+#### Sets
+
+
+Sets are denoted with curly brackets and behave like mathematical sets. 
+
+They are not indexed and there are no repeated entries.
+```{python}
+
+myset={1,2,3}
+
+print(myset)
+
+
+myset2={'a','b','c','a'}
+
+print(myset2)
+
+```
+
+#### Dictionaries
+
+
+Dictionaries are used to interface  datatypes that are connected. The first entry is known as the *key*.
+
+Suppose  John, Helen and Carol have been assigned projects 1,2 and 3, respectively. I could use a dictionary to connect these pieces of data.
+
 
 ```{python}
 
-my_list=[1,2,3,4,5]
+mydictionary={'John':1, 'Helen':2,'Carol':3}
 
-print(my_list)
+print(mydictionary)
 
-print('The second entry in the list is')
-print(my_list[1])
+print('Helen\'s project is')
+print(mydictionary['Helen'])
+
 ```
 
 
 ### Logical statements and control loops
 
+Logical statments and loops are essential in any programming language.
+
+It is essential to be competent using for loops and if statements.
+Note the positioning of the colon and the indentation in the code example below.
+
+```{python}
+
+for i in range(5):
+  print(i)
+
+```
+
+Suppose we only wish to print out i when it is greater than 3 in the above code. We could introduce an if statement (note colon +indentation again).
+
+```{python}
+
+for i in range(5):
+  if (i>3):
+    print(i)
+
+```
+
+Python has niceer ways to loop over containers (lists, arrays etc.) but this is enough for now.
+
+
 
 ### Writing functions
 
-A good rule of thumb is that if you find yourself using the same piece of code three or more times you should write a function. This avoids duplication of code.
+A good rule of thumb is that if you find yourself using the same piece of code three or more times, you should write a function (module). This avoids duplication of code.
 
 Suppose we find ourselves manually computing the sum of positive integers many times, i.e.
 $$ 
@@ -112,12 +249,11 @@ $$
 s_3=0+1+2+3=6.
 $$
 
-It makes sense to write a function that computes the sum for arbitrary $n$. Then we call that function when needed.
+It makes sense to write a function that computes the sum for arbitrary $n$. Then we call that function when needed. This way the logic of the function is only written out in one place.
 
 
 
 ```{python}
-
 # Define a function
 def sum_integers(n):
   sum_int=0
@@ -147,10 +283,16 @@ print(s_function_120)
 
 ### Code debugging
 
-* syntax errors
-* runtime errors
-* logic errors
+You will have bugs in your code! And it can be incredibly frustrating trying to find them!
 
+There are three main types of bugs:
+
+* syntax errors (e.g. not calling a function correctly)
+* runtime errors (e.g. dividing by zero)
+* logic errors (more fundamental problems with the algorithm)
+
+
+Can you find the bug in this piece of code?
 ``` python
 
 sum=0.0
@@ -159,28 +301,33 @@ for i in range(5)
 
 ```
 
+What about here?
 ``` python
 
 for i in range(5):
-  sum=sum+i
+sum=sum+i
 
 ```
 
-####
-Plan your code
-Keep code clean (e.g. use variables, write expressiosn that are easy to interpret)
-Test code often
-Comment code
+### Good code hygiene
+- Plan your code
+- Keep code clean (e.g. use variables, write expressions that are easy to interpret)
+- Test code often
+- Develop code on simple cases where you know what the answer should be
+- Comment code
 
-#### interpreting error messages
 
-#### print to screen
+### Some tipds fpr dealing with bugs 
 
-#### check datatypes
+1.  read the error message in terminal. Try to find the earliest sign of a problem in readout. This will tell you what line of your code is causing the first problem. 
 
-#### check syntax of function call
+2. print variables to screen - do they have the 
 
-#### Debugger
+3. check datatypes - are the objects you have defined doing what you think they are (e.g. if it is a matrix, does it have the expected shape)
+
+4. if you are calling a function, is the syntax correct (hover over the function or google 'python +  name of the function'). Usually there are working examples at the bottom of the help page.
+
+5. Python has a debugger that lets you follow the program as it executes.
 
 
 
@@ -191,7 +338,6 @@ Comment code
 #### Matrix computation (numpy)
 
 [Numpy](https://numpy.org) is a widely used Python libary. It is a standard way to use arrays in Python. Numpy also contains lots of algorithm (e.g. linear algebra, calculus, mathematical functions, integration, random number generation etc.). You can find a beginner's guide [here](https://numpy.org/doc/stable/user/absolute_beginners.html).
-
 
 Numpy provides tools for calculating many mathematical operations.
 
@@ -240,7 +386,7 @@ a[0]
 
 
 
-We can also use numpy for higher dimensional arrays
+We can  use numpy for higher dimensional arrays
 
 Calculate the determinant of the 2x2 matrix
 $$
@@ -297,8 +443,6 @@ $$
 #### Plotting (matplotlib)
 
 [Matplotlib](https://matplotlib.org/stable/users/explain/quick_start.html#a-simple-example) is a pyton library for plotting.
-
-
 
 Let's plot some well-known functions.
 
@@ -364,7 +508,7 @@ Exercises:
 ## Writing your own scripts
 
 At some point (either over the course of your project or later) you will likely encounter a  problem that cannot be solved using existing code libraries, i.e. you will need to write your own progammes. To prepare for this day, it is a good idea to practice your code development skills on problems where the solution are already known.
-Over the course of project assessment you will be asked about the methods that you have used in your project. It is much easier to defend the use of a method if you have a clear idea how to programme it; then the limitations of a method become much clearer. You can also include this code in appendix in your written report.
+Over the course of project assessment you will be asked about the methods that you have used in your project. It is much easier to defend the use of a method if you have a clear idea how to programme it; then the limitations of a method become much clearer. You can also include any code that you develop in the  appendices of your written report.
 
 
 

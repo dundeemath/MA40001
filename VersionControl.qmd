@@ -21,7 +21,22 @@ jupyter: python3
 
 * Find the Github Desktop app on Apps Anywhere.
 * You will need to create a github account if you do not currently have one.
-* Download the MA4000Resources repository using the provided link.
+* Download the MA40001Resources repository using the provided link.
+
+
+
+## Pull a repository from github
+
+Fetch origin
+Pull origin (updates your local version of files)
+
+View the files of your repository in Explorer
+
+Insert Summary comment
+Commit to main
+
+
+
 
 
 ## Edit an existing file  and push the modified version to github

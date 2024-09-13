@@ -105,18 +105,22 @@ You can find  guidance on how to do this [here](https://quarto.org/docs/output-f
 
 ## Adding structure to your Quarto documents
 
-Information on document structure can be found on the [Quarto help pages](https://quarto.org/docs/authoring/markdown-basics.html). Below I will highlight some of the key document structures that you will likely need in your project.
+Information on how to document structural elements to a document can be found on the [Quarto help pages](https://quarto.org/docs/authoring/markdown-basics.html). Below I will highlight some of the key document structures that you will likely need in your project.
 
 
 ### Section headings
 
 Below is some Quarto code that will generate a document with Section headings. 
 
+
+::: {.callout-note}
+# Exercise 
+
 * Create a new .qmd file in VS Code
 * Copy and paste the code below
 * Render the code and check that a .html file has been generated in
 * Open the .html in a browser.
-
+:::
 ``` markdown
 ---
 title: " Quarto sections"

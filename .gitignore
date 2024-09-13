@@ -1,4 +1,3 @@
-.quarto/
 .DS_Store
 docs/
 /*_files/
@@ -6,3 +5,14 @@ docs/
 \.quarto\
 .DS_Store
 /.quarto/
+
+/.quarto/
+/_*.local
+/.venv/
+/.condaenv/
+*_cache/
+
+
+
+
+

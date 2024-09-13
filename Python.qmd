@@ -40,11 +40,11 @@ Insert syntax for running python.
 
 ### Variables and datatypes
 
-Strings
-Lists
-Tuples
-Sets
-Dictionaries
+- Strings
+- Lists
+- Tuples
+- Sets
+- Dictionaries
 
 ```{python}
 

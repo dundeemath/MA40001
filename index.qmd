@@ -1,7 +1,7 @@
 # Preface {.unnumbered}
 
 
-Welcome to MA40001 
+Welcome to the module MA40001. 
 
 My name is Philip Murray and I am the module lead.
 

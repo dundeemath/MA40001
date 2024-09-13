@@ -4,5 +4,5 @@ docs/
 /*_files/
 .quarto/
 \.quarto\
-
+.DS_Store
 /.quarto/

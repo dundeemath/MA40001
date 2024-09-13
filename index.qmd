@@ -41,6 +41,7 @@ From Apps Anywhere, open:
 
 ### On your own machine
 Install
+
  * Quarto
  * VS Code 
  * Python + libraries (matplotlib.pyplot, numpy,)

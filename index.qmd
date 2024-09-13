@@ -14,7 +14,7 @@ My name is Philip Murray and I am the module lead.
 
 ## Software
 
-The taught component on the module will require you to use:
+The taught component of the module will require you to use the following software:
 
 * Quarto
 * Visual Studio Code
@@ -35,7 +35,7 @@ The aim is to provide you with *open-source* tools that enable you to generate m
 
 From Apps Anywhere, open:
 
-* VS Code with Quarto XXX 
+* Visual Studio  Code 1.92.2 with Quarto 1.5.56
 
 
 

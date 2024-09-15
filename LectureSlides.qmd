@@ -1,0 +1,60 @@
+---
+title: "MA40001"
+author: "Philip Murray"
+format: revealjs
+---
+
+## Module overview
+
+* investigate a new mathematical topic
+* develop communication skills
+* independent study
+* critical analysis
+* develop programming skills
+
+##  Structure
+
+* work independently with your project supervisor. You need to discuss a meeting plan.
+* weekly sessions developing communication/writing/programming skills.
+* 2 p.m. on Monday is Maths seminar - you are encouraged to attend but it is optional.s
+
+
+##  Week 1 and 2 - Tasks
+
+- Get assigned your project
+- Set up a meeting with your project advisor
+- Devise a plan for how you are going to work on your project.
+- Read Chapter 1 of lecture notes
+- Start using Quarto (Chapter 2 of lecture notes)
+
+## Module assessment
+
+* presentation
+* interim report
+* poster
+* final report + viva
+
+Template projects and presentations will be available.
+
+## How did projects get assigned?
+
+* Algorithm maximises overall satisfaction (tries to get as many students as high up preference list as possible) and is constrained by supervisor workload
+* If you are not satisfied, please come and discuss with me.
+
+## Feedback 
+
+* Formative assessment
+    * Feedback on submitted weekly work
+    * Feedback on practice presentation sessions
+    * Feedback from your supervisor in meetings
+    * Feedback on documents that your supervisor reads in advance of submission
+* Summative assessment
+    * Receive an email with grades and feedback from examiners
+
+## Any potential issues
+
+* 30 credit module
+* Speak with your project supervisor
+* Come and speak with me
+* SSLC
+

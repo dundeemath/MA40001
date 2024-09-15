@@ -110,6 +110,16 @@
     ]
   },
   {
+    "objectID": "CommunicatingMathematics.html#references",
+    "href": "CommunicatingMathematics.html#references",
+    "title": "2  Scientific/mathematical communication",
+    "section": "2.2 References",
+    "text": "2.2 References\nAll content in your report must be either original or attributed, via references, to the originating author(s). The majority of the content of a report should be in the author’s original words. It should be the author’s original logical argument, with citations used to document and justify key assertions and facts.\n\n2.2.1 Plagiarism\nPassing off someone else’s work as your own is plagiarism. It undermines the integrity of science, and has serious consequences for the authors as well. (e.g., failing grades, expulsion from a degree program, loss of an academic position, being shunned by the scientific community, etc.)\nSome tips:\n\nYou should try and try and cite primary sources (e.g. research papers or textbooks) as these have permanent bibliographic identifiers (dois).\nWikipedia is an excellent resource for learning new topics. However, it is not an acceptable source for citation in a report or publication as:\n\nthe content of wikipedia changes continuously;\nit is generally not written by experts and often contains errors.\n\nA word-for-word quotation should be indicated with quotation symbols. Such as: The whatever effect causes “extremely aggressive phenotypes” to dominate (Smith et al. 2010). Extensive quotes of more than one sentence should generally be set apart as a separate paragraph.\nlimit quotations to no more than 1-3 sentences. Instead, one should paraphrase and/or summarise cited work. Hence, quotations should be kept to a minimum.\n\nYou must take great care when quoting or paraphrasing text to cite the original source.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Scientific/mathematical communication</span>"
+    ]
+  },
+  {
     "objectID": "CommunicatingMathematics.html#use-of-ai",
     "href": "CommunicatingMathematics.html#use-of-ai",
     "title": "2  Scientific/mathematical communication",
@@ -267,16 +277,6 @@
     "text": "As part of your project you will give an approx. 10 minute presentation. To do this, you will have to develop some slides to present.\nQuarto has a number of different options for producing slide decks. Below we will use Revealjs.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Presentations</span>"
-    ]
-  },
-  {
-    "objectID": "CommunicatingMathematics.html#references",
-    "href": "CommunicatingMathematics.html#references",
-    "title": "2  Scientific/mathematical communication",
-    "section": "2.2 References",
-    "text": "2.2 References\nAll content in your report must be either original or attributed, via references, to the originating author(s). The majority of the content of a report should be in the author’s original words. It should be the author’s original logical argument, with citations used to document and justify key assertions and facts.\n\n2.2.1 Plagiarism\nPassing off someone else’s work as your own is plagiarism. It undermines the integrity of science, and has serious consequences for the authors as well. (e.g., failing grades, expulsion from a degree program, loss of an academic position, being shunned by the scientific community, etc.)\nSome tips:\n\nYou should try and try and cite primary sources (e.g. research papers or textbooks) as these have permanent bibliographic identifiers (dois).\nWikipedia is an excellent resource for learning new topics. However, it is not an acceptable source for citation in a report or publication as:\n\nthe content of wikipedia changes continuously;\nit is generally not written by experts and often contains errors.\n\nA word-for-word quotation should be indicated with quotation symbols. Such as: The whatever effect causes “extremely aggressive phenotypes” to dominate (Smith et al. 2010). Extensive quotes of more than one sentence should generally be set apart as a separate paragraph.\nlimit quotations to no more than 1-3 sentences. Instead, one should paraphrase and/or summarise cited work. Hence, quotations should be kept to a minimum.\n\nYou must take great care when quoting or paraphrasing text to cite the original source.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Scientific/mathematical communication</span>"
     ]
   }
 ]

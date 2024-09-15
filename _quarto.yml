@@ -12,12 +12,13 @@ book:
   
   chapters:
     - index.qmd
-    - WritingAReport.qmd 
-    - VersionControl.qmd
+    - Software.qmd
+    - CommunicatingMathematics.qmd 
     - QuartoIntroduction.qmd
     - MathematicalTypesetting.qmd
+    - VersionControl.qmd
+    #- Python.qmd
     - Presentations.qmd
-    - Python.qmd
 
       
 format:

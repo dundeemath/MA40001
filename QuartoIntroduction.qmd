@@ -8,26 +8,24 @@ format:
 jupyter: python3
 ---
 
+# Quarto {#sec-quartoint}
  
 
 [Quarto](https://quarto.org) is an open source scientific and technical publishing system. It can be used to make a range of publishable outputs (reports, posters, slides, blogs, webpages dashboards etc.). In this section you will learn to use Quarto to write reports and  make slide decks. However, one of the advantages of learning Quarto is that it is straightforward to write and publish websites, blogs, dashboards and books.
 
 It is assumed that you are using VSCode with Quarto from Apps Anywhere on the Uni machines. However, you are also encouraged to install Quarto/VSCode on your personal computer.
 
-Quarto documents are written using Markdown (you may have previously used RMArkdown). In the background, Quarto uses an open source document convertor called [Pandoc](https://pandoc.org/index.html). 
+Quarto documents are written using Markdown (you may have previously used RMarkdown). In the background, Quarto uses an open source document convertor called [Pandoc](https://pandoc.org/index.html). 
 
 ## Getting started
 
-Apps Anywhere
-Visual Studio Code X with Quarto extension-> Launch
-File->New File->Quarto document
+Open VS code -  Apps Anywhere Visual Studio Code 1.92.2 with Quarto 1.5.56 extension
 
-To compile the document: click preview button in top tight corner
+
 
 ## A first markdown document
 
 To begin with, let's consider a simple markdown document.
-
 
 ``` markdown
 <!-- Configuration information -->
@@ -43,6 +41,10 @@ This is a Quarto document.
 
 At the top of a file we include a YAML block (enclosed by `---`). This provides configuration information for the document. 
 
+
+::: {.callout-important}
+# Exercise
+
 To run this code you should:
 
 1. Open VisualStudio Code.
@@ -50,6 +52,7 @@ To run this code you should:
 3. Copy and paste the above code into the .qmd file.
 4. 
     * Compile the code by clicking the preview on the top right of your VSCode editor.
+    ![Rendering a .qmd document](QuartoRenderButton.png)
 
     OR
 
@@ -58,15 +61,7 @@ To run this code you should:
     quarto render
     quarto preview
     ``` 
-4. Have a look at the contents on the directory. You shoule be able to see that a .html fil has been generated.
-
-:::{.callout-note}
-## Quarto on your personal computer
-
- On your personal computer you may need to install  Quarto.
-
-You can find some guidance on how to do this [here](https://quarto.org/docs/get-started/).
-
+4. Have a look at the contents on the directory. You shoule be able to see that a .html file has been generated.
 :::
 
 
@@ -84,24 +79,18 @@ This is a Quarto document
 
 ```
 
-Repeat the above compiling steps. You should now be able to see that a pdf file has been created.
 
+:::{.callout-important}
+## Exercise
+Repeat the above compiling steps. You should now be able to see that a pdf file has been created in the directory alongside your .qmd file.
 
-::: {.callout-note}
 It is crucial that you can generate a pdf from your Quarto document as your final report will be submitted in pdf format. 
 
 It is advised to regularly check that  a pdf is generated when you render your Quarto document. I have noticed that with some bugs in latex, Quarto can render a document in .html format (it looks ok in preview) but be unable to generate a pdf.
 
 :::
 
-:::{.callout-note}
-# LAtex on your personal computer 
 
-To generate a pdf, your computer must have a version of latex installed. In the Uni machines this has been set up for you. On your personal machines you may need to install latex and configure Quarto.
-
-You can find  guidance on how to do this [here](https://quarto.org/docs/output-formats/pdf-basics.html).
-
-:::
 
 ## Adding structure to your Quarto documents
 
@@ -113,14 +102,8 @@ Information on how to document structural elements to a document can be found on
 Below is some Quarto code that will generate a document with Section headings. 
 
 
-::: {.callout-note}
-# Exercise 
 
-* Create a new .qmd file in VS Code
-* Copy and paste the code below
-* Render the code and check that a .html file has been generated in
-* Open the .html in a browser.
-:::
+
 ``` markdown
 ---
 title: " Quarto sections"
@@ -142,6 +125,15 @@ This is a new section
 
 ##
 ```
+
+::: {.callout-important}
+# Exercise 
+
+* Create a new .qmd file in VS Code
+* Copy and paste the above code.
+* Render the code and check that a .html file has been generated.
+* Add new section headings.
+:::
 
 
 ### Tables
@@ -173,8 +165,16 @@ The rendered version appears as
 
 You can find more info. on Quarto tables [here](https://quarto.org/docs/authoring/tables.html).
 
-### Figures
+::: {.callout-important}
+# Exercise 
 
+* Copy and paste the above table into your .qmd file.
+* Check that it renders.
+* Add another column to the table and render.
+* Add another row to the table and render.
+:::
+
+### Figures
 
 To include an existing figure in a Quarto document then you must firstly store the figure file in a sensible directory. Then you can include the figure ('DemoFigureMA40001.png') using the syntax: 
 
@@ -191,7 +191,13 @@ To include an existing figure in a Quarto document then you must firstly store t
 You can find more info on Quarto figures [here](https://quarto.org/docs/authoring/figures.html).
 
 
+::: {.callout-important}
+# Exercise 
 
+* Choose a .png file to include in your document.
+* Save the .png file in the same directory as your .qmd file.
+* Include the image and render your Quarto document.
+:::
 
 ### Cross referencing
 
@@ -256,6 +262,13 @@ Quarto allows for definition and cross referencing of a range of [mathematical o
 
 You can find out more about cross referencing [here](https://quarto.org/docs/authoring/cross-references.html).
 
+::: {.callout-important}
+# Exercise 
+
+* Tag the table and figure that you made above.
+* Cross-reference them in your document.
+:::
+
 
 ### Citations and references
 
@@ -268,8 +281,6 @@ You need to create a `.bib` file (e.g. `mybibliography.bib`) and save it in a se
 You need to populate the .bib file with bibliographic entries, each of which will have a unique tag (e.g. `my_bib_tag`)
 
 Then in your `.qmd` file you can cite a reference using  the `@' handle (e.g. `@my_bib_tag').
-
-
 
 
 You can find out more about citations in Quarto [here](https://quarto.org/docs/authoring/citations.html).
@@ -289,6 +300,7 @@ Alternatively, you
  - In the Bibliography manager, select -> *Show links to import citations into* Bibtex
 - Now when you search for a paper/textbook in Google scholar, there should be an additional link: 'import into Bibtex' 
 - Copy and paste the contents in the link into your .bib file
+- Cite the source in your Quarto document.
 
 
 
@@ -297,11 +309,28 @@ Alternatively, you
 :::
 
 
+### Schematic diagrams
+You can learn how to make diagrams [here](https://quarto.org/docs/authoring/diagrams.html). Here is an example:
+
+
+```` markdown
+```{mermaid}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
+
+````
+
+
+
 ## Appendices
 
 ### Submitting code
 
-You should include codes that you have developed in the appendix of your report. You can do this using a *code block*.
+In your final report you should include codes that you have developed in the appendix. You can do this using a *code block*.
 
 
 ````

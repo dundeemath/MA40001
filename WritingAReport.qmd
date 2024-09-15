@@ -361,6 +361,10 @@ The overall structure of a report is (generally) as follows:
 
 6. Discussion and Conclusions: Wrap up with a summary of your major results, the significance of your conclusions (including any additional analysis of the results to lay out this significance), and an outlook what else could be done/ or where improvements are required.
 
+7. Appendices (including statement on use of AI)
+
+8. Refeences
+
 :::{.callout-note}
 # Some common errors in the stucture
 

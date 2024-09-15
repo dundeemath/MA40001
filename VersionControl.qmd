@@ -10,60 +10,67 @@ jupyter: python3
 
 
 
-## 
+## Introduction
 
 [Github](https://github.com) is a developer platform that allows developers to create, store, manage and share their code. It is version-controlled, meaning that once you *push* files to the github cloud, you will have access to it and all previously *pushed* version of that file. 
 
 * Github is used across academia and industry.
 * It provides you with a back-up for your project.
 
-## Github classroom 
-
-* Launch the Github Desktop app on Apps Anywhere.
-* You will need to create a github account if you do not currently have one.
-* Download the MA40001Resources repository using the provided link.
-
-* Launch VS Code on AppsAnywhere.
-* File->Open folder->Find location of downloaded github repo on your local machine
+### Github  exercises 
 
 
 
-## Pull a repository from github
+1. Launch the Github Desktop app on Apps Anywhere.
+To deal with a bug in appsAnywhere: 
+    * Open CloudpagingPlayer (little blue icon on bottom right of your screen): * Stop Github Desktop. 
+    * Remove Github Desktop.
+    * Relaunch Github Desktop in AppsAnywhere.
+
+2. You will need to create a github account if you do not currently have one.
+
+3. Go to the  [MA40001Resources](https://github.com/dundeemath/MA40001Resources) github page.
+
+    - Follow the instructions [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#cloning-your-forked-repository) for *forking*  the repository. This creates a fork of the repository in your github account.
+    - Follow the instructions for cloning the repository. This  creates a copy of the repository on your local machine.
+
+    - You should now have a local copy of the resources on your computer and own a new (forked) repository.
+    
+
+4. Launch VS Code on AppsAnywhere and open the local copy of your MA40001Resources project.
+
+
+### Updating your repository from github
+
+You can 
 
 Fetch origin
-Pull origin (updates your local version of files)
+Pull origin (update your local version of files)
 
 View the files of your repository in Explorer
 
-Insert Summary comment
-Commit to main
 
+### Edit an existing file  and push the modified version to github
 
-
-
-
-## Edit an existing file  and push the modified version to github
-
-* Open the file *.text
-* Edit the text
-* Commit the file and push it
+* Open the file *dummy_file.txt* in VSCode
+* Edit the text.
+* Commit the file and push it to github.
 * Check that the version of the file in the cloud has changed to reflect your edit.
 
-## Create a new file on your local machine and push it to github
+### Create a new file on your local machine and push it to github
 
-## Revert to a previous version of a file using version control
+* Create a new file.
+* Commit the file and push it to github.
+* Check that the version of the file in the cloud has changed to reflect your edit.
 
-Suppose that you have made a mistake and want to revert to a previous version of a file. 
-- Find the file in the github repository
-- Look back at previous versions of the the file
-- Download the copy that you want to revert to
+### Revert to a previous version of a file using version control
 
-
+Suppose that you have made a mistake and want to revert to a previous version of the file *dummy_file.txt* 
+  - Find the file in the github repository
+  - Look back at previous versions of the the file
+  - Download the copy that you want to revert to.
 
 ## Using the command line interface
 
 You can also do all of the above from the terminal.
-
-
-
 

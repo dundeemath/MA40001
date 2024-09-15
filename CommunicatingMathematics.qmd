@@ -10,18 +10,12 @@ jupyter: python3
 ---
 
 
-The assessment of your project will involve:
+The assessment of your project will requires you develop:
 
-* verbal presentation (~10 minute slide presentation)
-* written reports (interim report and final report)
+* presentation slide
 * poster
-* viva (aural exam)
+*  written reports (interim report and final report)
 
-The main aims are to develop:
-
-* mathematical skills,
-* independent investigation skills
-* scientific/mathematical communication skills. 
 
 ## Common elements across different assessment points
 
@@ -56,13 +50,25 @@ Define a narrative for your project:
 
 ### Pitching the content appropriately
 
-The first in principle in good communication is to *know your audience*.
+A key principle of good communication is to *know your audience*.
 
-If you pitch at too high a level (e.g. assuming that your audience know more than they actually do), the audience will likely be unable to follow your reasoning.
+If you pitch at too high a level (e.g. assuming that your audience know more than they actually do), the audience will likely be confused and unable to follow your reasoning.
 
 If you pitch at too low a level (e.g. by explaining concepts that your audience is already familiar with) they will likely be bored/feel condescended etc.
 
 At all points of your assessment: assume that you are communicating with your peers, i.e. Level 4/5 of a undergraduate mathematics degree. This means that you should *not* assume that the audience have specific knowledge of the details/background of your project.
+
+:::{.callout-important}
+# Exercise - Pitching your project
+
+Practice pitching your project at different target audiences:
+
+- A high school student with Higher mathematics (*how much mathematical detail should you give?*)
+- A researcher in the field that you are working (*how much intro will they need?*)
+- A family member/flatmate.
+- At a job interview (*focus on parts of the project that are relevant*)
+
+:::
 
 ### Equations
 
@@ -146,14 +152,10 @@ Although this is a comparatively simple function it takes some time to figure ou
 
 To explain the behaviour of such a function, a plot will help! But which plot? For example, we could use a surface or contour plot (see @fig-surfplot).  The advantage of a contour plot is that it is often easier to see the locations of maxima and minima but it is not so easy to see how high the extrema are.
 
-:::{.callout-tip}
-# Connecting figures to text 
 
-Note that all plots should be cross referenced in the text, i.e. we should never have figures that are not referenceed somewhere in the text.
 
-A good rule of thumb is: if figures and tables are removed from the text, does the text still read coherently? i.e. the figure is helping the reader to understant a point that is made in the text. It is not replacing the need for text.
+A good rule of thumb is: if figures and tables are removed from the text, does the text still read coherently? i.e. the figure is helping the reader to understant a point that is made within the text. It is *not* replacing the need for text.
 
-:::
 
 ```{python}
 #| label: fig-surfplot
@@ -269,8 +271,7 @@ y = 3*np.sin(x)+1.0+0.05*np.random.rand(len(x))
 
 fig,ax=plt.subplots()
 ax.plot(x, y,'-x')
-ax.set_xlabel('$x$')
-ax.set_ylabel('$y$')
+
 
 plt.show()
 ```
@@ -285,13 +286,12 @@ Other types of plots are useful for different purposes:
 - bar chart (@fig-discretbin)
 - pie chart (@fig-piechart)
 - scatter plot (@fig-scatterplot)
-- line chart (@fig-line).
 
 :::{.callout-note}
 # common mistakes
 
-* hanging figures (i.e. figures that are not referenced/placed in context in the text (e.g. @fig-piechart))
-* figures without axis labels
+* hanging figures (i.e. figures that are not referenced/placed in context in the text (e.g. context for the information in @fig-piechart is not described in the text. @fig-line is not dven referenced)
+* figures without axis labels (@fig-line has no axis labels)
 * coloured graphs without colour scale/legend 
 * labels/ tick marks are too small
 * type of graph unsuitable for the data shown
@@ -310,7 +310,8 @@ Schematic diagrams are a useful way to help to try and introduce a new concept/s
 
 There are many ways to generate schematic diagrams (e.g. generating in software such as Photoshop or Illustrator and saving as an image).
 
-Alternatively Quarto provides an interface to a number of [graph-based tools](https://quarto.org/docs/authoring/diagrams.html) that generate schematic diagrams, e.g. 
+Alternatively Quarto (@sec-quartoint)
+) provides an interface to a number of [graph-based tools](https://quarto.org/docs/authoring/diagrams.html) that generate schematic diagrams, e.g. 
 
 ```{mermaid}
 flowchart LR
@@ -364,7 +365,7 @@ Large language models (LLMs), such as ChatGPT, Dal-E, are being used to generate
 
 LLMs use statistical patterns in datasets upon which they have been trained to generate responses to natural language queries. To the untrained eye, the output can seem very convincing and, depending on the query, it can be accurate. But the output can also be completely incorrect.
 
-Using AI-generated materials without attributing the source is a form of plagiarism. Hence if you use generative AI in your project it must be clearly declared.
+Using AI-generated materials without attributing the source is a form of plagiarism. Hence if you use generative AI in your project it must be clearly declared in your *Use of AI* statement (see template project). 
 
 
 ## Written reports
@@ -400,7 +401,9 @@ The overall structure of a report is (generally) as follows:
 
 7. References: This section contains the full list of publications that you cited in your report.
 
-8. Appendices (optional): Lengthy and/or tedious calculations or details that are too distracting to the overall flow of your paper, and yet are necessary to fully document your work, should be placed in appendices. You must also provide evidence for any codes that you have developed.
+8. Appendices 
+- Use of AI Statement
+- (optional): Lengthy and/or tedious calculations or details that are too distracting to the overall flow of your paper, and yet are necessary to fully document your work, should be placed in appendices. You must also present any codes that you have developed.
 
 
 
@@ -408,7 +411,7 @@ A template project report is available via the MA40001Resources github repositor
 
 ## Verbal presentation
 
-
+At the end of Semester 1 you will be asked to give an approx. 10 minute verbal presentation of your project. More information  will be provided in Weeks 7-10.
 
 
 

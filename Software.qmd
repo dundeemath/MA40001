@@ -1,0 +1,48 @@
+---
+title: "Software"
+format:
+  html:
+    code-fold: true
+  pdf:
+    code-fold: true    
+jupyter: python3
+---
+
+##  {#sec-unisoftware}
+
+A version of Visual Studio Code with Quarto + other software is available via Apps Anywhere via the app:
+
+* Visual Studio Code 1.92.2 with Quarto 1.5.56
+
+VS Code is an integrated development environment (IDE) - a platform from within which to develop and run codes.
+
+The Apps Anywhere app has necessary codes pre-installed for you to immediately begin working on the module. 
+
+::: {.callout-note}
+
+The AppsAnywhere app is still being finalised by UoDIT. There is currently a bug that means:
+- you cannot use the command----------
+- simultaneuosly generate multiple output formats
+- compile multi-file projects
+
+:::
+
+
+## On your personal computer
+
+It is advised that you get VS Code + ncessary software running on your personal computer.
+
+install the following free software: 
+
+ * [Quarto](https://quarto.org/docs/get-started/)
+ * [VS Code](https://code.visualstudio.com/download) 
+ * [Anaconda](https://www.anaconda.com/download) - to get Python and then libraries (matplotlib.pyplot, numpy, pandas, etc.)
+ * [Github Desktop](https://desktop.github.com/download/)
+
+ Within Quarto:
+
+ * Extensions - install the quarto extension for VS Code
+ * install Latex (follow these [guidelines](https://quarto.org/docs/output-formats/pdf-basics.html)).
+ * Configure the Python interpreter (Show and Run Commands->Python Select Interpreter)
+
+ After doing this you should be able to follow the exercises in lectures notes on your personal computer.

@@ -272,7 +272,9 @@ window.Quarto = {
 <p>Quarto documents are written using Markdown (you may have previously used RMarkdown). In the background, Quarto uses an open source document convertor called <a href="https://pandoc.org/index.html">Pandoc</a>.</p>
 <section id="getting-started" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="getting-started"><span class="header-section-number">3.1</span> Getting started</h2>
-<p>Open VS code - Apps Anywhere Visual Studio Code 1.92.2 with Quarto 1.5.56 extension</p>
+<p>Visual Studio code is a popular integrated development environment (IDE) that is used to write software.</p>
+<p>On Apps Anywhere you can find an iteration of VS Code that has Quarto, Python and Latex preinstalled. The app is called</p>
+<p>Visual Studio Code 1.92.2 with Quarto 1.5.56 extension</p>
 </section>
 <section id="a-first-markdown-document" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="a-first-markdown-document"><span class="header-section-number">3.2</span> A first markdown document</h2>
@@ -298,7 +300,7 @@ Exercise
 <div class="callout-body-container callout-body">
 <p>To run this code you should:</p>
 <ol type="1">
-<li><p>Open VisualStudio Code.</p></li>
+<li><p>Open the VisualStudio Code app.</p></li>
 <li><p>Create a new <code>.qmd</code> file and save in a sensible directory.</p></li>
 <li><p>Copy and paste the above code into the .qmd file.</p></li>
 <li><ul>
@@ -310,14 +312,15 @@ Exercise
 </ul>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Have a look at the contents on the directory. You shoule be able to see that a .html file has been generated.</p></li>
+<li><p>Have a look at the contents of the directory. You should be able to see that a .html file has been generated.</p></li>
+<li><p>Open the .html file in a web browser.</p></li>
 </ol>
 </div>
 </div>
 </section>
 <section id="creating-a-pdf" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="creating-a-pdf"><span class="header-section-number">3.3</span> Creating a pdf</h2>
-<p>Over the course of your project you will need to submit documents in pdf format. To get Quarto to generate PDF you need to edit the YAML information as follows.</p>
+<p>Over the course of your project you will need to submit documents in pdf format. To get Quarto to generate a PDF, you can edit the YAML information as follows.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Hello, Quarto"</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> pdf</span></span>
@@ -336,7 +339,7 @@ Exercise
 <div class="callout-body-container callout-body">
 <p>Repeat the above compiling steps. You should now be able to see that a pdf file has been created in the directory alongside your .qmd file.</p>
 <p>It is crucial that you can generate a pdf from your Quarto document as your final report will be submitted in pdf format.</p>
-<p>It is advised to regularly check that a pdf is generated when you render your Quarto document. I have noticed that with some bugs in latex, Quarto can render a document in .html format (it looks ok in preview) but be unable to generate a pdf.</p>
+<p>It is advised to regularly check that a pdf is generated when you render your Quarto document. I have noticed that with some bugs in Latex (more on this later), Quarto can render a document in .html format (it looks ok in preview) but be unable to generate a pdf.</p>
 </div>
 </div>
 </section>
@@ -376,10 +379,11 @@ Exercise
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Create a new .qmd file in VS Code</li>
+<li>Create a new .qmd file in VS Code.</li>
 <li>Copy and paste the above code.</li>
 <li>Render the code and check that a .html file has been generated.</li>
 <li>Add new section headings.</li>
+<li>Generate a table of contents.</li>
 </ul>
 </div>
 </div>
@@ -445,7 +449,7 @@ Exercise
 </section>
 <section id="figures" class="level3" data-number="3.4.3">
 <h3 data-number="3.4.3" class="anchored" data-anchor-id="figures"><span class="header-section-number">3.4.3</span> Figures</h3>
-<p>To include an existing figure in a Quarto document then you must firstly store the figure file in a sensible directory. Then you can include the figure (‘DemoFigureMA40001.png’) using the syntax:</p>
+<p>To include an image file in a Quarto document, you must firstly store the image file in a sensible directory. Suppose you store the image in the same directlry as your .qmd file. Then you could include the figure (‘DemoFigureMA40001.png’) using the syntax:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="al">![This is the figure caption.](DemoFigureMA40001.png)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -468,6 +472,8 @@ Exercise
 <li>Choose a .png file to include in your document.</li>
 <li>Save the .png file in the same directory as your .qmd file.</li>
 <li>Include the image and render your Quarto document.</li>
+<li>Try to modify the image height and width.</li>
+<li>Experiment with subfigures.</li>
 </ul>
 </div>
 </div>
@@ -475,7 +481,7 @@ Exercise
 <section id="cross-referencing" class="level3" data-number="3.4.4">
 <h3 data-number="3.4.4" class="anchored" data-anchor-id="cross-referencing"><span class="header-section-number">3.4.4</span> Cross referencing</h3>
 <p>Throughout your document you will need to refer to different objects that you have created (e.g.&nbsp;Tables, Figures, equations, theorems).</p>
-<p>In Quarto objects are tagged using a specific syntax (prefix for that specific obect + unique tag). See <a href="#tbl-syntax" class="quarto-xref">Table&nbsp;<span>3.1</span></a> for some examples. The object is cross referenced using an `@’ tag.</p>
+<p>In Quarto, objects are tagged using a specific syntax (prefix for that specific obect + unique tag). See <a href="#tbl-syntax" class="quarto-xref">Table&nbsp;<span>3.1</span></a> for some examples. Such objects can then be cross referenced using an `@’ tag.</p>
 <div id="tbl-syntax" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-syntax-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -511,7 +517,7 @@ Table&nbsp;3.1: A table with syntax for referencing some Quarto objects.
 </div>
 </figure>
 </div>
-<p>The table could be cross referenced using a tag <code>{#tbl-parameters}</code> as follows</p>
+<p>The table could be tagged as follows</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>| Parameter | Value | Unit  |</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>|---------|:-----|------:|</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>| $a$      | 1  |    ms$^{-1}$ |</span>
@@ -577,6 +583,7 @@ Exercise
 <ul>
 <li>Tag the table and figure that you made above.</li>
 <li>Cross-reference them in your document.</li>
+<li>Write down a theorem and cross reference it.</li>
 </ul>
 </div>
 </div>
@@ -584,10 +591,12 @@ Exercise
 <section id="citations-and-references" class="level3" data-number="3.4.5">
 <h3 data-number="3.4.5" class="anchored" data-anchor-id="citations-and-references"><span class="header-section-number">3.4.5</span> Citations and references</h3>
 <p>In your final report will need to provide a list of references that are cited at relevant points in your document.</p>
-<p>Thiscan be achieved relatively straightforwardly in Quarto.</p>
-<p>You need to create a <code>.bib</code> file (e.g.&nbsp;<code>mybibliography.bib</code>) and save it in a sensible directory (e.g.&nbsp;alongside your .qmd files).</p>
-<p>You need to populate the .bib file with bibliographic entries, each of which will have a unique tag (e.g.&nbsp;<code>my_bib_tag</code>)</p>
-<p>Then in your <code>.qmd</code> file you can cite a reference using the <code>@' handle (e.g.</code><span class="citation" data-cites="my_bib_tag">@my_bib_tag</span>’).</p>
+<p>This can be achieved relatively straightforwardly in Quarto.</p>
+<p>You need to 1. create a <code>.bib</code> file (e.g.&nbsp;<code>mybibliography.bib</code>) and save it in a sensible directory (e.g.&nbsp;alongside your .qmd files).</p>
+<ol start="2" type="1">
+<li><p>to populate the .bib file with bibliographic entries, each of which will have a unique tag (e.g.&nbsp;<code>my_bib_tag</code>)</p></li>
+<li><p>in your <code>.qmd</code> file you can cite a reference using the <code>@' handle (e.g.</code><span class="citation" data-cites="my_bib_tag">@my_bib_tag</span>’).</p></li>
+</ol>
 <p>You can find out more about citations in Quarto <a href="https://quarto.org/docs/authoring/citations.html">here</a>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">

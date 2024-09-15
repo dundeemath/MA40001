@@ -10,7 +10,7 @@ jupyter: python3
 
 
 ## Introduction
-It is strongly encouraged that you make use of any opportunities to use and develop computer programs over the course of your project. You should discuss programming with your project supervisor. 
+It is strongly encouraged that you make use of opportunities to use and develop computer programs over the course of your project. You should discuss programming with your project supervisor. 
 
 In this section we will develop some Python codes. Python has been chosen because it:
 

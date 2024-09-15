@@ -1,10 +1,12 @@
 ---
 title: "MA40001"
 author: "Philip Murray"
-format: revealjs
+format: beamer
 ---
 
 ## Week 1 and 2
+
+Aims:
 
 * investigate a new mathematical topic
 * develop communication skills
@@ -14,18 +16,15 @@ format: revealjs
 
 ##  Structure
 
-* work independently with your project supervisor. You need to discuss a meeting plan.
+* work independently 
+* meet with your project supervise (you need to discuss and arrange a meeting schedule).
+
+
 * weekly sessions developing communication/writing/programming skills.
+
 * 2 p.m. on Monday is Maths seminar - you are encouraged to attend but it is optional.s
 
 
-## Tasks
-
-- Get assigned your project
-- Set up a meeting with your project advisor
-- Devise a plan for how you are going to work on your project.
-- Read Chapter 1 of lecture notes
-- Start using Quarto (Chapter 2 of lecture notes)
 
 ## Module assessment
 
@@ -58,3 +57,10 @@ Template projects and presentations will be available.
 * Come and speak with me
 * SSLC
 
+## Tasks for Weeks 1 and 2
+
+- Get assigned your project
+- Set up a meeting with your project advisor
+- Devise a plan for how you are going to work on your project
+- Read Chapter 1 of lecture notes
+- Start using Quarto (Chapter 2 of lecture notes)

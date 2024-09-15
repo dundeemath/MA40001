@@ -1,6 +1,7 @@
 project:
   type: book
   output-dir: docs
+  resources: LectureSlides.pdf
 
 book:
   title: "MA40001"
@@ -18,9 +19,7 @@ book:
     - VersionControl.qmd
     #- Python.qmd
     - Presentations.qmd
-  appendices:
-    - LectureSlides.qmd
-
+  
       
 format:
   html:

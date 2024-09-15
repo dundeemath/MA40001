@@ -20,6 +20,8 @@ book:
     - VersionControl.qmd
     #- Python.qmd
     - Presentations.qmd
+  appendices:
+    - LectureSlides.qmd
 
       
 format:

@@ -4,7 +4,7 @@ author: "Philip Murray"
 format: revealjs
 ---
 
-## Module overview
+## Week 1 and 2
 
 * investigate a new mathematical topic
 * develop communication skills
@@ -19,7 +19,7 @@ format: revealjs
 * 2 p.m. on Monday is Maths seminar - you are encouraged to attend but it is optional.s
 
 
-##  Week 1 and 2 - Tasks
+## Tasks
 
 - Get assigned your project
 - Set up a meeting with your project advisor

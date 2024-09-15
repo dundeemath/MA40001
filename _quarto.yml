@@ -1,13 +1,11 @@
 project:
   type: book
   output-dir: docs
-  resources: LectureSlides.html
-
 
 book:
   title: "MA40001"
   author: "Philip Murray"
-  date: "01/09/2024"
+  date: "10/09/2024"
   downloads: pdf
   repo-actions: [issue]
   

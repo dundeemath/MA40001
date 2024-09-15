@@ -50,7 +50,7 @@ I have provided template codes via the github page [MA40001REsources](https://gi
 In @sec-github you will learn how to *fork* this github repository so that you have template project/presentations. 
 
 
-## Assessment components
+## Assessment 
 
 * Presentation
 * Interim report

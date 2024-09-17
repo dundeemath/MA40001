@@ -1,7 +1,9 @@
 project:
   type: book
   output-dir: docs
-  resources: LectureSlides.pdf
+  render:
+    - index.qmd
+    - LectureSlides.qmd
 
 book:
   title: "MA40001"

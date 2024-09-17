@@ -1,37 +1,44 @@
 ---
 title: "MA40001"
 author: "Philip Murray"
-format: beamer
+format: revealjs
 ---
 
 ## Week 1 and 2
 
-Aims:
+Modules Aims:
 
 * investigate a new mathematical topic
 * develop communication skills
-* independent study
+* develop independent study skills
 * critical analysis
 * develop programming skills
 
-##  Structure
+##  Module Structure
+
+
+### Your project content
 
 * work independently 
-* meet with your project supervise (you need to discuss and arrange a meeting schedule).
+* meet with your project supervisor (you need to discuss and arrange a meeting schedule).
+
+### Writing/presentation
+
+* weekly sessions developing communication/writing/programming skills (see timetable).
 
 
-* weekly sessions developing communication/writing/programming skills.
+### Optional
 
-* 2 p.m. on Monday is Maths seminar - you are encouraged to attend but it is optional.s
+* 2 p.m. on Monday is Maths seminar - you are encouraged to attend but it is optional.
 
 
 
 ## Module assessment
 
-* presentation
-* interim report
-* poster
-* final report + viva
+* presentation (10%)
+* interim report (15%)
+* poster (10%)
+* final report + *viva* (65%)
 
 Template projects and presentations will be available.
 
@@ -42,17 +49,17 @@ Template projects and presentations will be available.
 
 ## Feedback 
 
-* Formative assessment
-    * Feedback on submitted weekly work
-    * Feedback on practice presentation sessions
-    * Feedback from your supervisor in meetings
-    * Feedback on documents that your supervisor reads in advance of submission
+* Formative assessment. You will receive feedback 
+    * on submitted weekly work
+    * practice presentation sessions
+    * from your supervisor in meetings
+    * documents that your supervisor reads in advance of submission
 * Summative assessment
-    * Receive an email with grades and feedback from examiners
+    * You will receive an email with grades and feedback from examiners
 
 ## Any potential issues
 
-* 30 credit module
+* It's a 30 credit module
 * Speak with your project supervisor
 * Come and speak with me
 * SSLC
@@ -60,7 +67,7 @@ Template projects and presentations will be available.
 ## Tasks for Weeks 1 and 2
 
 - Get assigned your project
-- Set up a meeting with your project advisor
+- Set up a meeting with your project supervisor
 - Devise a plan for how you are going to work on your project
 - Read Chapter 1 of lecture notes
 - Start using Quarto (Chapter 2 of lecture notes)

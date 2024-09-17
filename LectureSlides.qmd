@@ -4,9 +4,18 @@ author: "Philip Murray"
 format: revealjs
 ---
 
-## Week 1 and 2
+# Weeks 1 and 2
+## Tasks 
 
-Modules Aims:
+- Get assigned your project
+- Set up a meeting with your project supervisor
+- Devise a plan for how you are going to work on your project
+- Read Chapter 1 of lecture notes
+- Start using Quarto (Chapter 2 of lecture notes)
+
+
+
+## Modules Aims:
 
 * investigate a new mathematical topic
 * develop communication skills
@@ -64,10 +73,3 @@ Template projects and presentations will be available.
 * Come and speak with me
 * SSLC
 
-## Tasks for Weeks 1 and 2
-
-- Get assigned your project
-- Set up a meeting with your project supervisor
-- Devise a plan for how you are going to work on your project
-- Read Chapter 1 of lecture notes
-- Start using Quarto (Chapter 2 of lecture notes)

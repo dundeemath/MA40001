@@ -240,43 +240,83 @@
     ]
   },
   {
+    "objectID": "Python.html",
+    "href": "Python.html",
+    "title": "5  Code development",
+    "section": "",
+    "text": "5.1 Introduction\nIt is strongly encouraged that you make use of opportunities to use and develop computer programs over the course of your project. You should discuss programming with your project supervisor.\nIn this section we will develop some Python codes. Python has been chosen because it:\nIt is, of course, fine if you wish to use other programming languages in your project.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Code development</span>"
+    ]
+  },
+  {
+    "objectID": "Python.html#introduction",
+    "href": "Python.html#introduction",
+    "title": "5  Code development",
+    "section": "",
+    "text": "is versatile (there are lots of existing libraries to explore);\nis open source (you will have free access to it after you graduate);\nit can be easily embedded within Quarto;\nis used across industry and academia.\n\n\n\n\n\n\n\n\nNote:\n\n\n\nOn the Uni machines Quarto has been set up so that it interfaces to an installation of Python with some preinstalled libraries. To set up on your own machine you will need to install Python, create a Python environment and interface with Quarto (Show and Run Commands -&gt; Select Python Interpreter).",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Code development</span>"
+    ]
+  },
+  {
+    "objectID": "Python.html#some-key-ideas",
+    "href": "Python.html#some-key-ideas",
+    "title": "5  Code development",
+    "section": "5.2 Some key ideas",
+    "text": "5.2 Some key ideas\n\n5.2.1 Python in Quarto\nTo run Python within Quarto, create a python environment as follows:\n\n```{python} \n\n# Insert Python code here.\n\n```\nNote that a simialr syntax is used to embed codes in other open source languages (R and Julia).\n\n\n5.2.2 Calculator\nWe can use Python as a simple calculator.\n\n\nCode\nx=1\ny=2\n\nz=x+y\nprint(z)\n\n\n3\n\n\n\n\n\n\n\n\nExercise\n\n\n\nUse Python to compute the product of 157 and 213.\n\n\n\n\n5.2.3 Datatypes\nIt is worth having a concept of different `datatypes’ before you start progamming. In Python, some of the key datatypes are:\n\nfloat (decimals)\nint integers\nstr (string of text)\nboolean (logical)\n\nIn Python, we not explicitly declare a datatype (the interpreter figures this out based upon the variable that has been defined). See code below for an example.\n\n\nCode\n# Define an integer\n\na=8\n\n# Define a floating point number\n\nb=16.25\n\n# Define a string\n\ns='Arsenal FC'\n\n\n# print out  the datatype\n\nprint(type(a))\nprint(type(b))\nprint(type(s))\n\n\n# Define some bollean variables\nboolean_variable_1=True\nboolean_variable_2=False\n\nboolean_variable_and=boolean_variable_1*boolean_variable_2\n\nassert(boolean_variable_and==False)\n\n\n&lt;class 'int'&gt;\n&lt;class 'float'&gt;\n&lt;class 'str'&gt;\n\n\n\n\n\n\n\n\nExercise\n\n\n\nDefine a float and integer (e.g. \\(x=2.0\\) and \\(y=7\\)).\nWhat datatype is the product?\n\n\n\n\n5.2.4 Containers\nPython comes with some default containers:\n\nLists\nTuples\nSets\nDictionaries\n\nThese have different uses.\n\n5.2.4.1 Lists\nLists are mutable, i.e. they can be modified within the code.\n\n\nCode\n# Define a list\nmylist=[1,2,3]\n\n# Print to screen\nprint(mylist)\n\n# Look at the 0th entry\nprint(mylist[0])\n\n\n# Define a new list\nmylist2=['a','b','c']\n\n# Print to screen\nprint(mylist2)\n# Print the 0th entry to screen\nprint(mylist2[0])\n\n# Change one of the elements ... it is mutable\nmylist2[1]='d'\n\n#Print to screen\nprint(mylist2)\n\n\n[1, 2, 3]\n1\n['a', 'b', 'c']\na\n['a', 'd', 'c']\n\n\n\n\n\n\n\n\nExercise\n\n\n\n\nCreate a list of five integers.\nSort the list in order of increasing size.\nWhat happens if you try to access the `6th’ entry in the list?\nAppend another entry to the list.\n\n\n\n\n\n5.2.4.2 Tuples\nTuples are immutable container types, i.e.\n\n\nCode\nmytuple=(1,2,3)\n\nprint(mytuple)\n\nprint(mytuple[0])\n\nmytuple2=('a','b','c')\n\nprint(mytuple2)\n\nprint(mytuple2[0])\n\n\n(1, 2, 3)\n1\n('a', 'b', 'c')\na\n\n\n\n\n5.2.4.3 Sets\nSets are denoted with curly brackets and behave like mathematical sets.\nThey are not indexed and there are no repeated entries.\n\n\nCode\nmyset={1,2,3}\n\nprint(myset)\n\n\nmyset2={'a','b','c','a'}\n\nprint(myset2)\n\n\n{1, 2, 3}\n{'c', 'a', 'b'}\n\n\n\n\n\n\n\n\nExercise\n\n\n\n\nCreate a set of floating point numbers.\nAdd another entry to the set.\nTry to add an entry that already exists in the set.\nCompute the number of items in the set.\n\n\n\n\n\n5.2.4.4 Dictionaries\nDictionaries are used to interface datatypes that are connected. The first entry is known as the key.\nSuppose John, Helen and Carol have been assigned projects 1,2 and 3, respectively. I could use a dictionary to connect these pieces of data as follows:\n\n\nCode\nmydictionary={'John':1, 'Helen':2,'Carol':3}\n\nprint(mydictionary)\n\nprint('Helen\\'s project is')\nprint(mydictionary['Helen'])\n\n\n{'John': 1, 'Helen': 2, 'Carol': 3}\nHelen's project is\n2\n\n\n\n\n\n\n\n\nExercise\n\n\n\n\nCreate a dictionary that connects your connects your modules codes for this semester with the module title ().\nAccess the module title using the module code as per the example.\n\n\n\n\n\n\n5.2.5 Logical statements and control loops\nIt is essential to be competent using logical statments statements in any programming language. Here we will consider for loops and if statements.\nNote the positioning of the colon and the indentation in the code example below:\n\n\nCode\nfor i in range(5):\n  print(i)\n\n\n0\n1\n2\n3\n4\n\n\nSuppose we only wish to print out \\(i\\) when it is greater than three in the above code. We could introduce an if statement as follows (note colon and indentation again):\n\n\nCode\nfor i in range(5):\n  if (i&gt;3):\n    print(i)\n\n\n4\n\n\nPython has nicer ways to loop over containers (lists, arrays etc.) but this is enough for now.\n\n\n5.2.6 Writing functions\nA good rule of thumb is that if you find yourself using the same piece of code three or more times, you should write a function (module). This avoids duplication of code.\nSuppose we find ourselves manually computing the sum of positive integers many times, i.e. \\[\ns_2=0+1+2=3\n\\] and \\[\ns_3=0+1+2+3=6.\n\\]\nIt makes sense to write a function that computes the sum for arbitrary \\(n\\). Then we call that function when needed. This way the logic of the function is only written out in one place.\n\n\nCode\n# Define a function\ndef sum_integers(n):\n  sum_int=0\n  for i in range(n):\n    sum_int=sum_int+i\n  return sum_int\n\n# The old way might eb to manually write out the sum\ns_1=0+1\ns_2=0+1+2\ns_3=0+1+2+3\n\n\n# instead we call a function \n\ns_function_3=sum_integers(3)\nprint(s_function_3)\n\ns_function_120=sum_integers(120)\nprint(s_function_120)\n\n\n3\n7140\n\n\n\n\n5.2.7 Code debugging\nYou will have bugs in your code! And it can be incredibly frustrating trying to find them!\nThere are three main types of bugs:\n\nsyntax errors (e.g. not calling a function correctly)\nruntime errors (e.g. dividing by zero)\nlogic errors (more fundamental problems with the algorithm)\n\nCan you find the bug in this piece of code?\n\nsum=0.0\nfor i in range(5)\n  sum=sum+i\nWhat about here?\n\nfor i in range(5):\nsum=sum+i\n\n\n5.2.8 Good code hygiene\n\nPlan your code\nKeep code clean (e.g. use variables, write expressions that are easy to interpret)\nTest code often\nDevelop code on simple cases where you know what the answer should be\nComment code\n\n\n\n5.2.9 Some tips for dealing with bugs\n\nread the error message in terminal. Try to find the earliest sign of a problem in readout. This will tell you what line of your code is causing the first problem.\nprint variables to screen - do they have the\ncheck datatypes - are the objects you have defined doing what you think they are (e.g. if it is a matrix, does it have the expected shape)\nif you are calling a function, is the syntax correct (hover over the function or google ‘python + name of the function’). Usually there are working examples at the bottom of the help page.\nPython has a debugger that lets you follow the program as it executes.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Code development</span>"
+    ]
+  },
+  {
+    "objectID": "Python.html#python-libraries",
+    "href": "Python.html#python-libraries",
+    "title": "5  Code development",
+    "section": "5.3 Python libraries",
+    "text": "5.3 Python libraries\n\n5.3.1 Essential\n\n5.3.1.1 Matrix computation (numpy)\nNumpy is a widely used Python libary. It is a standard way to use arrays in Python. Numpy also contains lots of algorithm (e.g. linear algebra, calculus, mathematical functions, integration, random number generation etc.). You can find a beginner’s guide here.\nNumpy provides tools for calculating many mathematical operations.\n\n\nCode\nimport numpy as np\n\nx=3.14\ny=np.sin(x)\n\n\nprint('sin (3.14) is: ' )\nprint(y)\n\nassert(np.abs(y)&lt;0.1)\n\nz=np.pi\np=np.sin(z)\n\nassert(np.abs(p)&lt;0.00001)\n\nprint(p)\n\n\nsin (3.14) is: \n0.0015926529164868282\n1.2246467991473532e-16\n\n\nWe can also use numpy to define and manipulate arrays. In the example below we use python lists to define two 1D arrays.\n\n\nCode\nimport numpy as np\n\n# Define a numpy array\na = np.array([1, 2, 3, 4, 5, 6])\nb=np.array([7,8,9,10,11,12])\nprint(a)\n\nc=a+b\nprint('The sum of a and b is:')\nprint(c)\n\nprint(\"The first entry in a is\")\na[0]\n\n\n[1 2 3 4 5 6]\nThe sum of a and b is:\n[ 8 10 12 14 16 18]\nThe first entry in a is\n\n\n1\n\n\nWe can use numpy for higher dimensional arrays\nCalculate the determinant of the 2x2 matrix \\[\nA=\\begin{pmatrix}\n4 & 3 \\\\\n2 & 1\n\\end{pmatrix}.\n\\]\n\n\nCode\nimport numpy as np\n\n# generate a two by two matrix of zeros\nA=np.zeros((2,2))\n\n# Set values as per questions\n\nA[0,0]=4\nA[0,1]=3\nA[1,0]=2\nA[1,1]=1\n\n# Print A out to check it is correct\nprint('The matrix is:')\nprint(A)\n\n# Compute the determinant\ndeterminant=np.linalg.det(A)\n\nprint('The determinant is:')\nprint(determinant)\n\n\n# Formally check that the answer is correct.\nassert(determinant==-2.0)\n\n\nThe matrix is:\n[[4. 3.]\n [2. 1.]]\nThe determinant is:\n-2.0\n\n\n\nCompute the trace of the matrix \\(A\\).\nCompute the determinant of the \\(3 \\times 3\\) matrix \\[\nB=\\begin{pmatrix}\n4 & 3& 2 \\\\\n2 & 1 & 4 \\\\\n3 & 2 & 1\n\\end{pmatrix}.\n\\]\nCompute the eigenvalues of \\(B\\).\n\n\n\n5.3.1.2 Plotting (matplotlib)\nMatplotlib is a pyton library for plotting.\nLet’s plot some well-known functions.\nSuppose we wish to plot the function \\[\nf(x)=x^2, \\ \\ x \\in[0,2].\n\\]\n\n\nCode\n#import python libraries\nimport matplotlib.pyplot as plt\nimport numpy as np\n# define x\nx=np.linspace(0,2,200)\n\n# Now define the funciton of x\n\nf=x**2\n\n# Now plot the function\n\n# Generate a figure ane an axis\nfig,ax=plt.subplots()\n\n# call the plot function to plot the data\nax.plot(x,f)\n\n# Set the x and y labels\nax.set_xlabel('$x$')\nax.set_ylabel('$f(x)$')\n\n\nText(0, 0.5, '$f(x)$')\n\n\n\n\n\n\n\n\n\nExercises:\n\nChange the domain to \\[x\\in[0,4]\\].\nPlot the function \\[f(x)=\\sin(x) \\].\nCreate two subplots.\nMake the font on the labels larger\nAdd a legend to the figures.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Code development</span>"
+    ]
+  },
+  {
     "objectID": "VersionControl.html",
     "href": "VersionControl.html",
-    "title": "5  File management",
+    "title": "6  File management",
     "section": "",
-    "text": "5.1 Introduction\nGithub is a developer platform that allows developers to create, store, manage and share their code. It is version-controlled, meaning that once you push files to the github cloud, you will have access to it and all previously pushed version of that file.",
+    "text": "6.1 Introduction\nGithub is a developer platform that allows developers to create, store, manage and share their code. It is version-controlled, meaning that you have access to all previously pushed version of that file.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>File management</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>File management</span>"
     ]
   },
   {
     "objectID": "VersionControl.html#introduction",
     "href": "VersionControl.html#introduction",
-    "title": "5  File management",
+    "title": "6  File management",
     "section": "",
-    "text": "Github is used across academia and industry.\nIt provides you with a back-up for your project.\n\n\n5.1.1 Github exercises\n\nLaunch the Github Desktop app on Apps Anywhere. To deal with a bug in appsAnywhere:\n\nOpen CloudpagingPlayer (little blue icon on bottom right of your screen): * Stop Github Desktop.\nRemove Github Desktop.\nRelaunch Github Desktop in AppsAnywhere.\n\nYou will need to create a github account if you do not currently have one.\nGo to the MA40001Resources github page.\n\nFollow the instructions here for forking the repository. This creates a fork of the repository in your github account.\nFollow the instructions for cloning the repository. This creates a copy of the repository on your local machine.\nYou should now have a local copy of the resources on your computer and own a new (forked) repository.\n\nLaunch VS Code on AppsAnywhere and open the local copy of your MA40001Resources project.\n\n\n\n5.1.2 Updating your repository from github\nYou can\nFetch origin Pull origin (update your local version of files)\nView the files of your repository in Explorer\n\n\n5.1.3 Edit an existing file and push the modified version to github\n\nOpen the file dummy_file.txt in VSCode\nEdit the text.\nCommit the file and push it to github.\nCheck that the version of the file in the cloud has changed to reflect your edit.\n\n\n\n5.1.4 Create a new file on your local machine and push it to github\n\nCreate a new file.\nCommit the file and push it to github.\nCheck that the version of the file in the cloud has changed to reflect your edit.\n\n\n\n5.1.5 Revert to a previous version of a file using version control\nSuppose that you have made a mistake and want to revert to a previous version of the file dummy_file.txt - Find the file in the github repository - Look back at previous versions of the the file - Download the copy that you want to revert to.",
+    "text": "Github is used across academia and industry.\nIt provides you with a back-up for your project.\n\n\n6.1.1 Getting started on Github\n\nLaunch the Github Desktop app on Apps Anywhere. To deal with a bug in appsAnywhere:\n\nOpen CloudpagingPlayer (little blue icon on bottom right of your screen): * Stop Github Desktop.\nRemove Github Desktop.\nRelaunch Github Desktop in AppsAnywhere.\n\nYou will need to create a github account if you do not currently have one.\n\n\n\n6.1.2 Create a respository and clone it\n\nGo to your online github account.\nCreate a new repository (it now exists in the cloud).\nClone the repository onto your local machine (it is now on yor lcoal machine).\nAdd a new file to your local repository.\nPush the new file into the cloud.\n\n\n\n6.1.3 Updating your repository from github\nYou can\nFetch origin Pull origin (update your local version of files)\nView the files of your repository in Explorer\n\n\n6.1.4 Edit an existing file and push the modified version to github\n\nOpen the file dummy_file.txt in VSCode\nEdit the text.\nCommit the file and push it to github.\nCheck that the version of the file in the cloud has changed to reflect your edit.\n\n\n\n6.1.5 Create a new file on your local machine and push it to github\n\nCreate a new file.\nCommit the file and push it to github.\nCheck that the version of the file in the cloud has changed to reflect your edit.\n\n\n\n6.1.6 Revert to a previous version of a file using version control\nSuppose that you have made a mistake and want to revert to a previous version of the file dummy_file.txt - Find the file in the github repository - Look back at previous versions of the file - Download the copy that you want to revert to.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>File management</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>File management</span>"
     ]
   },
   {
-    "objectID": "VersionControl.html#using-the-command-line-interface",
-    "href": "VersionControl.html#using-the-command-line-interface",
-    "title": "5  File management",
-    "section": "5.2 Using the command line interface",
-    "text": "5.2 Using the command line interface\nYou can also do all of the above from the terminal.",
+    "objectID": "VersionControl.html#forking-ma40001-resources-to-obtain-a-template-project-and-talk",
+    "href": "VersionControl.html#forking-ma40001-resources-to-obtain-a-template-project-and-talk",
+    "title": "6  File management",
+    "section": "6.2 Forking MA40001 resources to obtain a template project and talk",
+    "text": "6.2 Forking MA40001 resources to obtain a template project and talk\n\nGo to the MA40001Resources github page.\n\nFollow the instructions here for forking the repository. This creates a fork of the repository in your github account.\nFollow the instructions for cloning the repository. This creates a copy of the repository on your local machine.\nYou should now have a local copy of the resources on your computer and own a new (forked) repository.\n\nLaunch VS Code on AppsAnywhere and open the local copy of your MA40001Resources project.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>File management</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>File management</span>"
     ]
   },
   {
     "objectID": "Presentations.html",
     "href": "Presentations.html",
-    "title": "6  Presentations",
+    "title": "7  Presentations",
     "section": "",
     "text": "As part of your project you will give an approx. 10 minute presentation. To do this, you will have to develop some slides to present.\nQuarto has a number of different options for producing slide decks. Below we will use Revealjs.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Presentations</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Presentations</span>"
     ]
   }
 ]

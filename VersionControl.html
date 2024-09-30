@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; File management – MA40001</title>
+<title>6&nbsp; File management – MA40001</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./Presentations.html" rel="next">
-<link href="./MathematicalTypesetting.html" rel="prev">
+<link href="./Python.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./VersionControl.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">File management</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./VersionControl.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">File management</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -141,14 +141,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./Python.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Code development</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./VersionControl.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">File management</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">File management</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Presentations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Presentations</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Presentations</span></span></a>
   </div>
 </li>
     </ul>
@@ -161,15 +167,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">5.1</span> Introduction</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">6.1</span> Introduction</a>
   <ul class="collapse">
-  <li><a href="#github-exercises" id="toc-github-exercises" class="nav-link" data-scroll-target="#github-exercises"><span class="header-section-number">5.1.1</span> Github exercises</a></li>
-  <li><a href="#updating-your-repository-from-github" id="toc-updating-your-repository-from-github" class="nav-link" data-scroll-target="#updating-your-repository-from-github"><span class="header-section-number">5.1.2</span> Updating your repository from github</a></li>
-  <li><a href="#edit-an-existing-file-and-push-the-modified-version-to-github" id="toc-edit-an-existing-file-and-push-the-modified-version-to-github" class="nav-link" data-scroll-target="#edit-an-existing-file-and-push-the-modified-version-to-github"><span class="header-section-number">5.1.3</span> Edit an existing file and push the modified version to github</a></li>
-  <li><a href="#create-a-new-file-on-your-local-machine-and-push-it-to-github" id="toc-create-a-new-file-on-your-local-machine-and-push-it-to-github" class="nav-link" data-scroll-target="#create-a-new-file-on-your-local-machine-and-push-it-to-github"><span class="header-section-number">5.1.4</span> Create a new file on your local machine and push it to github</a></li>
-  <li><a href="#revert-to-a-previous-version-of-a-file-using-version-control" id="toc-revert-to-a-previous-version-of-a-file-using-version-control" class="nav-link" data-scroll-target="#revert-to-a-previous-version-of-a-file-using-version-control"><span class="header-section-number">5.1.5</span> Revert to a previous version of a file using version control</a></li>
+  <li><a href="#getting-started-on-github" id="toc-getting-started-on-github" class="nav-link" data-scroll-target="#getting-started-on-github"><span class="header-section-number">6.1.1</span> Getting started on Github</a></li>
+  <li><a href="#create-a-respository-and-clone-it" id="toc-create-a-respository-and-clone-it" class="nav-link" data-scroll-target="#create-a-respository-and-clone-it"><span class="header-section-number">6.1.2</span> Create a respository and clone it</a></li>
+  <li><a href="#updating-your-repository-from-github" id="toc-updating-your-repository-from-github" class="nav-link" data-scroll-target="#updating-your-repository-from-github"><span class="header-section-number">6.1.3</span> Updating your repository from github</a></li>
+  <li><a href="#edit-an-existing-file-and-push-the-modified-version-to-github" id="toc-edit-an-existing-file-and-push-the-modified-version-to-github" class="nav-link" data-scroll-target="#edit-an-existing-file-and-push-the-modified-version-to-github"><span class="header-section-number">6.1.4</span> Edit an existing file and push the modified version to github</a></li>
+  <li><a href="#create-a-new-file-on-your-local-machine-and-push-it-to-github" id="toc-create-a-new-file-on-your-local-machine-and-push-it-to-github" class="nav-link" data-scroll-target="#create-a-new-file-on-your-local-machine-and-push-it-to-github"><span class="header-section-number">6.1.5</span> Create a new file on your local machine and push it to github</a></li>
+  <li><a href="#revert-to-a-previous-version-of-a-file-using-version-control" id="toc-revert-to-a-previous-version-of-a-file-using-version-control" class="nav-link" data-scroll-target="#revert-to-a-previous-version-of-a-file-using-version-control"><span class="header-section-number">6.1.6</span> Revert to a previous version of a file using version control</a></li>
   </ul></li>
-  <li><a href="#using-the-command-line-interface" id="toc-using-the-command-line-interface" class="nav-link" data-scroll-target="#using-the-command-line-interface"><span class="header-section-number">5.2</span> Using the command line interface</a></li>
+  <li><a href="#forking-ma40001-resources-to-obtain-a-template-project-and-talk" id="toc-forking-ma40001-resources-to-obtain-a-template-project-and-talk" class="nav-link" data-scroll-target="#forking-ma40001-resources-to-obtain-a-template-project-and-talk"><span class="header-section-number">6.2</span> Forking MA40001 resources to obtain a template project and talk</a></li>
   </ul>
 </nav>
     </div>
@@ -178,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">File management</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">File management</span></h1>
 </div>
 
 
@@ -195,23 +202,67 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introduction" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">5.1</span> Introduction</h2>
-<p><a href="https://github.com">Github</a> is a developer platform that allows developers to create, store, manage and share their code. It is version-controlled, meaning that once you <em>push</em> files to the github cloud, you will have access to it and all previously <em>pushed</em> version of that file.</p>
+<p><span class="quarto-unresolved-ref">?sec-github</span></p>
+<section id="introduction" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">6.1</span> Introduction</h2>
+<p><a href="https://github.com">Github</a> is a developer platform that allows developers to create, store, manage and share their code. It is version-controlled, meaning that you have access to all previously <em>pushed</em> version of that file.</p>
 <ul>
 <li>Github is used across academia and industry.</li>
 <li>It provides you with a back-up for your project.</li>
 </ul>
-<section id="github-exercises" class="level3" data-number="5.1.1">
-<h3 data-number="5.1.1" class="anchored" data-anchor-id="github-exercises"><span class="header-section-number">5.1.1</span> Github exercises</h3>
+<section id="getting-started-on-github" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="getting-started-on-github"><span class="header-section-number">6.1.1</span> Getting started on Github</h3>
 <ol type="1">
-<li><p>Launch the Github Desktop app on Apps Anywhere. To deal with a bug in appsAnywhere:</p>
+<li>Launch the Github Desktop app on Apps Anywhere. To deal with a bug in appsAnywhere:
 <ul>
 <li>Open CloudpagingPlayer (little blue icon on bottom right of your screen): * Stop Github Desktop.</li>
 <li>Remove Github Desktop.</li>
 <li>Relaunch Github Desktop in AppsAnywhere.</li>
 </ul></li>
-<li><p>You will need to create a github account if you do not currently have one.</p></li>
+<li>You will need to create a github account if you do not currently have one.</li>
+</ol>
+</section>
+<section id="create-a-respository-and-clone-it" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="create-a-respository-and-clone-it"><span class="header-section-number">6.1.2</span> Create a respository and clone it</h3>
+<ol type="1">
+<li>Go to your online github account.</li>
+<li>Create a new repository (it now exists in the cloud).</li>
+<li>Clone the repository onto your local machine (it is now on yor lcoal machine).</li>
+<li>Add a new file to your local repository.</li>
+<li>Push the new file into the cloud.</li>
+</ol>
+</section>
+<section id="updating-your-repository-from-github" class="level3" data-number="6.1.3">
+<h3 data-number="6.1.3" class="anchored" data-anchor-id="updating-your-repository-from-github"><span class="header-section-number">6.1.3</span> Updating your repository from github</h3>
+<p>You can</p>
+<p>Fetch origin Pull origin (update your local version of files)</p>
+<p>View the files of your repository in Explorer</p>
+</section>
+<section id="edit-an-existing-file-and-push-the-modified-version-to-github" class="level3" data-number="6.1.4">
+<h3 data-number="6.1.4" class="anchored" data-anchor-id="edit-an-existing-file-and-push-the-modified-version-to-github"><span class="header-section-number">6.1.4</span> Edit an existing file and push the modified version to github</h3>
+<ul>
+<li>Open the file <em>dummy_file.txt</em> in VSCode</li>
+<li>Edit the text.</li>
+<li>Commit the file and push it to github.</li>
+<li>Check that the version of the file in the cloud has changed to reflect your edit.</li>
+</ul>
+</section>
+<section id="create-a-new-file-on-your-local-machine-and-push-it-to-github" class="level3" data-number="6.1.5">
+<h3 data-number="6.1.5" class="anchored" data-anchor-id="create-a-new-file-on-your-local-machine-and-push-it-to-github"><span class="header-section-number">6.1.5</span> Create a new file on your local machine and push it to github</h3>
+<ul>
+<li>Create a new file.</li>
+<li>Commit the file and push it to github.</li>
+<li>Check that the version of the file in the cloud has changed to reflect your edit.</li>
+</ul>
+</section>
+<section id="revert-to-a-previous-version-of-a-file-using-version-control" class="level3" data-number="6.1.6">
+<h3 data-number="6.1.6" class="anchored" data-anchor-id="revert-to-a-previous-version-of-a-file-using-version-control"><span class="header-section-number">6.1.6</span> Revert to a previous version of a file using version control</h3>
+<p>Suppose that you have made a mistake and want to revert to a previous version of the file <em>dummy_file.txt</em> - Find the file in the github repository - Look back at previous versions of the file - Download the copy that you want to revert to.</p>
+</section>
+</section>
+<section id="forking-ma40001-resources-to-obtain-a-template-project-and-talk" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="forking-ma40001-resources-to-obtain-a-template-project-and-talk"><span class="header-section-number">6.2</span> Forking MA40001 resources to obtain a template project and talk</h2>
+<ol type="1">
 <li><p>Go to the <a href="https://github.com/dundeemath/MA40001Resources">MA40001Resources</a> github page.</p>
 <ul>
 <li><p>Follow the instructions <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#cloning-your-forked-repository">here</a> for <em>forking</em> the repository. This creates a fork of the repository in your github account.</p></li>
@@ -220,38 +271,6 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li><p>Launch VS Code on AppsAnywhere and open the local copy of your MA40001Resources project.</p></li>
 </ol>
-</section>
-<section id="updating-your-repository-from-github" class="level3" data-number="5.1.2">
-<h3 data-number="5.1.2" class="anchored" data-anchor-id="updating-your-repository-from-github"><span class="header-section-number">5.1.2</span> Updating your repository from github</h3>
-<p>You can</p>
-<p>Fetch origin Pull origin (update your local version of files)</p>
-<p>View the files of your repository in Explorer</p>
-</section>
-<section id="edit-an-existing-file-and-push-the-modified-version-to-github" class="level3" data-number="5.1.3">
-<h3 data-number="5.1.3" class="anchored" data-anchor-id="edit-an-existing-file-and-push-the-modified-version-to-github"><span class="header-section-number">5.1.3</span> Edit an existing file and push the modified version to github</h3>
-<ul>
-<li>Open the file <em>dummy_file.txt</em> in VSCode</li>
-<li>Edit the text.</li>
-<li>Commit the file and push it to github.</li>
-<li>Check that the version of the file in the cloud has changed to reflect your edit.</li>
-</ul>
-</section>
-<section id="create-a-new-file-on-your-local-machine-and-push-it-to-github" class="level3" data-number="5.1.4">
-<h3 data-number="5.1.4" class="anchored" data-anchor-id="create-a-new-file-on-your-local-machine-and-push-it-to-github"><span class="header-section-number">5.1.4</span> Create a new file on your local machine and push it to github</h3>
-<ul>
-<li>Create a new file.</li>
-<li>Commit the file and push it to github.</li>
-<li>Check that the version of the file in the cloud has changed to reflect your edit.</li>
-</ul>
-</section>
-<section id="revert-to-a-previous-version-of-a-file-using-version-control" class="level3" data-number="5.1.5">
-<h3 data-number="5.1.5" class="anchored" data-anchor-id="revert-to-a-previous-version-of-a-file-using-version-control"><span class="header-section-number">5.1.5</span> Revert to a previous version of a file using version control</h3>
-<p>Suppose that you have made a mistake and want to revert to a previous version of the file <em>dummy_file.txt</em> - Find the file in the github repository - Look back at previous versions of the the file - Download the copy that you want to revert to.</p>
-</section>
-</section>
-<section id="using-the-command-line-interface" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="using-the-command-line-interface"><span class="header-section-number">5.2</span> Using the command line interface</h2>
-<p>You can also do all of the above from the terminal.</p>
 
 
 </section>
@@ -679,13 +698,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./MathematicalTypesetting.html" class="pagination-link" aria-label="Typesetting mathematics">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Typesetting mathematics</span></span>
+      <a href="./Python.html" class="pagination-link" aria-label="Code development">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Code development</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./Presentations.html" class="pagination-link" aria-label="Presentations">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Presentations</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Presentations</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

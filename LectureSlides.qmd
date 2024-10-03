@@ -16,7 +16,7 @@ General:
 * Fill in feedback form linked on MyDundee announcement.
 
 
-Python
+Python:
 
 * Start embedding Python codes in your Quarto document 
 * Work through the exercises up to for loops and if statements.

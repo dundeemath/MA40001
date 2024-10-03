@@ -1,13 +1,4 @@
----
-title: "File management"
-format:
-  html:
-    code-fold: true
-  pdf:
-    code-fold: true    
-jupyter: python3
----
-@sec-github
+# File management {#sec-github}
 
 ## Introduction
 
@@ -108,3 +99,24 @@ Suppose that you have made a mistake and want to revert to a previous version of
   * create a new folder and copy template folders into it.
   * commit and push back to the cloud.
   
+
+
+::: {.callout-tip}
+# Blog
+
+
+A quarto blog is a nice way to record progress in your project.
+
+1. Copy the blog folder in MA40001Resources
+2. Each .qmd in the posts folder will be a new blog post
+3. Render index.qmd and the blog will get refreshed.
+
+Why do this?
+
+1. You have a record of any text that you write - later you can copy and paste for assessment purposes 
+2.  If you embed Python in the .qmd, you have a record of data  associated with any numerical results (e.g parameter values, initial conditions).
+3. You can revisit blog posts as your project develops.
+4. Use github to store your files and you have a version controlled back up of your project.
+
+
+:::

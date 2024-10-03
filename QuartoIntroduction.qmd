@@ -1,14 +1,4 @@
----
-title: "Quarto"
-format:
-  html:
-    code-fold: true
-  pdf:
-    code-fold: true    
-jupyter: python3
----
-
-{#sec-quartoint}
+# Quarto {#sec-quartoint}
  
 
 [Quarto](https://quarto.org) is an open source scientific and technical publishing system. It can be used to make a range of publishable outputs (reports, posters, slides, blogs, webpages dashboards etc.). In this section you will learn to use Quarto to write reports and  make slide decks. However, one of the advantages of learning Quarto is that it is straightforward to write and publish websites, blogs, dashboards and books.

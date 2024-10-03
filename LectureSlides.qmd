@@ -1,8 +1,57 @@
 ---
 title: "MA40001"
 author: "Philip Murray"
-format: revealjs
+format: beamer
 ---
+
+# Week 3
+
+## Tasks
+
+
+General:
+
+* If you do not already have one, sign up for an account on https:://github.com. We will use this next week.
+* Install VSCode on your personal computer. Then install the Quarto extension on VSCode. 
+* Fill in feedback form linked on MyDundee announcement.
+
+
+Python
+
+* Start embedding Python codes in your Quarto document 
+* Work through the exercises up to for loops and if statements.
+
+# Week 2
+
+## Tasks
+
+Use Quarto to generate a pdf with:
+
+* title, author 
+* section headings
+* figures
+* tables
+* equations using latex
+* schematic diagrams
+* cross referencing of different objects
+* bibliography
+* appendices
+
+## Project narrative (suggestion)
+
+ * One sentence summary of your project
+ * Why is the topic important?
+ * What is the background to your project (place the work in historical context)?
+ * What are the project Aims?
+ * What work did you do to address the Aims?
+ * Outlook, reflection (recap the project, were the aims addressed?, what are the limitations of the work? what would come next?)
+
+ Disclaimer: there are other ways to structure a project narrative. Discuss this with your project supervisor.
+
+
+ 
+
+
 
 # Weeks 1 and 2
 ## Tasks 

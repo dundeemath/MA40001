@@ -7,70 +7,106 @@ format:
     code-fold: true    
 jupyter: python3
 ---
-
-
+@sec-github
 
 ## Introduction
 
-[Github](https://github.com) is a developer platform that allows developers to create, store, manage and share their code. It is version-controlled, meaning that once you *push* files to the github cloud, you will have access to it and all previously *pushed* version of that file. 
+[Github](https://github.com) is a developer platform that allows developers to create, store, manage and share their code. It is version-controlled, meaning that you  have access to all previously *pushed* version of that file. 
 
 * Github is used across academia and industry.
 * It provides you with a back-up for your project.
 
-### Github  exercises 
-
-
+### Getting started on Github   
 
 1. Launch the Github Desktop app on Apps Anywhere.
-To deal with a bug in appsAnywhere: 
-    * Open CloudpagingPlayer (little blue icon on bottom right of your screen): * Stop Github Desktop. 
-    * Remove Github Desktop.
+To deal with a bug in AppsAnywhere: 
+    * Open CloudpagingPlayer (little blue icon on the toolbar on the bottom right of your screen): 
+    * *Stop* Github Desktop. 
+    * *Remove* Github Desktop.
     * Relaunch Github Desktop in AppsAnywhere.
 
 2. You will need to create a github account if you do not currently have one.
 
-3. Go to the  [MA40001Resources](https://github.com/dundeemath/MA40001Resources) github page.
+### Creating a repository
+
+There are three important features of repository management:
+
+1. Remote repository (i.e. the cloud)
+2. Local repository (i.e. your local version of the files in the cloud)
+3. Local directory
+
+The workflow for managing your repository is as follows:
+```{mermaid}
+
+sequenceDiagram
+  participant LocalDirectory
+  participant LocalRepository
+  participant RemoteRepository
+  
+  RemoteRepository->>LocalRepository: 1. Fetch origin
+  LocalRepository->>LocalDirectory: 2. Pull origin to update local directory
+  LocalDirectory->>LocalDirectory: 3. Make changes to local files
+  LocalDirectory->>LocalRepository: 4. Commit to main
+  LocalRepository->>RemoteRepository: 5. Push
+
+  ```
+
+
+#### Create in the cloud and clone onto your machine
+
+1. Go to your online github account. 
+2. Create a new repository (why not MA40001?).
+3. On GithubDesktop ... clone the repository onto your local machine (it now exists on your local machine).
+
+#### Create a repository on your local drive and push to the cloud
+
+1. In GithubDesktop ... 'Create a new repository on your local drive'
+2. Publish your repository to Github.
+3. Check https://github.com to ensure that your repository has been created.
+
+### Add a file to your MA40001 repository
+
+In Github  Desktop refresh your local version of the repository:
+1. 'Fetch Origin' 
+
+In VSCode
+
+1. Open your MA40001 repository (File->Open Folder)
+2. Create a new file (e.g.  *testgithub.qmd*?)
+
+In Github Desktop, push your changes to the remote repository:
+
+1.  'Commit to Main' (you'll need to include a summary comment)
+2. 'Push origin'
+
+
+### Edit the existing file  and push the modified version to github
+
+* Open the file *testgithub.qmd* in VSCode
+* Edit the text.
+* Commit the file and push it to github.
+* Check that the version of the file in the remote repository has changed to reflect your edit.
+
+
+### Revert to a previous version of a file using version control
+
+Suppose that you have made a mistake and want to revert to a previous version of *testgithub.qmd* 
+
+  - Find the file in the github repository
+  - Look back at previous versions of the file (click history).
+  - You could now download the copy that you want to revert to.
+
+##  Forking MA40001 resources to obtain a template project and talk 
+
+
+1. Go to the [MA40001Resources](https://github.com/dundeemath/MA40001Resources) github page.
 
     - Follow the instructions [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#cloning-your-forked-repository) for *forking*  the repository. This creates a fork of the repository in your github account.
     - Follow the instructions for cloning the repository. This  creates a copy of the repository on your local machine.
 
     - You should now have a local copy of the resources on your computer and own a new (forked) repository.
+    - create a new folder and copy template folders into it.
+    - commit and push back to the cloud.
     
 
-4. Launch VS Code on AppsAnywhere and open the local copy of your MA40001Resources project.
-
-
-### Updating your repository from github
-
-You can 
-
-Fetch origin
-Pull origin (update your local version of files)
-
-View the files of your repository in Explorer
-
-
-### Edit an existing file  and push the modified version to github
-
-* Open the file *dummy_file.txt* in VSCode
-* Edit the text.
-* Commit the file and push it to github.
-* Check that the version of the file in the cloud has changed to reflect your edit.
-
-### Create a new file on your local machine and push it to github
-
-* Create a new file.
-* Commit the file and push it to github.
-* Check that the version of the file in the cloud has changed to reflect your edit.
-
-### Revert to a previous version of a file using version control
-
-Suppose that you have made a mistake and want to revert to a previous version of the file *dummy_file.txt* 
-  - Find the file in the github repository
-  - Look back at previous versions of the the file
-  - Download the copy that you want to revert to.
-
-## Using the command line interface
-
-You can also do all of the above from the terminal.
-
+2. Launch VS Code on AppsAnywhere and open the local copy of your MA40001Resources project.

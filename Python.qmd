@@ -37,10 +37,14 @@ On the Uni machines Quarto has been set up so that it interfaces to an installat
 
 ### Python in Quarto
 
-To run Python within Quarto, create a python environment as follows:
+To run Python within Quarto, create a new .qmd file. Within the file create a python environment as follows:
 
 ````markdown
+title: " Code development"
+format: html
 
+
+# Python code
 ```{{python}} 
 
 # Insert Python code here.
@@ -48,7 +52,7 @@ To run Python within Quarto, create a python environment as follows:
 ```
 ````
 
-Note that a simialr syntax is used to embed codes in other open source languages (R and Julia).
+Note that a similar syntax is used to embed codes in other open source languages (R and Julia).
 
 ### Calculator
 
@@ -62,6 +66,12 @@ z=x+y
 print(z)
 
 ```
+
+:::{.callout-important}
+## Exercise
+Use Python to compute the product of 157 and 213.
+
+:::
 
 ### Datatypes
 
@@ -108,6 +118,16 @@ assert(boolean_variable_and==False)
 
 ```
 
+:::{.callout-important}
+## Exercise
+
+Define a float and integer (e.g. $x=2.0$ and $y=7$).
+
+What datatype is the product?
+
+
+:::
+
 
 ### Containers 
 
@@ -151,9 +171,23 @@ mylist2[1]='d'
 print(mylist2)
 
 ```
+
+:::{.callout-important}
+## Exercise
+
+1. Create a list of five integers.
+
+2. Sort the list in order of increasing size.
+
+3. What happens if you try to access the `6th' entry in the list?
+
+4. Append another entry to the list.
+
+:::
+
 #### Tuples
 
-Tuples are immutable container type, i,
+Tuples are immutable container types, i.e.
 ```{python}
 
 mytuple=(1,2,3)
@@ -188,12 +222,21 @@ print(myset2)
 
 ```
 
+:::{.callout-important}
+## Exercise
+
+1. Create a set of floating point numbers.
+2. Add another entry to the set.
+3. Try to add an entry that already exists in the set.
+4. Compute the number of items in the set.
+:::
+
 #### Dictionaries
 
 
 Dictionaries are used to interface  datatypes that are connected. The first entry is known as the *key*.
 
-Suppose  John, Helen and Carol have been assigned projects 1,2 and 3, respectively. I could use a dictionary to connect these pieces of data.
+Suppose  John, Helen and Carol have been assigned projects 1,2 and 3, respectively. I could use a dictionary to connect these pieces of data as follows:
 
 
 ```{python}
@@ -207,13 +250,21 @@ print(mydictionary['Helen'])
 
 ```
 
+:::{.callout-important}
+## Exercise
+
+1. Create  a dictionary that connects your connects your modules codes for this semester with the module title ().
+2. Access the module title using the module code as per the example.
+:::
 
 ### Logical statements and control loops
 
-Logical statments and loops are essential in any programming language.
 
-It is essential to be competent using for loops and if statements.
-Note the positioning of the colon and the indentation in the code example below.
+
+It is essential to be competent using logical statments statements in any programming language. Here we will consider for loops and if statements.
+
+
+Note the positioning of the colon and the indentation in the code example below:
 
 ```{python}
 
@@ -222,7 +273,18 @@ for i in range(5):
 
 ```
 
-Suppose we only wish to print out i when it is greater than 3 in the above code. We could introduce an if statement (note colon +indentation again).
+
+:::{.callout-important}
+## Exercise
+
+Write a for loop that loops over one of the lists that you defined above and prints each item to screen. 
+
+
+:::
+
+
+
+Suppose we only wish to print out $i$ when it is greater than three in the above code. We could introduce an if statement as follows (note colon  and indentation again):
 
 ```{python}
 
@@ -232,7 +294,17 @@ for i in range(5):
 
 ```
 
-Python has niceer ways to loop over containers (lists, arrays etc.) but this is enough for now.
+:::{.callout-important}
+## Exercise
+
+Modify your above for loop as follows.
+Write an if statement within the for loop so that only certain entries in the list get printed out.
+
+
+:::
+
+
+Python has nicer ways to loop over containers (lists, arrays etc.) but this is enough for now.
 
 
 
@@ -279,6 +351,14 @@ print(s_function_120)
 
 ```
 
+:::{.callout-important}
+## Exercise
+
+Write a function that takes a list as an agrument and prints out the entries using a for loop. 
+
+
+:::
+
 
 
 ### Code debugging
@@ -292,7 +372,13 @@ There are three main types of bugs:
 * logic errors (more fundamental problems with the algorithm)
 
 
-Can you find the bug in this piece of code?
+Copy and past the code snippets below into the python environment in Quarto. Can you find the bugs?
+
+
+::: {.callout-important}
+# Exercise
+
+
 ``` python
 
 sum=0.0
@@ -300,14 +386,30 @@ for i in range(5)
   sum=sum+i
 
 ```
+:::
 
-What about here?
+
+::: {.callout-important}
+# Exercise
 ``` python
 
 for i in range(5):
 sum=sum+i
 
 ```
+:::
+
+::: {.callout-important}
+# Exercise
+What about here?
+``` python
+
+sum=0.0
+for i in range(5):
+  sum=(sum+i)/i
+
+```
+:::
 
 ### Good code hygiene
 - Plan your code
@@ -317,17 +419,19 @@ sum=sum+i
 - Comment code
 
 
-### Some tipds fpr dealing with bugs 
+### Some tips for dealing with bugs 
 
 1.  read the error message in terminal. Try to find the earliest sign of a problem in readout. This will tell you what line of your code is causing the first problem. 
 
-2. print variables to screen - do they have the 
+2. print variables to screen - do they have the expected datatypes/values?
 
 3. check datatypes - are the objects you have defined doing what you think they are (e.g. if it is a matrix, does it have the expected shape)
 
-4. if you are calling a function, is the syntax correct (hover over the function or google 'python +  name of the function'). Usually there are working examples at the bottom of the help page.
+4. if you are calling a function, is the syntax correct (hover the pointer over the function in VSCode or google 'python +  name of the function'). Use the working example, usually found at the bottom of the help pages, to ensure syntax is correct. Do you understand what kind of objects the functions is going to return?
 
-5. Python has a debugger that lets you follow the program as it executes.
+5. Test your code on a problem where you know the answer. 
+
+6. Python has a debugger that lets you follow the program as it executes.
 
 
 
@@ -428,6 +532,9 @@ assert(determinant==-2.0)
 
 ```
 
+::: {.callout-important}
+# Exercise
+
 1. Compute the trace of the matrix $A$.
 2. Compute the determinant of the $3 \times 3$ matrix
 $$
@@ -438,6 +545,8 @@ B=\begin{pmatrix}
 \end{pmatrix}.
 $$
 3. Compute the eigenvalues of $B$.
+
+:::
 
 
 #### Plotting (matplotlib)
@@ -473,18 +582,92 @@ ax.plot(x,f)
 # Set the x and y labels
 ax.set_xlabel('$x$')
 ax.set_ylabel('$f(x)$')
+plt.show()
 ```
 
-Exercises:
 
- 1. Change the domain to $$x\in[0,4]$$.
- 2. Plot the function $$f(x)=\sin(x) $$.
+::: {.callout-important}
+# Exercise
+
+ 1. Change the domain to $x\in[0,4]$.
+ 2. Plot the function $f(x)=\sin(x)$.
  3. Create two subplots.
  4. Make the font on the labels larger
  5. Add a legend to the figures.
 
+:::
+
 
 #### Symbolic computation in Python (sympy)
+
+
+[sympy](https://www.sympy.org/en/index.html) provides a symbolic calculator in Python. For example, suppose I want to differentiate or integrate the function
+$$
+f(x)=x^3.
+$$
+
+```{python}
+import sympy as sp
+
+x, f = sp.symbols("x f")
+
+f=x**3
+
+df_dx=sp.diff(f,x)
+
+print('The derivative is')
+print(df_dx)
+
+df_fx_eval=df_dx.subs(x,1)
+
+print('The derivative evaluated at x=1 is')
+print(df_fx_eval)
+```
+
+::: {.callout-important}
+# Exercise
+
+Use sympy to compute the integral
+$$
+\int_0^1 x^3 dx.
+$$
+:::
+
+
+#### scipy
+
+[Scipy](https://docs.scipy.org/doc/scipy/tutorial/index.html#user-guide) is library of useful mathematical algorithms. It builds upon numpy.
+
+For example, suppose you want to numerically calculate the integral 
+$$
+\int_0^1 x^3 dx.
+$$
+
+Using scipy
+``` {python}
+import scipy.integrate as integrate
+
+## Define the function you want to integrate
+## Here we use a lambda function to define the integrand
+f = lambda x: x**2
+lower_lim=0.0
+upper_lim=1.0
+
+## Use scipy quadrature integration to compute the integral
+integral = integrate.quad(f, lower_lim, upper_lim)
+print(integral[0])
+```
+
+::: {.callout-important}
+# Exercise
+
+Use scipy to numerically compute the integral
+$$
+\int_0^1 \sin(x) dx.
+$$
+:::
+
+
 
 
 ###  Python libraries of interest to particular projects
@@ -494,21 +677,235 @@ Exercises:
  
 #### ODEs
 
-#### PDEs
+Suppose we wish to solve the Lottka Volterra equations
+$$
+\begin{aligned}
+\frac{dn}{dt}&= n(1-p) \\
+\frac{dp }{dt}&=\alpha(n-1)
+\end{aligned}
+$$
+with initial conditions
+$$
+n(0)=2 \quad p(0)=1.
+$$
 
-### Optimisation (skikit-learn)
+
+```{python}
+#| label: fig-odes
+#| fig-cap: "Numerically solving the Lotka Volterra ODEs."
+
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import odeint
+
+
+
+# Define model parameters
+alpha=1.5
+
+# Define rhs of LV ODEs
+def rhs_lv_model(x,t):
+  rhs=np.zeros_like(x)
+  n=x[0]
+  p=x[1]
+  dn_dt=n*(1-p)
+  dp_dt=alpha*p*(n-1)
+  rhs[0]=dn_dt
+  rhs[1]=dp_dt
+  return rhs
+
+# Define discretised t domain
+t = np.linspace(0, 10, 1000)
+
+# define initial conditions
+init_cond=[2.0,0.5]
+
+# Compute numerical solution of ODEs
+sol1 = odeint(rhs_lv_model, init_cond,t)
+
+# Plot results
+n=sol1[:,0]
+p=sol1[:,1]
+
+plt.plot(t, n, 'b',t,p,'r')
+
+plt.legend(['n','p'],loc='best')
+plt.xlabel('$t$')
+
+plt.grid()
+plt.show()
+```
+
+::: {.callout-important}
+# Exercise
+1. Plot the solution in the $np$ phase plane.
+2. Annotate the phase plane by plotting the steady state and nullclines.
+
+:::
+
+
+
+### Optimisation (scipy.optimise)
+
+Suppose we want to numerically estimate the local minima of the function
+$$
+f(x)=x^4-2x^2.
+$$
+
+We can do this using the scipy-optimize function minimise.
+
+```{python}
+#| label: fig-localmin
+#| fig-cap: "Finding local minima using scipy optimize."
+
+import numpy as np
+from scipy.optimize import minimize
+import matplotlib.pyplot as plt
+
+def quartic(x):
+    """The quartic function"""
+    y=0.25*x**4.0-0.5*x**2
+    return y
+
+
+# Create an array of x valuez for plotting
+x=np.linspace(-5.0,5.0,200,dtype=float)
+# Evaluate the function at each x
+y=quartic(x)
+
+x0 = np.array([1.3])
+res = minimize(quartic, x0)
+
+x_sol=res.x[0]
+print(x_sol)
+y_res=quartic(x_sol)
+
+fig,ax=plt.subplots()
+ax.plot(x,y)
+ax.set_ylim([-6.0,6.0])
+ax.plot(x_sol,y_res,'r*')
+
+```
 
 ### Data analysis (pandas)
 
-### Machine learning (tensorflow)
+[Pandas](https://pandas.pydata.org/docs/index.html) is the standard library for data analysis in Python.
 
-### Image analysis (skikit-image)
+The main datastructure is known as a *Dataframe*.
+
+```{python}
+
+import pandas as pd
+
+df = pd.DataFrame([[1,2,3,4],[2,4,6,8],[3,6,9,12],[4,8,12,16],[5,10,15,20]], columns=list("ABCD"))
+
+```
+
+To view the first few rows of a dataframe use
+
+```{python}
+df.head()
+```
+
+To generate a quick summary use
+```{python}
+df.describe()
+```
+
+To sort the data based upon values in a  column
+```{python}
+df.sort_values(by='A')
+```
+
+To view a single column, e.g. the C column use
+```{python}
+df['C']
+```
+
+To use logical operators to filter data, e.g. to identify only rows where the $A$ column is positive
+```{python}
+df[df['A']>4.0]
+```
+
+To compute some basic statistics, e.g. the mean of each column
+```{python}
+df.mean()
+```
+
 
 
 ## Writing your own scripts
 
-At some point (either over the course of your project or later) you will likely encounter a  problem that cannot be solved using existing code libraries, i.e. you will need to write your own progammes. To prepare for this day, it is a good idea to practice your code development skills on problems where the solution are already known.
-Over the course of project assessment you will be asked about the methods that you have used in your project. It is much easier to defend the use of a method if you have a clear idea how to programme it; then the limitations of a method become much clearer. You can also include any code that you develop in the  appendices of your written report.
+At some point (either over the course of your project or later) you will likely encounter a  problem that cannot be solved using existing code libraries, i.e. you will need to write your own progammes. To prepare for this day, it is a good idea to practice your algorithm/code development skills on problems where the solutions are already known.
+For example, could you write an algorithm that:
+
+ * numerically solves the ODEs in @fig-odes.
+ * finds the local minima in @fig-localmin.
+
+
+Over the course of the project assessment you will be asked about the methods that you have used in your project. You should be able to describe how the method works.
+
+ It is much easier to defend the use of a method if you have a clear idea how to programme it; then the limitations of the method are much clearer. 
+
+
+
+
+
+
+<!--
+
+
+#### PDEs
+
+[PyPDE](https://py-pde.readthedocs.io/en/latest/index.html) is a library of Python codes that use the finite difference method to numerically solve PDEs. 
+
+```{python}
+from pde import DiffusionPDE, ScalarField, UnitGrid
+
+grid = UnitGrid([64, 64])  # generate grid
+state = ScalarField.random_uniform(grid, 0.2, 0.3)  # generate initial condition
+
+eq = DiffusionPDE(diffusivity=1.1)  # define the pde
+result = eq.solve(state, t_range=10)
+result.plot()
+```
+
+
+```{python}
+from pde import PDE, FieldCollection, PlotTracker, ScalarField, UnitGrid
+
+# define the PDE
+a, b = 1, 3
+d0, d1 = 1, 0.1
+eq = PDE(
+    {
+        "u": f"{d0} * laplace(u) + {a} - ({b} + 1) * u + u**2 * v",
+        "v": f"{d1} * laplace(v) + {b} * u - u**2 * v",
+    }
+)
+
+# initialize state
+grid = UnitGrid([64, 64])
+u = ScalarField(grid, a, label="Field $u$")
+v = b / a + 0.1 * ScalarField.random_normal(grid, label="Field $v$")
+state = FieldCollection([u, v])
+
+# simulate the pde
+tracker = PlotTracker(interrupts=1, plot_args={"vmin": 0, "vmax": 5})
+sol = eq.solve(state, t_range=20, dt=1e-3, tracker=tracker)
+```
+
+
+
+### Image analysis (skikit-image)
+
+
+### Machine learning (tensorflow)
+
+
+
+
+-->
 
 
 

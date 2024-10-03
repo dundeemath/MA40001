@@ -180,7 +180,7 @@ You can find more info. on Quarto tables [here](https://quarto.org/docs/authorin
 
 ### Figures
 
-To include an  image file in a Quarto document, you must firstly store the image file in a sensible directory. Suppose you store the image in the same directlry as your .qmd file. Then you could include the figure ('DemoFigureMA40001.png') using the syntax: 
+To include an  image file in a Quarto document, you must firstly store the image file in a sensible directory. Suppose you store the image in the same directory as your .qmd file. Then you could include the figure ('DemoFigureMA40001.png') using the syntax: 
 
 
 ``` markdown
@@ -209,7 +209,7 @@ You can find more info on Quarto figures [here](https://quarto.org/docs/authorin
 
 Throughout your document you will need to refer to different objects that you have created (e.g. Tables, Figures, equations, theorems).
 
-In Quarto, objects are tagged using a specific syntax (prefix for that specific obect + unique tag). See @tbl-syntax for some examples. Such objects can then be cross referenced using an `@' tag.
+In Quarto, objects are tagged using a specific syntax (prefix for that specific object + unique tag). See @tbl-syntax for some examples. Such objects can then be cross referenced using an `@' tag.
 
 
 | Object | Tag | Reference |
@@ -261,7 +261,7 @@ I can refer to it in the text via @eq-emc2.
 
 
 
-Quarto allows for definition and cross referencing of a range of [mathematical objects](https://quarto.org/docs/authoring/cross-references.html#theorems-and-proofs) (e.g. theorems, corroloraries)
+Quarto allows for definition and cross referencing of a range of [mathematical objects](https://quarto.org/docs/authoring/cross-references.html#theorems-and-proofs) (e.g. theorems, corollaries)
 
 You can find out more about cross referencing [here](https://quarto.org/docs/authoring/cross-references.html).
 
@@ -345,7 +345,7 @@ Copy and paste code here
 
 Given what you have achieved thus far, it is not a very big step to generate and publish websites, blogs and dashboards. 
 
-There are some tutorials avilable on how to do this on the Quarto [pages](https://quarto.org/docs/websites/).
+There are some tutorials available on how to do this on the Quarto [pages](https://quarto.org/docs/websites/).
 
 For guidance on publishing material see [here](https://quarto.org/docs/publishing/).
 

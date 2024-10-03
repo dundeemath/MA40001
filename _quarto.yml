@@ -4,6 +4,8 @@ project:
   render:
     - index.qmd
     - LectureSlides.qmd
+  resources:
+    - LectureSlides.pdf
 
 book:
   title: "MA40001"
@@ -18,8 +20,8 @@ book:
     - CommunicatingMathematics.qmd 
     - QuartoIntroduction.qmd
     - MathematicalTypesetting.qmd
+    - Python.qmd
     - VersionControl.qmd
-    #- Python.qmd
     - Presentations.qmd
   
       

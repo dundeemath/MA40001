@@ -129,9 +129,9 @@ To explain the behaviour of such a function, a plot will help! But which plot? F
 :::{.callout-tip}
 # Connecting figures to text 
 
-Note that all plots should be cross referenced in the text, i.e. we should never have figures that are not referenceed somewhere in the text.
+Note that all plots should be cross referenced in the text, i.e. we should never have figures that are not referenced somewhere in the text.
 
-A good rule of thumb is: if figures and tables are removed from the text, does the text still read coherently? i.e. the figure is helping the reader to understant a point that is made in the text. It is not replacing the need for text.
+A good rule of thumb is: if figures and tables are removed from the text, does the text still read coherently? i.e. the figure is helping the reader to understand a point that is made in the text. It is not replacing the need for text.
 
 :::
 
@@ -287,7 +287,7 @@ Schematic diagrams are a useful way to help to try and introduce a new concept/s
 
 There are many ways to generate schematic diagrams (e.g. generating in software such as Photoshop or Illustrator and saving as an image).
 
-Alternatively Quarto provides an itnerface to a number of graph tools that generate schematic diagrams, e.g. 
+Alternatively Quarto provides an interface to a number of graph tools that generate schematic diagrams, e.g. 
 
 ```{mermaid}
 flowchart LR
@@ -366,7 +366,7 @@ The overall structure of a report is (generally) as follows:
 8. Refeences
 
 :::{.callout-note}
-# Some common errors in the stucture
+# Some common errors in the structure
 
 * Insufficient development of background (the author assumes that the reader knows more than they do)
 * The aims of the project are not clearly stated

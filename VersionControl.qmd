@@ -99,14 +99,12 @@ Suppose that you have made a mistake and want to revert to a previous version of
 ##  Forking MA40001 resources to obtain a template project and talk 
 
 
-1. Go to the [MA40001Resources](https://github.com/dundeemath/MA40001Resources) github page.
+ Go to the [MA40001Resources](https://github.com/dundeemath/MA40001Resources) github page.
 
-    - Follow the instructions [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#cloning-your-forked-repository) for *forking*  the repository. This creates a fork of the repository in your github account.
-    - Follow the instructions for cloning the repository. This  creates a copy of the repository on your local machine.
+  * Follow the instructions [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#cloning-your-forked-repository) for *forking*  the repository. This creates a fork of the repository in your github account.
+  * Follow the instructions for cloning the repository. This  creates a copy of the repository on your local machine.
 
-    - You should now have a local copy of the resources on your computer and own a new (forked) repository.
-    - create a new folder and copy template folders into it.
-    - commit and push back to the cloud.
-    
-
-2. Launch VS Code on AppsAnywhere and open the local copy of your MA40001Resources project.
+  * You should now have a local copy of the resources on your computer and own a new (forked) repository.
+  * create a new folder and copy template folders into it.
+  * commit and push back to the cloud.
+  

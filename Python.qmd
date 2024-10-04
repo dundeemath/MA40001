@@ -21,19 +21,15 @@ In this section we will develop some Python codes. Python has been chosen becaus
 
 It is, of course, fine if you wish to use other programming languages in your project.
 
-
-
-
 ::: {.callout-note}
 # Note:
 
-On the Uni machines Quarto has been set up so that it interfaces to an installation of Python with some preinstalled libraries. To set up on your own machine you will need to install Python, create a Python environment and interface with Quarto (Show and Run Commands -> Select Python Interpreter).
+On the Uni machines Quarto has been set up so that it interfaces to an installation of Python with some pre-installed libraries. To set up on your own machine you will need to install Python, create a Python environment and interface with Quarto (Show and Run Commands -> Select Python Interpreter).
 
 :::
 
 
 ## Some key ideas
-
 
 ### Python in Quarto
 
@@ -59,10 +55,14 @@ Note that a similar syntax is used to embed codes in other open source languages
 We can use Python as a simple calculator.
 ```{python}
 
+# Define some integers
 x=1
 y=2
 
+# Define a new variable to be the sum
 z=x+y
+
+# Print the result to screen
 print(z)
 
 ```
@@ -82,27 +82,23 @@ It is worth having a concept of different `datatypes' before you start progammin
 - str (string of text)
 - boolean (logical)
 
-In Python, we not explicitly declare a datatype (the interpreter figures this out based upon the variable that has been defined). See code below for an example.
+In Python, we do not explicitly declare a datatype (the interpreter figures this out based upon the variable that has been defined). See code below for an example.
 
 
 
 ```{python}
 
 # Define an integer
-
 a=8
 
 # Define a floating point number
-
 b=16.25
 
 # Define a string
-
 s='Arsenal FC'
 
 
 # print out  the datatype
-
 print(type(a))
 print(type(b))
 print(type(s))
@@ -114,6 +110,7 @@ boolean_variable_2=False
 
 boolean_variable_and=boolean_variable_1*boolean_variable_2
 
+# Here we are using an assert to test that the variable is correct
 assert(boolean_variable_and==False)
 
 ```
@@ -124,7 +121,6 @@ assert(boolean_variable_and==False)
 Define a float and integer (e.g. $x=2.0$ and $y=7$).
 
 What datatype is the product?
-
 
 :::
 
@@ -143,7 +139,8 @@ These have different uses.
 
 #### Lists
 
-Lists are mutable, i.e. they can be modified within the code.
+Lists are mutable, i.e. they can be modified within the code. Note that Python indexing starts at zero!
+
 ```{python}
 
 # Define a list
@@ -190,12 +187,15 @@ print(mylist2)
 Tuples are immutable container types, i.e.
 ```{python}
 
+# Create a tuple (using round brackets)
 mytuple=(1,2,3)
 
+# print the tuple
 print(mytuple)
-
+# print the zeroth entry of the tuple
 print(mytuple[0])
 
+# Define a tuple of strings 
 mytuple2=('a','b','c')
 
 print(mytuple2)
@@ -211,13 +211,14 @@ Sets are denoted with curly brackets and behave like mathematical sets.
 They are not indexed and there are no repeated entries.
 ```{python}
 
+
+# Define a set
 myset={1,2,3}
 
 print(myset)
 
-
+# Define another set
 myset2={'a','b','c','a'}
-
 print(myset2)
 
 ```
@@ -241,10 +242,13 @@ Suppose  John, Helen and Carol have been assigned projects 1,2 and 3, respective
 
 ```{python}
 
+# Define a dictionary
 mydictionary={'John':1, 'Helen':2,'Carol':3}
 
+# Print the dictionary
 print(mydictionary)
 
+# Print out a single item using a key
 print('Helen\'s project is')
 print(mydictionary['Helen'])
 
@@ -261,13 +265,14 @@ print(mydictionary['Helen'])
 
 
 
-It is essential to be competent using logical statments statements in any programming language. Here we will consider for loops and if statements.
+It is essential to be competent using logical statements statements in any programming language. Here we will consider for loops and if statements.
 
 
 Note the positioning of the colon and the indentation in the code example below:
 
 ```{python}
 
+# A for loop, note colon and indentation
 for i in range(5):
   print(i)
 
@@ -288,23 +293,25 @@ Suppose we only wish to print out $i$ when it is greater than three in the above
 
 ```{python}
 
+# A for loop again
 for i in range(5):
+  # Nested if statement
   if (i>3):
     print(i)
 
 ```
 
+Note nested indentation of the for loop and if statement!
+
 :::{.callout-important}
 ## Exercise
 
-Modify your above for loop as follows.
+Modify the above for loop as follows.
 Write an if statement within the for loop so that only certain entries in the list get printed out.
-
-
 :::
 
 
-Python has nicer ways to loop over containers (lists, arrays etc.) but this is enough for now.
+Python has nicer/more efficient ways to loop over containers (lists, arrays etc.) but this is enough for now.
 
 
 
@@ -324,7 +331,6 @@ $$
 It makes sense to write a function that computes the sum for arbitrary $n$. Then we call that function when needed. This way the logic of the function is only written out in one place.
 
 
-
 ```{python}
 # Define a function
 def sum_integers(n):
@@ -340,14 +346,11 @@ s_3=0+1+2+3
 
 
 # instead we call a function 
-
 s_function_3=sum_integers(3)
 print(s_function_3)
 
 s_function_120=sum_integers(120)
 print(s_function_120)
-
-
 
 ```
 
@@ -355,7 +358,6 @@ print(s_function_120)
 ## Exercise
 
 Write a function that takes a list as an agrument and prints out the entries using a for loop. 
-
 
 :::
 
@@ -446,15 +448,18 @@ for i in range(5):
 Numpy provides tools for calculating many mathematical operations.
 
 ```{python}
+# Import thre needed library
 import numpy as np
 
+# Define a variable
 x=3.14
+# COmpute the sine using numpy (np.)
 y=np.sin(x)
-
 
 print('sin (3.14) is: ' )
 print(y)
 
+# Test the the answer is behaving as expected
 assert(np.abs(y)<0.1)
 
 z=np.pi
@@ -470,7 +475,6 @@ print(p)
 We can also use numpy to define and manipulate arrays. In the example below we use python lists to define two 1D arrays. 
 
 
-
 ``` {python}
 import numpy as np
 
@@ -479,6 +483,7 @@ a = np.array([1, 2, 3, 4, 5, 6])
 b=np.array([7,8,9,10,11,12])
 print(a)
 
+# Concatenate arrays
 c=a+b
 print('The sum of a and b is:')
 print(c)
@@ -508,7 +513,6 @@ import numpy as np
 A=np.zeros((2,2))
 
 # Set values as per questions
-
 A[0,0]=4
 A[0,1]=3
 A[1,0]=2
@@ -524,11 +528,8 @@ determinant=np.linalg.det(A)
 print('The determinant is:')
 print(determinant)
 
-
-# Formally check that the answer is correct.
+# assert that the answer is correct.
 assert(determinant==-2.0)
-
-
 
 ```
 
@@ -567,8 +568,7 @@ import numpy as np
 # define x
 x=np.linspace(0,2,200)
 
-# Now define the funciton of x
-
+# Now define the function of x
 f=x**2
 
 # Now plot the function
@@ -607,17 +607,22 @@ f(x)=x^3.
 $$
 
 ```{python}
+#import sympy
 import sympy as sp
 
+# Define symbolic variables
 x, f = sp.symbols("x f")
 
 f=x**3
 
+# Differentiate symbolically using sympy
 df_dx=sp.diff(f,x)
 
+# Print out the derivative
 print('The derivative is')
 print(df_dx)
 
+# Evaluate the derivative
 df_fx_eval=df_dx.subs(x,1)
 
 print('The derivative evaluated at x=1 is')
@@ -645,11 +650,14 @@ $$
 
 Using scipy
 ``` {python}
+# import library
 import scipy.integrate as integrate
 
 ## Define the function you want to integrate
 ## Here we use a lambda function to define the integrand
 f = lambda x: x**2
+
+# Define integration limits
 lower_lim=0.0
 upper_lim=1.0
 
@@ -693,7 +701,9 @@ $$
 ```{python}
 #| label: fig-odes
 #| fig-cap: "Numerically solving the Lotka Volterra ODEs."
+# The above info enables the figure generated by the code to be cross references in Quarto
 
+# Import libraries
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import odeint
@@ -740,7 +750,6 @@ plt.show()
 # Exercise
 1. Plot the solution in the $np$ phase plane.
 2. Annotate the phase plane by plotting the steady state and nullclines.
-
 :::
 
 
@@ -758,10 +767,14 @@ We can do this using the scipy-optimize function minimise.
 #| label: fig-localmin
 #| fig-cap: "Finding local minima using scipy optimize."
 
+
+# Import libraries
 import numpy as np
 from scipy.optimize import minimize
 import matplotlib.pyplot as plt
 
+
+# Define function to minimise 
 def quartic(x):
     """The quartic function"""
     y=0.25*x**4.0-0.5*x**2
@@ -773,13 +786,19 @@ x=np.linspace(-5.0,5.0,200,dtype=float)
 # Evaluate the function at each x
 y=quartic(x)
 
+# Define an initial guess
 x0 = np.array([1.3])
+
+# Compute the local minimum
 res = minimize(quartic, x0)
 
+# The solution is the zeroth element of the returned object
 x_sol=res.x[0]
 print(x_sol)
+# Evaluate the function at the local minimum
 y_res=quartic(x_sol)
 
+# Plot the results
 fig,ax=plt.subplots()
 ax.plot(x,y)
 ax.set_ylim([-6.0,6.0])
@@ -794,9 +813,10 @@ ax.plot(x_sol,y_res,'r*')
 The main datastructure is known as a *Dataframe*.
 
 ```{python}
-
+# Import libraries
 import pandas as pd
 
+# Define a dataframe
 df = pd.DataFrame([[1,2,3,4],[2,4,6,8],[3,6,9,12],[4,8,12,16],[5,10,15,20]], columns=list("ABCD"))
 
 ```
@@ -836,7 +856,7 @@ df.mean()
 
 ## Writing your own scripts
 
-At some point (either over the course of your project or later) you will likely encounter a  problem that cannot be solved using existing code libraries, i.e. you will need to write your own progammes. To prepare for this day, it is a good idea to practice your algorithm/code development skills on problems where the solutions are already known.
+At some point (either over the course of your project or later) you will likely encounter a  problem that cannot be solved using existing code libraries, i.e. you will need to write your own programmes. To prepare for this day, it is a good idea to practice your algorithm/code development skills on problems where the solutions are already known.
 For example, could you write an algorithm that:
 
  * numerically solves the ODEs in @fig-odes.

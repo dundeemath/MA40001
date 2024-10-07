@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -169,6 +203,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#sec-unisoftware" id="toc-sec-unisoftware" class="nav-link active" data-scroll-target="#sec-unisoftware"><span class="header-section-number">1.1</span> </a></li>
   <li><a href="#on-your-personal-computer" id="toc-on-your-personal-computer" class="nav-link" data-scroll-target="#on-your-personal-computer"><span class="header-section-number">1.2</span> On your personal computer</a></li>
+  <li><a href="#on-h1-desktops" id="toc-on-h1-desktops" class="nav-link" data-scroll-target="#on-h1-desktops"><span class="header-section-number">1.3</span> On H1 Desktops</a></li>
   </ul>
 </nav>
     </div>
@@ -237,6 +272,32 @@ Note
 <li>Configure the Python interpreter (Show and Run Commands-&gt;Python Select Interpreter)</li>
 </ul>
 <p>After doing this you should be able to follow the exercises in lectures notes on your personal computer.</p>
+</section>
+<section id="on-h1-desktops" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="on-h1-desktops"><span class="header-section-number">1.3</span> On H1 Desktops</h2>
+<ol type="1">
+<li>Launch VS Code from the Apps menu on your computer</li>
+<li>Install the Quarto extension on VS Code.</li>
+</ol>
+<p><img src="QuartoExtensions.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>Install the Python extension (search as in 2. above).</li>
+<li>On the command line type</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>quarto install tinytex</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="QuartoInstallTinytex.png" class="img-fluid"></p>
+<ol start="5" type="1">
+<li>Install some python packages</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a> pip install jupyter</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a> pip install matplotlib</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a> pip install numpy</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a> pip install scipy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="6" type="1">
+<li>Note you can render Quarto documents on the command line</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>quarto render</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>quarto preview</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>

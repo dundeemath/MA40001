@@ -68,9 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -233,35 +230,20 @@ ul.task-list li input[type="checkbox"] {
 <li>Local directory</li>
 </ol>
 <p>The workflow for managing your repository is as follows:</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">sequenceDiagram
-  participant LocalDirectory
-  participant LocalRepository
-  participant RemoteRepository
-  
-  RemoteRepository-&gt;&gt;LocalRepository: 1. Fetch origin
-  LocalRepository-&gt;&gt;LocalDirectory: 2. Pull origin to update local directory
-  LocalDirectory-&gt;&gt;LocalDirectory: 3. Make changes to local files
-  LocalDirectory-&gt;&gt;LocalRepository: 4. Commit to main
-  LocalRepository-&gt;&gt;RemoteRepository: 5. Push
-
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
 <section id="create-in-the-cloud-and-clone-onto-your-machine" class="level4" data-number="6.1.2.1">
 <h4 data-number="6.1.2.1" class="anchored" data-anchor-id="create-in-the-cloud-and-clone-onto-your-machine"><span class="header-section-number">6.1.2.1</span> Create in the cloud and clone onto your machine</h4>
 <ol type="1">
 <li>Go to your online github account.</li>
-<li>Create a new repository (why not MA40001?).</li>
-<li>On GithubDesktop … clone the repository onto your local machine (it now exists on your local machine).</li>
 </ol>
+<ul>
+<li>Create a new repository (why not MA40001Sandbox?).</li>
+</ul>
+<ol start="2" type="1">
+<li>On GithubDesktop</li>
+</ol>
+<ul>
+<li>Clone the repository onto your local machine (it now exists on your local machine).</li>
+</ul>
 </section>
 <section id="create-a-repository-on-your-local-drive-and-push-to-the-cloud" class="level4" data-number="6.1.2.2">
 <h4 data-number="6.1.2.2" class="anchored" data-anchor-id="create-a-repository-on-your-local-drive-and-push-to-the-cloud"><span class="header-section-number">6.1.2.2</span> Create a repository on your local drive and push to the cloud</h4>
@@ -275,6 +257,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="add-a-file-to-your-ma40001-repository" class="level3" data-number="6.1.3">
 <h3 data-number="6.1.3" class="anchored" data-anchor-id="add-a-file-to-your-ma40001-repository"><span class="header-section-number">6.1.3</span> Add a file to your MA40001 repository</h3>
 <p>In Github Desktop refresh your local version of the repository: 1. ‘Fetch Origin’</p>
+<p><img src="GithubDesktopFetch.png" class="img-fluid"></p>
 <p>In VSCode</p>
 <ol type="1">
 <li>Open your MA40001 repository (File-&gt;Open Folder)</li>
@@ -283,8 +266,8 @@ ul.task-list li input[type="checkbox"] {
 <p>In Github Desktop, push your changes to the remote repository:</p>
 <ol type="1">
 <li>‘Commit to Main’ (you’ll need to include a summary comment)</li>
-<li>‘Push origin’</li>
 </ol>
+<p><img src="GithubCommit.png" class="img-fluid"> 2. ‘Push origin’ <img src="GithubPush.png" class="img-fluid"></p>
 </section>
 <section id="edit-the-existing-file-and-push-the-modified-version-to-github" class="level3" data-number="6.1.4">
 <h3 data-number="6.1.4" class="anchored" data-anchor-id="edit-the-existing-file-and-push-the-modified-version-to-github"><span class="header-section-number">6.1.4</span> Edit the existing file and push the modified version to github</h3>

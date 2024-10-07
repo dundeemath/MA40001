@@ -46,3 +46,32 @@ Install the following free software:
  * Configure the Python interpreter (Show and Run Commands->Python Select Interpreter)
 
  After doing this you should be able to follow the exercises in lectures notes on your personal computer.
+
+## On H1 Desktops
+
+ 1. Launch VS Code from the Apps menu on your computer
+ 2. Install the Quarto extension on VS Code.
+
+ ![](QuartoExtensions.png)
+
+ 3. Install the Python extension (search as in 2. above).
+ 4. On the command line type 
+ ``` markdown
+ quarto install tinytex
+ ```
+
+ ![](QuartoInstallTinytex.png)
+
+ 5. Install some python packages
+
+ ``` markdown
+  pip install jupyter
+  pip install matplotlib
+  pip install numpy
+  pip install scipy
+  ```
+6. Note you can render Quarto documents on the command line 
+``` markdown
+quarto render
+quarto preview
+```

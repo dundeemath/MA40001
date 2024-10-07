@@ -4,6 +4,19 @@ author: "Philip Murray"
 format: beamer
 ---
 
+# Week 4
+
+## Tasks
+
+
+1. Install software on H1 pc (see Chapter 1)
+2. Learn to use github for file management (see Chapter 6 in notes)
+3. Continue with Python exercises (Chapter 5)
+4. Learn how to write a blog using the template
+5. Submit a pdf: a quarto write up of your work so far in Python.
+
+
+
 # Week 3
 
 ## Tasks

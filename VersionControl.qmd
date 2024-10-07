@@ -46,8 +46,9 @@ sequenceDiagram
 #### Create in the cloud and clone onto your machine
 
 1. Go to your online github account. 
-2. Create a new repository (why not MA40001?).
-3. On GithubDesktop ... clone the repository onto your local machine (it now exists on your local machine).
+  * Create a new repository (why not MA40001Sandbox?).
+2. On GithubDesktop
+  * Clone the repository onto your local machine (it now exists on your local machine).
 
 #### Create a repository on your local drive and push to the cloud
 
@@ -59,6 +60,8 @@ sequenceDiagram
 
 In Github  Desktop refresh your local version of the repository:
 1. 'Fetch Origin' 
+
+![](GithubDesktopFetch.png)
 
 In VSCode
 

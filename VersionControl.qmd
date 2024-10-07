@@ -71,7 +71,10 @@ In VSCode
 In Github Desktop, push your changes to the remote repository:
 
 1.  'Commit to Main' (you'll need to include a summary comment)
+
+![](GithubCommit.png)
 2. 'Push origin'
+![](GithubPush.png)
 
 
 ### Edit the existing file  and push the modified version to github

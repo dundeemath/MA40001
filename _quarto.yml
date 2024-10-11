@@ -22,6 +22,7 @@ book:
     - MathematicalTypesetting.qmd
     - Python.qmd
     - VersionControl.qmd
+
     - Presentations.qmd
   
       
@@ -41,7 +42,8 @@ format:
           \begin{tikzpicture}[remember picture,overlay]
           \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{MA32009Cover.png}};
           \end{tikzpicture}\clearpage}
-
+  gfm:
+    mermaid-format: png
 execute:
   warning: false
      

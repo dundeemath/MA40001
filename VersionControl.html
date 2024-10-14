@@ -233,12 +233,23 @@ ul.task-list li input[type="checkbox"] {
 <li>Local directory</li>
 </ol>
 <p>The workflow for managing your repository is as follows:</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">sequenceDiagram
+<p><img src="GithubMermaidDiagram.png" class="img-fluid"></p>
+<!--
+
+
+
+
+::::::{.cell layout-align="default"}
+
+:::::{.cell-output-display}
+
+::::{}
+`<figure class=''>`{=html}
+
+:::{}
+
+<pre class="mermaid mermaid-js">
+sequenceDiagram
   participant LocalDirectory
   participant LocalRepository
   participant RemoteRepository
@@ -250,11 +261,16 @@ ul.task-list li input[type="checkbox"] {
   LocalRepository-&gt;&gt;RemoteRepository: 5. Push
 
 </pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
+:::
+`</figure>`{=html}
+::::
+:::::
+::::::
+
+
+
+
+  -->
 <section id="create-in-the-cloud-and-clone-onto-your-machine" class="level4" data-number="6.1.2.1">
 <h4 data-number="6.1.2.1" class="anchored" data-anchor-id="create-in-the-cloud-and-clone-onto-your-machine"><span class="header-section-number">6.1.2.1</span> Create in the cloud and clone onto your machine</h4>
 <ol type="1">

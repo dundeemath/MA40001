@@ -27,6 +27,11 @@ There are three important features of repository management:
 3. Local directory
 
 The workflow for managing your repository is as follows:
+
+
+![](GithubMermaidDiagram.png)
+
+<!--
 ```{mermaid}
 
 sequenceDiagram
@@ -41,6 +46,7 @@ sequenceDiagram
   LocalRepository->>RemoteRepository: 5. Push
 
   ```
+  -->
 
 
 #### Create in the cloud and clone onto your machine

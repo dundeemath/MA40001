@@ -1,0 +1,12 @@
+{
+  "hash": "37b3d5c64568f57e161f5406bab666c2",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Software\"\nformat:\n  html:\n    code-fold: true\n  pdf:\n    code-fold: true    \njupyter: python3\n---\n\n\n\n\n\n\n##  {#sec-unisoftware}\n\nA version of Visual Studio Code with Quarto + other software is available via Apps Anywhere via the app:\n\n* Visual Studio Code 1.92.2 with Quarto 1.5.56\n\nVS Code is an integrated development environment (IDE) - a platform from within which to develop and run codes.\n\nThe Apps Anywhere app has necessary codes pre-installed for you to immediately begin working on the module. \n\n::: {.callout-note}\n\nThe AppsAnywhere app is still being finalised by UoDIT. There is currently a bug that means:\n\n* you cannot use the commandline/terminal\n* simultaneuosly generate multiple output formats (e.g. html and pdf)\n* compile multi-file projects\n\n:::\n\n\n## On your personal computer\n\nIt is advised that you get VS Code + necessary software running on your personal computer.\n\nInstall the following free software: \n\n * [VS Code](https://code.visualstudio.com/download) \n * [Anaconda](https://www.anaconda.com/download) - to get Python and then libraries (matplotlib.pyplot, numpy, pandas, etc.)\n * [Github Desktop](https://desktop.github.com/download/)\n\n Within Quarto:\n\n * Extensions - install the quarto extension for VS Code\n * install tinytex (follow these [guidelines](https://quarto.org/docs/output-formats/pdf-basics.html)).\n * Configure the Python interpreter (Show and Run Commands->Python Select Interpreter)\n\n![](PythonInterp1.png)\n![](PythonInterp2.png)\n![](PythonInterp3.png)\n\n\n\n\n After doing this you should be able to follow the exercises in lectures notes on your personal computer.\n\n## On H1 Desktops \n\n 1. Launch VS Code from the Apps menu on your computer\n 2. Install the Quarto extension on VS Code.\n\n ![](QuartoExtensions.png)\n\n 3. Install the Python extension (search as in 2. above).\n 4. On the command line type \n ``` markdown\n quarto install tinytex\n ```\n\n ![](QuartoInstallTinytex.png)\n\n 5. Install some python packages\n\n ``` markdown\n  pip install jupyter\n  pip install matplotlib\n  pip install numpy\n  pip install scipy\n  ```\n6. Note you can render Quarto documents on the command line \n``` markdown\nquarto render\nquarto preview\n```\n\n",
+    "supporting": [
+      "Software_files/figure-html"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

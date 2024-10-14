@@ -22,7 +22,6 @@ book:
     - MathematicalTypesetting.qmd
     - Python.qmd
     - VersionControl.qmd
-
     - Presentations.qmd
   
       
@@ -46,6 +45,7 @@ format:
     mermaid-format: png
 execute:
   warning: false
+  freeze: auto  # re-render only when source changes
      
 
 

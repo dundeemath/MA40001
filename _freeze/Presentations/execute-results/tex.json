@@ -1,0 +1,11 @@
+{
+  "hash": "1efe744b42ecc97f4ecfeef68a3261eb",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Presentations\"\nformat:\n  html:\n    code-fold: true\n  pdf:\n    code-fold: true    \njupyter: python3\n---\n\n\n\n\n\n\nAs part of your project you will give an approx. 10 minute presentation. To do this, you will have to develop some slides to present.\n\nQuarto has a number of different options for [producing slide decks](https://quarto.org/docs/presentations/). Below we will use [Revealjs](https://quarto.org/docs/presentations/revealjs/).\n\n",
+    "supporting": [
+      "Presentations_files/figure-pdf"
+    ],
+    "filters": []
+  }
+}

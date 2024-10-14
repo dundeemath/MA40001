@@ -86,7 +86,7 @@ You might use it:
 
 ## Problems with using generative AI
 
-1. We want to develop critical thinking/problem solving skills!
+1. We want to develop critical thinking and problem solving skills!
 \pause
 2. You are expected to defend the choices/methods/techniques that you use.
 \pause

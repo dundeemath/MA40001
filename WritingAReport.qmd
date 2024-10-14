@@ -363,7 +363,7 @@ The overall structure of a report is (generally) as follows:
 
 7. Appendices (including statement on use of AI)
 
-8. Refeences
+8. References
 
 :::{.callout-note}
 # Some common errors in the structure

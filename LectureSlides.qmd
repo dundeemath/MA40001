@@ -4,6 +4,107 @@ author: "Philip Murray"
 format: beamer
 ---
 
+# Week 5
+
+## Recap
+
+1. Quarto 
+    * Using Quarto to render .qmd file into .html and .pdf formats
+    * Add document elements (sections,figures,tables, cross references, citations, schematic diagrams etc.)
+\pause 
+
+2. Python
+    * Integrate Python code in a Quarto document
+    * Use Python libraries
+\pause 
+
+3. Github 
+    * Create and clone repositories
+    * Fetch,pull, commit and push
+    * Fork repositories
+
+4. Install VSCode/Python/Github on your own computer/H1 desktop.
+
+##  Feedback on your submissions
+
+1. Strip out figures/table/appendices. Does the writing stand alone,i.e. is there a coherent narrative to the presented work?
+\pause
+2. Figures/tables should appear after they are first introduced in the text.
+\pause
+3. Submit a pdf!
+\pause
+4. Equations require punctuation.
+\pause
+5. What makes a good figure caption?
+\pause
+6. Mathematical functions: $\sin(x)$ rather than $sin(x)$.
+
+
+## Tasks for this week
+
+1. *Fork* blog and final report templates from github
+2. Using the terminal in VSCode to render blog and final report (see bottom of Chapter 3).
+4. Use Python libraries (e.g. Pandas, Matplotlib, numpy, sympy, scipy).
+
+
+##  Plagiarism
+
+Plagiarism is the unacknowledged use of another’s work as if it were one’s own. Examples are: 
+
+* the inclusion of more than a single phrase from another's work without the use of quotation marks and acknowledgement of the source;
+\pause 
+* summarising another's work by changing a few words or altering the order of presentation without acknowledgement; 
+\pause 
+* copying another's work; 
+\pause 
+* the use of another's ideas without acknowledgement.
+
+
+## References
+
+Unless otherwise stated, it is assumed that any presented work is your own. 
+
+\pause 
+* Use references to attribute work to others
+\pause 
+* Reference primary sources (e.g. textbooks, papers as they have permanent bibliographic records) where possible.
+\pause 
+*  code that you have not written must be referenced.
+
+## Generative AI
+
+Generative AI uses statistical patterns in data upon which it has been trained to provide responses to natural language queries.
+
+You might use it:
+
+* to generate graphics/visual content
+* to summarise long texts to check your understanding
+* as a debating partner
+* to generate questions from an article/text to check your understanding
+* for debugging code
+* for improving grammar
+
+## Problems with using generative AI
+
+1. We want to develop critical thinking/problem solving skills!
+\pause
+2. You are expected to defend the choices/methods/techniques that you use.
+\pause
+3. Generative AI can sound convincing but be factually incorrect (e.g. references)
+\pause
+4. Using generative AI to generate content without attributing the source is a form of plagiarism. 
+
+## AI statement (University policy)
+
+1. Fill in an AI statement in report appendix
+2. Provide a record of 
+    * prompts
+    * responses
+    * how you used the output.
+3. Be able to defend the work that you present (presentation/poster/viva).
+
+
+
 # Week 4
 
 ## Tasks

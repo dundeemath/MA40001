@@ -331,11 +331,33 @@ Copy and paste code here
 ```
 ````
 
+
+
 ## Websites and blogs in Quarto
 
-Given what you have achieved thus far, it is not a very big step to generate and publish websites, blogs and dashboards. 
+Given what you have achieved thus far, it is not a very big step to generate a Quarto project (e.g. books, blogs and dashboards). 
+
+You can create a project template on VSCode using *File->NewFile-> Quarto Project*.
+
+The main difference with what we have previously done is that the configuration information is now defined in a *.yaml* file. See image below for an example.
+
+![](QuartoProjectYAML.png)
+
+To render a Quarto project you need to use the terminal:
+
+```{terminal}
+quarto render
+```
+
+Note that in the template projects the html and pdf formats are rendered together. The pdf is stored in the directory *docs*  (this is specified in the .yaml file).
+
+## Quarto Publishing
+
+Given what you have achieved thus far, it is straightforward to publish Quarto output on the web.
 
 There are some tutorials available on how to do this on the Quarto [pages](https://quarto.org/docs/websites/).
+
+
 
 For guidance on publishing material see [here](https://quarto.org/docs/publishing/).
 

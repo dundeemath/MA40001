@@ -24,7 +24,7 @@
     "href": "index.html#software",
     "title": "MA40001",
     "section": "Software",
-    "text": "Software\nThe taught component of the module will require you to use the following software:\n\nQuarto\nVisual Studio Code\nGithub\nLatex\nPython\n\nMore details available here (see Chapter 1.1 ).\n\n\n\n\n\n\nWhy bother with all this?\n\n\n\nThe aim is to provide you with open-source tools that enable you to generate modern scientific/mathematical documents.",
+    "text": "Software\nThe taught component of the module will require you to use the following software:\n\nQuarto\nVisual Studio Code\nGithub\nLatex\nPython\n\nMore details available here (see Chapter sec-unisoftware).\n\n\n\n\n\n\nWhy bother with all this?\n\n\n\nThe aim is to provide you with open-source tools that enable you to generate modern scientific/mathematical documents.",
     "crumbs": [
       "Preface"
     ]
@@ -64,17 +64,7 @@
     "href": "Software.html",
     "title": "1  Software",
     "section": "",
-    "text": "1.1\nA version of Visual Studio Code with Quarto + other software is available via Apps Anywhere via the app:\nVS Code is an integrated development environment (IDE) - a platform from within which to develop and run codes.\nThe Apps Anywhere app has necessary codes pre-installed for you to immediately begin working on the module.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Software</span>"
-    ]
-  },
-  {
-    "objectID": "Software.html#sec-unisoftware",
-    "href": "Software.html#sec-unisoftware",
-    "title": "1  Software",
-    "section": "",
-    "text": "Visual Studio Code 1.92.2 with Quarto 1.5.56\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe AppsAnywhere app is still being finalised by UoDIT. There is currently a bug that means:\n\nyou cannot use the commandline/terminal\nsimultaneuosly generate multiple output formats (e.g. html and pdf)\ncompile multi-file projects",
+    "text": "1.1\nA version of Visual Studio Code with Quarto in IT Suite 3 and Wolfson Rear in the library.\nVS Code is an integrated development environment (IDE) - a platform from within which to develop and run codes.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Software</span>"
     ]
@@ -84,17 +74,17 @@
     "href": "Software.html#on-your-personal-computer",
     "title": "1  Software",
     "section": "1.2 On your personal computer",
-    "text": "1.2 On your personal computer\nIt is advised that you get VS Code + necessary software running on your personal computer.\nInstall the following free software:\n\nVS Code\nAnaconda - to get Python and then libraries (matplotlib.pyplot, numpy, pandas, etc.)\nGithub Desktop\n\nWithin Quarto:\n\nExtensions - install the quarto extension for VS Code\ninstall tinytex (follow these guidelines).\nConfigure the Python interpreter (Show and Run Commands-&gt;Python Select Interpreter)\n\n  \nAfter doing this you should be able to follow the exercises in lectures notes on your personal computer.",
+    "text": "1.2 On your personal computer\nIt is advised that you get VS Code + necessary software running on your personal computer.\nInstall the following free software:\n\nVS Code\nAnaconda - to get Python and then libraries (matplotlib.pyplot, numpy, pandas, etc.)\n\nWithin Quarto:\n\nExtensions - install the quarto extension for VS Code\ninstall tinytex (follow these guidelines).\nConfigure the Python interpreter (Show and Run Commands-&gt;Python Select Interpreter)\n\n  \nAfter doing this you should be able to follow the exercises in lectures notes on your personal computer.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Software</span>"
     ]
   },
   {
-    "objectID": "Software.html#on-h1-desktops",
-    "href": "Software.html#on-h1-desktops",
+    "objectID": "Software.html#on-it-suite-3-wolfson-rear-desktops-in-the-library",
+    "href": "Software.html#on-it-suite-3-wolfson-rear-desktops-in-the-library",
     "title": "1  Software",
-    "section": "1.3 On H1 Desktops",
-    "text": "1.3 On H1 Desktops\n\nLaunch VS Code from the Apps menu on your computer\nInstall the Quarto extension on VS Code.\n\n\n\nInstall the Python extension (search as in 2. above).\nOn the command line type\n\nquarto install tinytex\n\n\nInstall some python packages\n\n pip install jupyter\n pip install matplotlib\n pip install numpy\n pip install scipy\n\nNote you can render Quarto documents on the command line\n\nquarto render\nquarto preview",
+    "section": "1.3 On IT Suite 3/ Wolfson Rear Desktops in the library",
+    "text": "1.3 On IT Suite 3/ Wolfson Rear Desktops in the library\n\nCreate a folder in OneDrive called Quarto2025.\nLaunch VS Code and open the folder that you just created in your OneDrive.\nInstall the Quarto extension on VS Code (using the left panel in VSCode).\n\n\n\nInstall the Python extension on VS Code (search as in 2. above).\nOpen the terminal in VSCode (View-&gt;Terminal). Install a latex renderer\n\nquarto install tinytex --update-path\n\nCreate a python environment. In the terminal paste\n\npython -m venv .venv \nNote this python environment should save to your OneDrive folder (.venv). 6. Activate the python environment. In the terminal paste markdown     .\\\\.venv\\\\Scripts\\\\activate\n\nInstall python packages into the created Python environment (these should save to your OneDrive folder)\n\npip install matplotlib\npip install sympy\npip install scipy\npip install pandas\npip install scikit-learn\npip install scikit-image\npip install jupyter\n\nNote you can render Quarto documents on the command line\n\nquarto render\nquarto preview\n\nTroubleshooting\n\nquarto tools\nCheck Quarto is using the intended Python environment\n    quarto check jupyter\nYou might have to activate the Python environment (ass above).\nYou change Python Interpeter by going to Show and Run Commands-&gt; Select Python Interpreter.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Software</span>"
     ]
@@ -104,7 +94,7 @@
     "href": "CommunicatingMathematics.html",
     "title": "2  Scientific/mathematical communication",
     "section": "",
-    "text": "2.1 Common elements across different assessment points",
+    "text": "2.1 Common elements across different assessment points\nThe assessment of your project will requires you develop:",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Scientific/mathematical communication</span>"
     ]
@@ -164,7 +154,7 @@
     "href": "QuartoIntroduction.html",
     "title": "3  Quarto",
     "section": "",
-    "text": "3.1 Getting started\nVisual Studio code is a popular integrated development environment (IDE) that is used to write software.\nOn Apps Anywhere you can find an iteration of VS Code that has Quarto, Python and Latex preinstalled. The app is called\nVisual Studio Code 1.92.2 with Quarto 1.5.56 extension",
+    "text": "3.1 Getting started\nQuarto is an open source scientific and technical publishing system. It can be used to make a range of publishable outputs (reports, posters, slides, blogs, webpages dashboards etc.). In this section you will learn to use Quarto to write reports and make slide decks. However, one of the advantages of learning Quarto is that it is straightforward to write and publish websites, blogs, dashboards and books.\nIt is assumed that you are using VSCode with Quarto from Apps Anywhere on the Uni machines. However, you are also encouraged to install Quarto/VSCode on your personal computer.\nQuarto documents are written using Markdown (you may have previously used RMarkdown). In the background, Quarto uses an open source document convertor called Pandoc.\nVisual Studio code is a popular integrated development environment (IDE) that is used to write software.\nOn Apps Anywhere you can find an iteration of VS Code that has Quarto, Python and Latex preinstalled. The app is called\nVisual Studio Code 1.92.2 with Quarto 1.5.56 extension",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Quarto</span>"
     ]
